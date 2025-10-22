@@ -1,5 +1,5 @@
 defmodule Faker.Phone.PtPt do
-  import Faker, only: [samplerp: 2]
+  import Faker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating phone related data for portugal location
@@ -29,7 +29,7 @@ defmodule Faker.Phone.PtPt do
     end
   end
 
-  samplerp(:landline_number_format, [
+  sampler(:landline_number_format, [
     "2########",
     "3########"
   ])
@@ -54,7 +54,7 @@ defmodule Faker.Phone.PtPt do
     Faker.format(landline_number_format())
   end
 
-  samplerp(:cell_number_format, [
+  sampler(:cell_number_format, [
     "91#######",
     "92#######",
     "93#######",

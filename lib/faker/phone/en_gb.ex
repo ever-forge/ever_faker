@@ -1,5 +1,5 @@
 defmodule Faker.Phone.EnGb do
-  import Faker, only: [samplerp: 2]
+  import Faker, only: [sampler: 2]
 
   @moduledoc """
   This follows the rules of
@@ -68,7 +68,7 @@ defmodule Faker.Phone.EnGb do
     |> random_numbers_until(12)
   end
 
-  samplerp(:cell_number_format, [
+  sampler(:cell_number_format, [
     "074## ######",
     "075## ######",
     "076## ######",
