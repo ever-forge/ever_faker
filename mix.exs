@@ -1,21 +1,24 @@
 defmodule Faker.Mixfile do
   use Mix.Project
 
-  @source_url "https://github.com/elixirs/faker"
-  @version "0.19.0-alpha.1"
+  @version "0.1.0"
+  @description "Generate fake (but realistic) data for testing and development."
+  @source_url "https://github.com/ever-forge/ever_faker"
+  @changelog_url "https://github.com/ever-forge/ever_faker/blob/v#{@version}/CHANGELOG.md"
 
   def project do
     [
-      app: :faker,
+      app: :ever_faker,
       version: @version,
-      elixir: "~> 1.6",
-      description: "Faker is a pure Elixir library for generating fake data.",
-      package: package(),
-      name: "Faker",
+      elixir: "~> 1.18",
+      start_permanent: Mix.env() == :prod,
       deps: deps(),
-      docs: docs(),
+      description: @description,
       source_url: @source_url,
-      homepage_url: @source_url
+      homepage_url: @source_url,
+      docs: docs(),
+      package: package(),
+      aliases: aliases()
     ]
   end
 
@@ -42,7 +45,7 @@ defmodule Faker.Mixfile do
   defp docs do
     [
       main: "readme",
-      extras: ["CHANGELOG.md", "README.md"],
+      extras: ["README.md", "CHANGELOG.md"],
       skip_undefined_reference_warnings_on: ["CHANGELOG.md"],
       source_url: @source_url,
       source_ref: "v#{@version}"
@@ -51,10 +54,24 @@ defmodule Faker.Mixfile do
 
   defp package do
     [
-      maintainers: ["Anthony Smith", "Igor Kapkov", "Toby Hinloopen", "Vitor Oliveira"],
-      files: ["lib", "mix.exs", "mix.lock", "README.md", "LICENSE", "CHANGELOG.md"],
       licenses: ["MIT"],
-      links: %{"GitHub" => @source_url}
+      links: %{
+        "Source" => @source_url,
+        "Changelog" => @changelog_url
+      }
     ]
+  end
+
+  defp aliases do
+    [
+      publish: ["hex.publish", "tag"],
+      tag: &tag_release/1
+    ]
+  end
+
+  defp tag_release(_) do
+    Mix.shell().info("Tagging release as v#{@version}")
+    System.cmd("git", ["tag", "v#{@version}", "--message", "Release v#{@version}"])
+    System.cmd("git", ["push", "--tags"])
   end
 end
