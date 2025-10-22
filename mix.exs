@@ -11,7 +11,6 @@ defmodule Faker.Mixfile do
       app: :ever_faker,
       version: @version,
       elixir: "~> 1.18",
-      start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: @description,
       source_url: @source_url,
