@@ -1,16 +1,6 @@
 # Faker
 
-[![build](https://github.com/elixirs/faker/actions/workflows/ci.yaml/badge.svg)](https://github.com/elixirs/faker/actions/workflows/ci.yaml)
-[![Version](https://img.shields.io/hexpm/v/faker.svg?style=flat-square)](https://hex.pm/packages/faker)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/faker/)
-[![License](https://img.shields.io/hexpm/l/faker.svg?style=flat-square)](https://github.com/elixirs/faker/blob/master/LICENSE)
-[![Issues](https://img.shields.io/github/issues/elixirs/faker.svg?style=flat-square)](https://github.com/elixirs/faker/issues)
-[![Downloads](https://img.shields.io/hexpm/dt/faker.svg?style=flat-square)](https://hex.pm/packages/faker)
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/igas/faker)
-[![Last Updated](https://img.shields.io/github/last-commit/elixirs/faker.svg)](https://github.com/elixirs/faker/commits/master)
-
-**Faker** is a pure [Elixir](http://elixir-lang.org/) library for generating
-fake data.
+Generate fake (but realistic) data for testing and development.
 
 - [Faker](#faker)
   - [Quickstart](#quickstart)
@@ -26,35 +16,35 @@ fake data.
 
 ## Quickstart
 
-* add `{:faker, "~> 0.19.0-alpha.1"}` to your deps in `mix.exs`:
+- add `{:faker, "~> 0.19.0-alpha.1"}` to your deps in `mix.exs`:
 
-    ```elixir
-    defp deps do
-      [
-        {:faker, "~> 0.19.0-alpha.1", only: :test}
-      ]
-    end
-    ```
+  ```elixir
+  defp deps do
+    [
+      {:faker, "~> 0.19.0-alpha.1", only: :test}
+    ]
+  end
+  ```
 
-* run:
+- run:
 
-    ```
-    mix deps.get
-    ```
+  ```
+  mix deps.get
+  ```
 
-* add `Faker.start()` to `test/test_helper.exs`:
+- add `Faker.start()` to `test/test_helper.exs`:
 
-    ```elixir
-    ExUnit.start()
-    Faker.start()
-    ```
+  ```elixir
+  ExUnit.start()
+  Faker.start()
+  ```
 
-* jump to [usage examples](#usage).
+- jump to [usage examples](#usage).
 
 ### Requirements
 
-* OTP 19+
-* Elixir 1.6+
+- OTP 19+
+- Elixir 1.6+
 
 ## Usage
 
@@ -62,15 +52,15 @@ See [documentation](http://hexdocs.pm/faker/) and [usage examples](https://githu
 
 ## Troubleshooting
 
-* If you get a message like the one below when you call `Faker.Address.city/0`,
-you need to add `:faker` to your application's mix file, in the `applications`
-function, as above.
+- If you get a message like the one below when you call `Faker.Address.city/0`,
+  you need to add `:faker` to your application's mix file, in the `applications`
+  function, as above.
 
-    ```
-    ** (FunctionClauseError) no function clause matching in Faker.Address.city_count/1
-    lib/faker/address.ex:48: Faker.Address.city_count(nil)
-    lib/faker/address.ex:41: Faker.Address.city/0
-    ```
+      ```
+      ** (FunctionClauseError) no function clause matching in Faker.Address.city_count/1
+      lib/faker/address.ex:48: Faker.Address.city_count(nil)
+      lib/faker/address.ex:41: Faker.Address.city/0
+      ```
 
 ## Tools
 
@@ -89,10 +79,10 @@ Faker was originally written by [Igor Kapkov](https://igas.me).
 
 Current list of maintainers:
 
-* [Anthony Smith](https://github.com/anthonator)
-* [Igor Kapkov](https://igas.me)
-* [Toby Hinloopen](https://github.com/tobyhinloopen)
-* [Vitor Oliveira](https://github.com/vbrazo)
+- [Anthony Smith](https://github.com/anthonator)
+- [Igor Kapkov](https://igas.me)
+- [Toby Hinloopen](https://github.com/tobyhinloopen)
+- [Vitor Oliveira](https://github.com/vbrazo)
 
 ## Contributing
 
