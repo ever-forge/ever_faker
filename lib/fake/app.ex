@@ -86,9 +86,7 @@ defmodule Fake.App do
 
   defp semver_reformat_bad_luck(<<first::utf8, ".0", second::utf8, rest::binary>>)
        when second !== 46 do
-    semver_reformat_bad_luck(
-      <<first, ".#{Fake.random_between(1, 9)}", second, rest::binary>>
-    )
+    semver_reformat_bad_luck(<<first, ".#{Fake.random_between(1, 9)}", second, rest::binary>>)
   end
 
   defp semver_reformat_bad_luck(
