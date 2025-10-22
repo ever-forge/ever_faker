@@ -1,14 +1,14 @@
-defmodule EverFaker.Mixfile do
+defmodule Fake.Mixfile do
   use Mix.Project
 
   @version "0.1.0"
   @description "Generate fake (but realistic) data for testing and development."
-  @source_url "https://github.com/ever-forge/ever_faker"
-  @changelog_url "https://github.com/ever-forge/ever_faker/blob/v#{@version}/CHANGELOG.md"
+  @source_url "https://github.com/ever-forge/fake"
+  @changelog_url "https://github.com/ever-forge/fake/blob/v#{@version}/CHANGELOG.md"
 
   def project do
     [
-      app: :ever_faker,
+      app: :fake,
       version: @version,
       elixir: "~> 1.18",
       deps: deps(),
@@ -27,7 +27,7 @@ defmodule EverFaker.Mixfile do
       env: [
         locale: :en,
         country: nil,
-        random_module: EverFaker.Random.Elixir
+        random_module: Fake.Random.Elixir
       ]
     ]
   end
