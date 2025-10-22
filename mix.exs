@@ -2,7 +2,7 @@ defmodule Fake.Mixfile do
   use Mix.Project
 
   @version "0.1.0"
-  @description "Generate fake (but realistic) data for testing and development."
+  @description "Generate fake (but realistic) data."
   @source_url "https://github.com/ever-forge/fake"
   @changelog_url "https://github.com/ever-forge/fake/blob/v#{@version}/CHANGELOG.md"
 

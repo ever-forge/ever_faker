@@ -3,7 +3,7 @@
 [![CI](https://github.com/ever-forge/fake/actions/workflows/ci.yml/badge.svg)](https://github.com/ever-forge/fake/actions/workflows/ci.yml)
 [![Hex.pm](https://img.shields.io/hexpm/v/fake.svg)](https://hex.pm/packages/fake)
 
-Generate fake (but realistic) data for testing and development.
+Generate fake (but realistic) data.
 
 ## Installation
 
