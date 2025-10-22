@@ -1,5 +1,5 @@
-defmodule Faker.Industry.Hy do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Industry.Hy do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating industry related data in Armenian
@@ -10,13 +10,13 @@ defmodule Faker.Industry.Hy do
 
   ## Examples
 
-      iex> Faker.Industry.Hy.industry()
+      iex> EverFaker.Industry.Hy.industry()
       "Հյուրընկալություն"
-      iex> Faker.Industry.Hy.industry()
+      iex> EverFaker.Industry.Hy.industry()
       "Բժշկական Գործունեություն"
-      iex> Faker.Industry.Hy.industry()
+      iex> EverFaker.Industry.Hy.industry()
       "Վենչուրային և Մասնավոր Կապիտալ"
-      iex> Faker.Industry.Hy.industry()
+      iex> EverFaker.Industry.Hy.industry()
       "Էներգետիկա"
   """
   @spec industry() :: String.t()

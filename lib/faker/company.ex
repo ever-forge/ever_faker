@@ -1,5 +1,5 @@
-defmodule Faker.Company do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Company do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Functions for generating company names and related stuff
@@ -10,13 +10,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.bs()
+      iex> EverFaker.Company.bs()
       "syndicate e-business e-business"
-      iex> Faker.Company.bs()
+      iex> EverFaker.Company.bs()
       "scale global metrics"
-      iex> Faker.Company.bs()
+      iex> EverFaker.Company.bs()
       "optimize scalable markets"
-      iex> Faker.Company.bs()
+      iex> EverFaker.Company.bs()
       "implement out-of-the-box content"
   """
   @spec bs() :: String.t()
@@ -27,13 +27,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.bullshit()
+      iex> EverFaker.Company.bullshit()
       "web-enabled"
-      iex> Faker.Company.bullshit()
+      iex> EverFaker.Company.bullshit()
       "e-business"
-      iex> Faker.Company.bullshit()
+      iex> EverFaker.Company.bullshit()
       "web-enabled"
-      iex> Faker.Company.bullshit()
+      iex> EverFaker.Company.bullshit()
       "next-generation"
   """
   @spec bullshit() :: String.t()
@@ -44,13 +44,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.bullshit_prefix()
+      iex> EverFaker.Company.bullshit_prefix()
       "syndicate"
-      iex> Faker.Company.bullshit_prefix()
+      iex> EverFaker.Company.bullshit_prefix()
       "visualize"
-      iex> Faker.Company.bullshit_prefix()
+      iex> EverFaker.Company.bullshit_prefix()
       "incentivize"
-      iex> Faker.Company.bullshit_prefix()
+      iex> EverFaker.Company.bullshit_prefix()
       "scale"
   """
   @spec bullshit_prefix() :: String.t()
@@ -61,13 +61,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.bullshit_suffix()
+      iex> EverFaker.Company.bullshit_suffix()
       "e-services"
-      iex> Faker.Company.bullshit_suffix()
+      iex> EverFaker.Company.bullshit_suffix()
       "niches"
-      iex> Faker.Company.bullshit_suffix()
+      iex> EverFaker.Company.bullshit_suffix()
       "e-business"
-      iex> Faker.Company.bullshit_suffix()
+      iex> EverFaker.Company.bullshit_suffix()
       "systems"
   """
   @spec bullshit_suffix() :: String.t()
@@ -78,13 +78,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.buzzword()
+      iex> EverFaker.Company.buzzword()
       "upward-trending"
-      iex> Faker.Company.buzzword()
+      iex> EverFaker.Company.buzzword()
       "full-range"
-      iex> Faker.Company.buzzword()
+      iex> EverFaker.Company.buzzword()
       "uniform"
-      iex> Faker.Company.buzzword()
+      iex> EverFaker.Company.buzzword()
       "tertiary"
   """
   @spec buzzword() :: String.t()
@@ -95,13 +95,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.buzzword_prefix()
+      iex> EverFaker.Company.buzzword_prefix()
       "Configurable"
-      iex> Faker.Company.buzzword_prefix()
+      iex> EverFaker.Company.buzzword_prefix()
       "Advanced"
-      iex> Faker.Company.buzzword_prefix()
+      iex> EverFaker.Company.buzzword_prefix()
       "Grass-roots"
-      iex> Faker.Company.buzzword_prefix()
+      iex> EverFaker.Company.buzzword_prefix()
       "Automated"
   """
   @spec buzzword_prefix() :: String.t()
@@ -112,13 +112,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.buzzword_suffix()
+      iex> EverFaker.Company.buzzword_suffix()
       "encoding"
-      iex> Faker.Company.buzzword_suffix()
+      iex> EverFaker.Company.buzzword_suffix()
       "standardization"
-      iex> Faker.Company.buzzword_suffix()
+      iex> EverFaker.Company.buzzword_suffix()
       "Graphical User Interface"
-      iex> Faker.Company.buzzword_suffix()
+      iex> EverFaker.Company.buzzword_suffix()
       "product"
   """
   @spec buzzword_suffix() :: String.t()
@@ -129,13 +129,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.catch_phrase()
+      iex> EverFaker.Company.catch_phrase()
       "Configurable full-range Graphical User Interface"
-      iex> Faker.Company.buzzword_suffix()
+      iex> EverFaker.Company.buzzword_suffix()
       "product"
-      iex> Faker.Company.buzzword_suffix()
+      iex> EverFaker.Company.buzzword_suffix()
       "intranet"
-      iex> Faker.Company.buzzword_suffix()
+      iex> EverFaker.Company.buzzword_suffix()
       "pricing structure"
   """
   @spec catch_phrase() :: String.t()
@@ -146,13 +146,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.name()
+      iex> EverFaker.Company.name()
       "Hayes Inc"
-      iex> Faker.Company.name()
+      iex> EverFaker.Company.name()
       "Sipes, Wehner and Hane"
-      iex> Faker.Company.name()
+      iex> EverFaker.Company.name()
       "Schiller, Rogahn and Hartmann"
-      iex> Faker.Company.name()
+      iex> EverFaker.Company.name()
       "Murphy-Metz"
   """
   @spec name() :: String.t()
@@ -163,13 +163,13 @@ defmodule Faker.Company do
 
   ## Examples
 
-      iex> Faker.Company.suffix()
+      iex> EverFaker.Company.suffix()
       "Inc"
-      iex> Faker.Company.suffix()
+      iex> EverFaker.Company.suffix()
       "and Sons"
-      iex> Faker.Company.suffix()
+      iex> EverFaker.Company.suffix()
       "Inc"
-      iex> Faker.Company.suffix()
+      iex> EverFaker.Company.suffix()
       "Ltd"
   """
   @spec suffix() :: String.t()

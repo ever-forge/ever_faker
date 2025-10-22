@@ -1,4 +1,4 @@
-defmodule Faker.Blockchain.Bitcoin do
+defmodule EverFaker.Blockchain.Bitcoin do
   @moduledoc """
   Functions for generate random bitcoin addresses.
   """
@@ -10,22 +10,22 @@ defmodule Faker.Blockchain.Bitcoin do
 
   ## Examples
 
-      iex> Faker.Blockchain.Bitcoin.address()
+      iex> EverFaker.Blockchain.Bitcoin.address()
       "1Lb2DM8vNXubePBWV7xmRnqJp5YT3BatcQ"
-      iex> Faker.Blockchain.Bitcoin.address()
+      iex> EverFaker.Blockchain.Bitcoin.address()
       "1erV2PhPaR4ndbEvLWDD9KX8btdNJZXt5"
-      iex> Faker.Blockchain.Bitcoin.address(:main)
+      iex> EverFaker.Blockchain.Bitcoin.address(:main)
       "1Pn5NbAbT5hZocVWKSBtmqygdVbeVoheWk"
-      iex> Faker.Blockchain.Bitcoin.address(:testnet)
+      iex> EverFaker.Blockchain.Bitcoin.address(:testnet)
       "mj1Vh7G8JZxg8gBtcQic2opTxtKUCQBBc5"
   """
   @spec address(atom) :: binary
   def address(:testnet) do
-    base58(<<111>> <> Faker.random_bytes(20))
+    base58(<<111>> <> EverFaker.random_bytes(20))
   end
 
   def address(:main) do
-    base58(<<0>> <> Faker.random_bytes(20))
+    base58(<<0>> <> EverFaker.random_bytes(20))
   end
 
   defp base58(hash) do

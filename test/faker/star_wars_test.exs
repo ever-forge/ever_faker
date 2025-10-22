@@ -1,6 +1,6 @@
-defmodule Faker.StarWarsTest do
+defmodule EverFaker.StarWarsTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.StarWars
-  doctest Faker.StarWars.En
+  doctest EverFaker.StarWars
+  doctest EverFaker.StarWars.En
 end

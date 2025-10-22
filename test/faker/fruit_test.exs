@@ -1,6 +1,6 @@
-defmodule Faker.FuitTest do
+defmodule EverFaker.FuitTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Fruit.PtBr
-  doctest Faker.Fruit.En
+  doctest EverFaker.Fruit.PtBr
+  doctest EverFaker.Fruit.En
 end

@@ -1,5 +1,5 @@
-defmodule Faker.Address.Ru do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Address.Ru do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating addresses in Russian
@@ -10,13 +10,13 @@ defmodule Faker.Address.Ru do
 
   ## Examples
 
-      iex> Faker.Address.Ru.country()
+      iex> EverFaker.Address.Ru.country()
       "Белоруссия"
-      iex> Faker.Address.Ru.country()
+      iex> EverFaker.Address.Ru.country()
       "Австрия"
-      iex> Faker.Address.Ru.country()
+      iex> EverFaker.Address.Ru.country()
       "Ирландия"
-      iex> Faker.Address.Ru.country()
+      iex> EverFaker.Address.Ru.country()
       "Тринидад и Тобаго"
   """
   @spec country() :: String.t()
@@ -222,13 +222,13 @@ defmodule Faker.Address.Ru do
 
   ## Examples
 
-      iex> Faker.Address.Ru.state()
+      iex> EverFaker.Address.Ru.state()
       "Самарская область"
-      iex> Faker.Address.Ru.state()
+      iex> EverFaker.Address.Ru.state()
       "Орловская область"
-      iex> Faker.Address.Ru.state()
+      iex> EverFaker.Address.Ru.state()
       "Рязанская область"
-      iex> Faker.Address.Ru.state()
+      iex> EverFaker.Address.Ru.state()
       "Волгоградская область"
   """
   @spec state() :: String.t()

@@ -1,5 +1,5 @@
-defmodule Faker.FinanceTest do
+defmodule EverFaker.FinanceTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Finance.Stock
+  doctest EverFaker.Finance.Stock
 end

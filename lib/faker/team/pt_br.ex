@@ -1,6 +1,6 @@
-defmodule Faker.Team.PtBr do
-  import Faker, only: [sampler: 2]
-  alias Faker.Address
+defmodule EverFaker.Team.PtBr do
+  import EverFaker, only: [sampler: 2]
+  alias EverFaker.Address
 
   @moduledoc """
   Functions for generating team related data in Brazilian Portuguese
@@ -11,13 +11,13 @@ defmodule Faker.Team.PtBr do
 
   ## Examples
 
-      iex> Faker.Team.PtBr.name()
+      iex> EverFaker.Team.PtBr.name()
       "corujas de Alaska"
-      iex> Faker.Team.PtBr.name()
+      iex> EverFaker.Team.PtBr.name()
       "vampiros de California"
-      iex> Faker.Team.PtBr.name()
+      iex> EverFaker.Team.PtBr.name()
       "pássaros de Kentucky"
-      iex> Faker.Team.PtBr.name()
+      iex> EverFaker.Team.PtBr.name()
       "vixens de Kentucky"
   """
   @spec name() :: String.t()
@@ -28,13 +28,13 @@ defmodule Faker.Team.PtBr do
 
   ## Examples
 
-      iex> Faker.Team.PtBr.creature()
+      iex> EverFaker.Team.PtBr.creature()
       "corujas"
-      iex> Faker.Team.PtBr.creature()
+      iex> EverFaker.Team.PtBr.creature()
       "ovelha"
-      iex> Faker.Team.PtBr.creature()
+      iex> EverFaker.Team.PtBr.creature()
       "vampiros"
-      iex> Faker.Team.PtBr.creature()
+      iex> EverFaker.Team.PtBr.creature()
       "macacos"
   """
   @spec creature() :: String.t()

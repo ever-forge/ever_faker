@@ -1,4 +1,4 @@
-defmodule Faker.Random do
+defmodule EverFaker.Random do
   @moduledoc """
   Behaviour that defines randomisation in faker.
   """
@@ -10,7 +10,7 @@ defmodule Faker.Random do
 
   defmacro __using__(_) do
     quote do
-      @behaviour Faker.Random
+      @behaviour EverFaker.Random
 
       def random_between(left, right) do
         Enum.random(left..right)

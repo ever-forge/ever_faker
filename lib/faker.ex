@@ -1,10 +1,10 @@
-defmodule Faker do
+defmodule EverFaker do
   @moduledoc """
   Main module to start application with some helper functions.
   """
 
   @doc """
-  Starts Faker with default locale.
+  Starts EverFaker with default locale.
   """
   @spec start() :: :ok
   def start do
@@ -12,7 +12,7 @@ defmodule Faker do
   end
 
   @doc """
-  Starts Faker with `lang` locale.
+  Starts EverFaker with `lang` locale.
   """
   @spec start(atom) :: :ok
   def start(lang) when is_atom(lang) do
@@ -57,7 +57,7 @@ defmodule Faker do
   """
   @spec mlocale() :: String.t()
   def mlocale do
-    Faker.country()
+    EverFaker.country()
     |> mlocale()
   end
 
@@ -66,7 +66,7 @@ defmodule Faker do
   end
 
   defp mlocale(suffix) do
-    Faker.locale()
+    EverFaker.locale()
     |> to_string()
     |> String.capitalize()
     |> Kernel.<>(suffix)
@@ -146,7 +146,7 @@ defmodule Faker do
         fn_args = []
         fallback = Module.concat(caller, En)
 
-        [Faker.mlocale(), EnUs]
+        [EverFaker.mlocale(), EnUs]
         |> Stream.map(&Module.concat(caller, &1))
         |> Enum.find(fallback, &function_exported?(&1, fn_impl, 0))
         |> apply(fn_impl, fn_args)
@@ -163,7 +163,7 @@ defmodule Faker do
     quote do
       def unquote(name)() do
         unquote(mapped_data)
-        |> Map.get(Faker.random_between(0, unquote(count - 1)))
+        |> Map.get(EverFaker.random_between(0, unquote(count - 1)))
       end
     end
   end

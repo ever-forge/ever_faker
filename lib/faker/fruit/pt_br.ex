@@ -1,5 +1,5 @@
-defmodule Faker.Fruit.PtBr do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Fruit.PtBr do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for fruit data in Brazilian Portuguese.
@@ -10,13 +10,13 @@ defmodule Faker.Fruit.PtBr do
 
   ## Examples
 
-      iex> Faker.Fruit.PtBr.fruit()
+      iex> EverFaker.Fruit.PtBr.fruit()
       "Fruta-do-conde"
-      iex> Faker.Fruit.PtBr.fruit()
+      iex> EverFaker.Fruit.PtBr.fruit()
       "Bergamota"
-      iex> Faker.Fruit.PtBr.fruit()
+      iex> EverFaker.Fruit.PtBr.fruit()
       "Quixaba"
-      iex> Faker.Fruit.PtBr.fruit()
+      iex> EverFaker.Fruit.PtBr.fruit()
       "Amora"
   """
   @spec fruit() :: String.t()

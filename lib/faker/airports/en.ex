@@ -1,5 +1,5 @@
-defmodule Faker.Airports.En do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Airports.En do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating airports related data in English
@@ -10,13 +10,13 @@ defmodule Faker.Airports.En do
 
   ## Examples
 
-      iex> Faker.Airports.En.name()
+      iex> EverFaker.Airports.En.name()
       "Union Island International Airport"
-      iex> Faker.Airports.En.name()
+      iex> EverFaker.Airports.En.name()
       "St. John's International Airport"
-      iex> Faker.Airports.En.name()
+      iex> EverFaker.Airports.En.name()
       "Jizan Regional Airport"
-      iex> Faker.Airports.En.name()
+      iex> EverFaker.Airports.En.name()
       "Bisho Airport"
   """
 

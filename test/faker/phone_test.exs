@@ -1,8 +1,8 @@
-defmodule Faker.PhoneTest do
+defmodule EverFaker.PhoneTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Phone.EnGb
-  doctest Faker.Phone.EnUs
-  doctest Faker.Phone.Hy
-  doctest Faker.Phone.PtBr
+  doctest EverFaker.Phone.EnGb
+  doctest EverFaker.Phone.EnUs
+  doctest EverFaker.Phone.Hy
+  doctest EverFaker.Phone.PtBr
 end

@@ -1,5 +1,5 @@
-defmodule Faker.Dog.PtBrTest do
+defmodule EverFaker.Dog.PtBrTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Dog.PtBr
+  doctest EverFaker.Dog.PtBr
 end

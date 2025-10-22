@@ -1,7 +1,7 @@
-defmodule Faker.Phone.PtPtTest do
+defmodule EverFaker.Phone.PtPtTest do
   use ExUnit.Case, async: true
 
-  import Faker.Phone.PtPt
+  import EverFaker.Phone.PtPt
 
   @iterations 10_000
 

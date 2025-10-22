@@ -1,5 +1,5 @@
-defmodule Faker.Phone.PtBr do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Phone.PtBr do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Function to generate Brazilian phone numbers.
@@ -10,19 +10,19 @@ defmodule Faker.Phone.PtBr do
 
   ## Examples
 
-      iex> Faker.Phone.PtBr.phone()
+      iex> EverFaker.Phone.PtBr.phone()
       "(75) 9 1542-6461"
-      iex> Faker.Phone.PtBr.phone()
+      iex> EverFaker.Phone.PtBr.phone()
       "(75) 4329-7052"
-      iex> Faker.Phone.PtBr.phone()
+      iex> EverFaker.Phone.PtBr.phone()
       "(69) 9 7020-3032"
-      iex> Faker.Phone.PtBr.phone()
+      iex> EverFaker.Phone.PtBr.phone()
       "(75) 5733-7603"
   """
   @spec phone :: binary
   def phone do
     base_template_number()
-    |> Faker.format()
+    |> EverFaker.format()
     |> number_with_region()
   end
 
@@ -31,13 +31,13 @@ defmodule Faker.Phone.PtBr do
 
   ## Examples
 
-      iex> Faker.Phone.PtBr.number_with_region("(xx) 9 1542-6461")
+      iex> EverFaker.Phone.PtBr.number_with_region("(xx) 9 1542-6461")
       "(92) 9 1542-6461"
-      iex> Faker.Phone.PtBr.number_with_region("(xx) 4329-7052")
+      iex> EverFaker.Phone.PtBr.number_with_region("(xx) 4329-7052")
       "(31) 4329-7052"
-      iex> Faker.Phone.PtBr.number_with_region("(xx) 9 7020-3032")
+      iex> EverFaker.Phone.PtBr.number_with_region("(xx) 9 7020-3032")
       "(71) 9 7020-3032"
-      iex> Faker.Phone.PtBr.number_with_region("(xx) 5733-7603")
+      iex> EverFaker.Phone.PtBr.number_with_region("(xx) 5733-7603")
       "(71) 5733-7603"
   """
   @spec number_with_region(binary) :: binary
@@ -53,13 +53,13 @@ defmodule Faker.Phone.PtBr do
 
   ## Examples
 
-      iex> Faker.Phone.PtBr.generate_region_code()
+      iex> EverFaker.Phone.PtBr.generate_region_code()
       "92"
-      iex> Faker.Phone.PtBr.generate_region_code()
+      iex> EverFaker.Phone.PtBr.generate_region_code()
       "31"
-      iex> Faker.Phone.PtBr.generate_region_code()
+      iex> EverFaker.Phone.PtBr.generate_region_code()
       "71"
-      iex> Faker.Phone.PtBr.generate_region_code()
+      iex> EverFaker.Phone.PtBr.generate_region_code()
       "71"
   """
   @spec generate_region_code :: binary

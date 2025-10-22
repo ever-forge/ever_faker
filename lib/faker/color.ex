@@ -1,5 +1,5 @@
-defmodule Faker.Color do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Color do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Functions for generating different color representations.
@@ -10,13 +10,13 @@ defmodule Faker.Color do
 
   ## Examples
 
-      iex> Faker.Color.rgb_hex()
+      iex> EverFaker.Color.rgb_hex()
       "D6D98B"
-      iex> Faker.Color.rgb_hex()
+      iex> EverFaker.Color.rgb_hex()
       "88C866"
-      iex> Faker.Color.rgb_hex()
+      iex> EverFaker.Color.rgb_hex()
       "F496DB"
-      iex> Faker.Color.rgb_hex()
+      iex> EverFaker.Color.rgb_hex()
       "D4DE7B"
   """
   @spec rgb_hex() :: binary
@@ -31,21 +31,21 @@ defmodule Faker.Color do
 
   ## Examples
 
-      iex> Faker.Color.rgb_decimal()
+      iex> EverFaker.Color.rgb_decimal()
       {214, 217, 139}
-      iex> Faker.Color.rgb_decimal()
+      iex> EverFaker.Color.rgb_decimal()
       {136, 200, 102}
-      iex> Faker.Color.rgb_decimal()
+      iex> EverFaker.Color.rgb_decimal()
       {244, 150, 219}
-      iex> Faker.Color.rgb_decimal()
+      iex> EverFaker.Color.rgb_decimal()
       {212, 222, 123}
   """
   @spec rgb_decimal() :: {byte, byte, byte}
   def rgb_decimal do
     {
-      Faker.random_between(0, 255),
-      Faker.random_between(0, 255),
-      Faker.random_between(0, 255)
+      EverFaker.random_between(0, 255),
+      EverFaker.random_between(0, 255),
+      EverFaker.random_between(0, 255)
     }
   end
 
@@ -54,13 +54,13 @@ defmodule Faker.Color do
 
   ## Examples
 
-      iex> Faker.Color.name()
+      iex> EverFaker.Color.name()
       "Red"
-      iex> Faker.Color.name()
+      iex> EverFaker.Color.name()
       "Green"
-      iex> Faker.Color.name()
+      iex> EverFaker.Color.name()
       "Brown"
-      iex> Faker.Color.name()
+      iex> EverFaker.Color.name()
       "Pink"
   """
   @spec name() :: String.t()
@@ -71,13 +71,13 @@ defmodule Faker.Color do
 
   ## Examples
 
-      iex> Faker.Color.fancy_name()
+      iex> EverFaker.Color.fancy_name()
       "Tawny"
-      iex> Faker.Color.fancy_name()
+      iex> EverFaker.Color.fancy_name()
       "Citrine"
-      iex> Faker.Color.fancy_name()
+      iex> EverFaker.Color.fancy_name()
       "Greige"
-      iex> Faker.Color.fancy_name()
+      iex> EverFaker.Color.fancy_name()
       "Cesious"
   """
   @spec fancy_name() :: String.t()

@@ -1,5 +1,5 @@
-defmodule Faker.File do
-  alias Faker.Lorem
+defmodule EverFaker.File do
+  alias EverFaker.Lorem
 
   @moduledoc """
   Functions for generating file related data
@@ -38,13 +38,13 @@ defmodule Faker.File do
 
   ## Examples
 
-      iex> Faker.File.file_extension()
+      iex> EverFaker.File.file_extension()
       "wav"
-      iex> Faker.File.file_extension()
+      iex> EverFaker.File.file_extension()
       "wav"
-      iex> Faker.File.file_extension()
+      iex> EverFaker.File.file_extension()
       "doc"
-      iex> Faker.File.file_extension()
+      iex> EverFaker.File.file_extension()
       "mov"
   """
   @spec file_extension() :: String.t()
@@ -60,13 +60,13 @@ defmodule Faker.File do
 
   ## Examples
 
-      iex> Faker.File.file_extension(:video)
+      iex> EverFaker.File.file_extension(:video)
       "mov"
-      iex> Faker.File.file_extension(:image)
+      iex> EverFaker.File.file_extension(:image)
       "tiff"
-      iex> Faker.File.file_extension(:audio)
+      iex> EverFaker.File.file_extension(:audio)
       "flac"
-      iex> Faker.File.file_extension(:office)
+      iex> EverFaker.File.file_extension(:office)
       "xls"
   """
   @spec file_extension(atom) :: String.t()
@@ -81,13 +81,13 @@ defmodule Faker.File do
 
   ## Examples
 
-      iex> Faker.File.file_name()
+      iex> EverFaker.File.file_name()
       "aliquam.jpg"
-      iex> Faker.File.file_name()
+      iex> EverFaker.File.file_name()
       "deleniti.doc"
-      iex> Faker.File.file_name()
+      iex> EverFaker.File.file_name()
       "qui.jpg"
-      iex> Faker.File.file_name()
+      iex> EverFaker.File.file_name()
       "quibusdam.csv"
   """
   @spec file_name() :: String.t()
@@ -101,13 +101,13 @@ defmodule Faker.File do
 
   ## Examples
 
-      iex> Faker.File.file_name(:text)
+      iex> EverFaker.File.file_name(:text)
       "aliquam.txt"
-      iex> Faker.File.file_name(:video)
+      iex> EverFaker.File.file_name(:video)
       "sint.mp4"
-      iex> Faker.File.file_name(:image)
+      iex> EverFaker.File.file_name(:image)
       "consequatur.bmp"
-      iex> Faker.File.file_name(:audio)
+      iex> EverFaker.File.file_name(:audio)
       "qui.wav"
   """
   @spec file_name(atom) :: String.t()
@@ -120,13 +120,13 @@ defmodule Faker.File do
 
   ## Examples
 
-      iex> Faker.File.mime_type()
+      iex> EverFaker.File.mime_type()
       "text/css"
-      iex> Faker.File.mime_type()
+      iex> EverFaker.File.mime_type()
       "message/http"
-      iex> Faker.File.mime_type()
+      iex> EverFaker.File.mime_type()
       "application/ogg"
-      iex> Faker.File.mime_type()
+      iex> EverFaker.File.mime_type()
       "model/x3d+xml"
   """
   @spec mime_type :: String.t()
@@ -143,13 +143,13 @@ defmodule Faker.File do
 
   ## Examples
 
-      iex> Faker.File.mime_type(:image)
+      iex> EverFaker.File.mime_type(:image)
       "image/vnd.microsoft.icon"
-      iex> Faker.File.mime_type(:audio)
+      iex> EverFaker.File.mime_type(:audio)
       "audio/mp4"
-      iex> Faker.File.mime_type(:application)
+      iex> EverFaker.File.mime_type(:application)
       "application/xop+xml"
-      iex> Faker.File.mime_type(:video)
+      iex> EverFaker.File.mime_type(:video)
       "video/mpeg"
   """
   @spec mime_type(atom) :: String.t()
@@ -169,6 +169,6 @@ defmodule Faker.File do
 
   defp pick(list) do
     list
-    |> Enum.at(Faker.random_between(0, Enum.count(list) - 1))
+    |> Enum.at(EverFaker.random_between(0, Enum.count(list) - 1))
   end
 end

@@ -1,9 +1,9 @@
-defmodule Faker.CodeTest do
+defmodule EverFaker.CodeTest do
   use ExUnit.Case, async: true
 
-  import Faker.Code
+  import EverFaker.Code
 
-  doctest Faker.Code
+  doctest EverFaker.Code
 
   @iterations 10_000
 

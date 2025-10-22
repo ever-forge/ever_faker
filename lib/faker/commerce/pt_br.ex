@@ -1,24 +1,24 @@
-defmodule Faker.Commerce.PtBr do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Commerce.PtBr do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating commerce related data in Brazilian Portuguese.
   """
 
-  alias Faker.Color.PtBr, as: Color
+  alias EverFaker.Color.PtBr, as: Color
 
   @doc """
   Returns a random color.
 
   ## Examples
 
-      iex> Faker.Commerce.PtBr.color()
+      iex> EverFaker.Commerce.PtBr.color()
       "Vermelho(a)"
-      iex> Faker.Commerce.PtBr.color()
+      iex> EverFaker.Commerce.PtBr.color()
       "Verde"
-      iex> Faker.Commerce.PtBr.color()
+      iex> EverFaker.Commerce.PtBr.color()
       "Marrom"
-      iex> Faker.Commerce.PtBr.color()
+      iex> EverFaker.Commerce.PtBr.color()
       "Rosa"
   """
   @spec color() :: String.t()
@@ -44,13 +44,13 @@ defmodule Faker.Commerce.PtBr do
 
   ## Examples
 
-      iex> Faker.Commerce.PtBr.department()
+      iex> EverFaker.Commerce.PtBr.department()
       "Eletrônicos, TV e Áudio"
-      iex> Faker.Commerce.PtBr.department()
+      iex> EverFaker.Commerce.PtBr.department()
       "Alimentos e bebidas"
-      iex> Faker.Commerce.PtBr.department()
+      iex> EverFaker.Commerce.PtBr.department()
       "Livros"
-      iex> Faker.Commerce.PtBr.department()
+      iex> EverFaker.Commerce.PtBr.department()
       "Beleza e cuidados pessoais"
   """
   @spec department() :: String.t()
@@ -83,17 +83,17 @@ defmodule Faker.Commerce.PtBr do
 
   ## Examples
 
-      iex> Faker.Commerce.PtBr.product_name()
+      iex> EverFaker.Commerce.PtBr.product_name()
       "Cadeira Gigante de Algodão"
-      iex> Faker.Commerce.PtBr.product_name()
+      iex> EverFaker.Commerce.PtBr.product_name()
       "Computador de Granito"
-      iex> Faker.Commerce.PtBr.product_name()
+      iex> EverFaker.Commerce.PtBr.product_name()
       "Bolsa Médio(a)"
-      iex> Faker.Commerce.PtBr.product_name()
+      iex> EverFaker.Commerce.PtBr.product_name()
       "Escrivaninha Grande"
   """
   @spec product_name() :: String.t()
-  def product_name, do: product_name(Faker.random_between(0, 5))
+  def product_name, do: product_name(EverFaker.random_between(0, 5))
 
   defp product_name(0) do
     "#{product_name_product()} #{product_name_adjective()} de #{product_name_material()}"
@@ -113,13 +113,13 @@ defmodule Faker.Commerce.PtBr do
 
   ## Examples
 
-      iex> Faker.Commerce.PtBr.product_name_adjective()
+      iex> EverFaker.Commerce.PtBr.product_name_adjective()
       "Gigante"
-      iex> Faker.Commerce.PtBr.product_name_adjective()
+      iex> EverFaker.Commerce.PtBr.product_name_adjective()
       "Rústico(a)"
-      iex> Faker.Commerce.PtBr.product_name_adjective()
+      iex> EverFaker.Commerce.PtBr.product_name_adjective()
       "Gigante"
-      iex> Faker.Commerce.PtBr.product_name_adjective()
+      iex> EverFaker.Commerce.PtBr.product_name_adjective()
       "Elegante"
   """
   @spec product_name_adjective() :: String.t()
@@ -147,13 +147,13 @@ defmodule Faker.Commerce.PtBr do
 
   ## Examples
 
-      iex> Faker.Commerce.PtBr.product_name_material()
+      iex> EverFaker.Commerce.PtBr.product_name_material()
       "Plástico"
-      iex> Faker.Commerce.PtBr.product_name_material()
+      iex> EverFaker.Commerce.PtBr.product_name_material()
       "Aço"
-      iex> Faker.Commerce.PtBr.product_name_material()
+      iex> EverFaker.Commerce.PtBr.product_name_material()
       "Concreto"
-      iex> Faker.Commerce.PtBr.product_name_material()
+      iex> EverFaker.Commerce.PtBr.product_name_material()
       "Algodão"
   """
   @spec product_name_material() :: String.t()
@@ -173,13 +173,13 @@ defmodule Faker.Commerce.PtBr do
 
   ## Examples
 
-      iex> Faker.Commerce.PtBr.product_name_product()
+      iex> EverFaker.Commerce.PtBr.product_name_product()
       "Guarda-roupa"
-      iex> Faker.Commerce.PtBr.product_name_product()
+      iex> EverFaker.Commerce.PtBr.product_name_product()
       "Cadeira"
-      iex> Faker.Commerce.PtBr.product_name_product()
+      iex> EverFaker.Commerce.PtBr.product_name_product()
       "Cobertor"
-      iex> Faker.Commerce.PtBr.product_name_product()
+      iex> EverFaker.Commerce.PtBr.product_name_product()
       "Sandália"
   """
   @spec product_name_product() :: String.t()

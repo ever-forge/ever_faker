@@ -1,15 +1,15 @@
-defmodule Faker.ColorTest do
+defmodule EverFaker.ColorTest do
   use ExUnit.Case, async: true
 
-  import Faker.Color
+  import EverFaker.Color
 
-  doctest Faker.Color
-  doctest Faker.Color.En
-  doctest Faker.Color.Es
-  doctest Faker.Color.Fr
-  doctest Faker.Color.Hy
-  doctest Faker.Color.It
-  doctest Faker.Color.PtBr
+  doctest EverFaker.Color
+  doctest EverFaker.Color.En
+  doctest EverFaker.Color.Es
+  doctest EverFaker.Color.Fr
+  doctest EverFaker.Color.Hy
+  doctest EverFaker.Color.It
+  doctest EverFaker.Color.PtBr
 
   @iterations 10_000
 

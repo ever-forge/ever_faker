@@ -1,5 +1,5 @@
-defmodule Faker.Aws.PtPt do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Aws.PtPt do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating AWS information in Portuguese of Portugal
@@ -10,13 +10,13 @@ defmodule Faker.Aws.PtPt do
 
   ## Examples
 
-      iex> Faker.Aws.PtPt.region_name()
+      iex> EverFaker.Aws.PtPt.region_name()
       "Asia Pacifico (Tóquio)"
-      iex> Faker.Aws.PtPt.region_name()
+      iex> EverFaker.Aws.PtPt.region_name()
       "EUA Este (Ohio)"
-      iex> Faker.Aws.PtPt.region_name()
+      iex> EverFaker.Aws.PtPt.region_name()
       "Europa (Milão)"
-      iex> Faker.Aws.PtPt.region_name()
+      iex> EverFaker.Aws.PtPt.region_name()
       "Africa (Cape Town)"
   """
   @spec region_name() :: String.t()

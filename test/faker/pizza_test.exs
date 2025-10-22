@@ -1,5 +1,5 @@
-defmodule Faker.PizzaTest do
+defmodule EverFaker.PizzaTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Pizza
+  doctest EverFaker.Pizza
 end

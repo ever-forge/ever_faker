@@ -1,7 +1,7 @@
-defmodule Faker.Random.Elixir do
+defmodule EverFaker.Random.Elixir do
   @moduledoc """
   Default implementation of random functions based on erlang and elixir standard library.
   """
 
-  use Faker.Random
+  use EverFaker.Random
 end

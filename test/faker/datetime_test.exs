@@ -1,9 +1,9 @@
-defmodule Faker.DateTimeTest do
+defmodule EverFaker.DateTimeTest do
   use ExUnit.Case, async: true
 
   test "forward/1" do
     now = DateTime.utc_now()
-    forwarded_date = Faker.DateTime.forward(10)
+    forwarded_date = EverFaker.DateTime.forward(10)
 
     assert %DateTime{
              year: year,
@@ -21,7 +21,7 @@ defmodule Faker.DateTimeTest do
 
   test "backward/1" do
     now = DateTime.utc_now()
-    backward_date = Faker.DateTime.backward(10)
+    backward_date = EverFaker.DateTime.backward(10)
 
     assert %DateTime{
              year: year,
@@ -39,8 +39,8 @@ defmodule Faker.DateTimeTest do
 
   test "between/2 for Date.t" do
     from_date = DateTime.utc_now() |> DateTime.to_date()
-    to_date = Faker.DateTime.forward(50) |> DateTime.to_date()
-    between_date = Faker.DateTime.between(from_date, to_date)
+    to_date = EverFaker.DateTime.forward(50) |> DateTime.to_date()
+    between_date = EverFaker.DateTime.between(from_date, to_date)
     assert %DateTime{year: year, month: month, day: day} = between_date
     assert from_date.year <= year || from_date.month <= month || from_date.day <= day
     assert to_date.year >= year || to_date.month >= month || to_date.day >= day
@@ -52,12 +52,12 @@ defmodule Faker.DateTimeTest do
     from_time = from_datetime |> DateTime.to_time()
     {:ok, from_naivedatetime} = NaiveDateTime.new(from_date, from_time)
 
-    to_datetime = Faker.DateTime.forward(50)
+    to_datetime = EverFaker.DateTime.forward(50)
     to_date = to_datetime |> DateTime.to_date()
     to_time = to_datetime |> DateTime.to_time()
     {:ok, to_naivedatetime} = NaiveDateTime.new(to_date, to_time)
 
-    between_date = Faker.DateTime.between(from_naivedatetime, to_naivedatetime)
+    between_date = EverFaker.DateTime.between(from_naivedatetime, to_naivedatetime)
 
     assert %DateTime{
              year: year,
@@ -82,8 +82,8 @@ defmodule Faker.DateTimeTest do
 
   test "between/2 for DateTime.t" do
     from_date = DateTime.utc_now()
-    to_date = Faker.DateTime.forward(50)
-    between_date = Faker.DateTime.between(from_date, to_date)
+    to_date = EverFaker.DateTime.forward(50)
+    between_date = EverFaker.DateTime.between(from_date, to_date)
 
     assert %DateTime{
              year: year,

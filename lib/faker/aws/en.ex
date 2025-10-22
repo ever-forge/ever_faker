@@ -1,5 +1,5 @@
-defmodule Faker.Aws.En do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Aws.En do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating AWS information in English
@@ -10,13 +10,13 @@ defmodule Faker.Aws.En do
 
   ## Examples
 
-      iex> Faker.Aws.En.region_name()
+      iex> EverFaker.Aws.En.region_name()
       "Asia Pacific (Tokyo)"
-      iex> Faker.Aws.En.region_name()
+      iex> EverFaker.Aws.En.region_name()
       "US East (Ohio)"
-      iex> Faker.Aws.En.region_name()
+      iex> EverFaker.Aws.En.region_name()
       "Europe (Milan)"
-      iex> Faker.Aws.En.region_name()
+      iex> EverFaker.Aws.En.region_name()
       "Africa (Cape Town)"
   """
   @spec region_name() :: String.t()
@@ -48,13 +48,13 @@ defmodule Faker.Aws.En do
 
   ## Examples
 
-      iex> Faker.Aws.En.region_code()
+      iex> EverFaker.Aws.En.region_code()
       "ap-northeast-1"
-      iex> Faker.Aws.En.region_code()
+      iex> EverFaker.Aws.En.region_code()
       "us-east-2"
-      iex> Faker.Aws.En.region_code()
+      iex> EverFaker.Aws.En.region_code()
       "eu-south-1"
-      iex> Faker.Aws.En.region_code()
+      iex> EverFaker.Aws.En.region_code()
       "af-south-1"
   """
   @spec region_code() :: String.t()
@@ -86,13 +86,13 @@ defmodule Faker.Aws.En do
 
   ## Examples
 
-    iex> Faker.Aws.En.service()
+    iex> EverFaker.Aws.En.service()
     "AWS Compute Optimizer"
-    iex> Faker.Aws.En.service()
+    iex> EverFaker.Aws.En.service()
     "Ground Station"
-    iex> Faker.Aws.En.service()
+    iex> EverFaker.Aws.En.service()
     "Neptune"
-    iex> Faker.Aws.En.service()
+    iex> EverFaker.Aws.En.service()
     "DataSync"
   """
   @spec service() :: String.t()
@@ -247,13 +247,13 @@ defmodule Faker.Aws.En do
 
   ## Example
 
-    iex> Faker.Aws.En.s3_action()
+    iex> EverFaker.Aws.En.s3_action()
     "DeleteBucketTagging"
-    iex> Faker.Aws.En.s3_action()
+    iex> EverFaker.Aws.En.s3_action()
     "DeleteObjects"
-    iex> Faker.Aws.En.s3_action()
+    iex> EverFaker.Aws.En.s3_action()
     "PutPublicAccessBlock"
-    iex> Faker.Aws.En.s3_action()
+    iex> EverFaker.Aws.En.s3_action()
     "PutBucketReplication"
   """
   @spec s3_action() :: String.t()
@@ -353,13 +353,13 @@ defmodule Faker.Aws.En do
 
   ## Example
 
-    iex> Faker.Aws.En.rds_action()
+    iex> EverFaker.Aws.En.rds_action()
     "DeleteDBClusterEndpoint"
-    iex> Faker.Aws.En.rds_action()
+    iex> EverFaker.Aws.En.rds_action()
     "CopyDBSnapshot"
-    iex> Faker.Aws.En.rds_action()
+    iex> EverFaker.Aws.En.rds_action()
     "ModifyDBParameterGroup"
-    iex> Faker.Aws.En.rds_action()
+    iex> EverFaker.Aws.En.rds_action()
     "DescribeDBClusterSnapshots"
   """
   @spec rds_action() :: String.t()
@@ -501,13 +501,13 @@ defmodule Faker.Aws.En do
 
   ## Example
 
-    iex> Faker.Aws.En.ec2_action()
+    iex> EverFaker.Aws.En.ec2_action()
     "CreateVpcEndpoint"
-    iex> Faker.Aws.En.ec2_action()
+    iex> EverFaker.Aws.En.ec2_action()
     "RevokeSecurityGroupEgress"
-    iex> Faker.Aws.En.ec2_action()
+    iex> EverFaker.Aws.En.ec2_action()
     "GetTransitGatewayRouteTableAssociations"
-    iex> Faker.Aws.En.ec2_action()
+    iex> EverFaker.Aws.En.ec2_action()
     "RunScheduledInstances"
   """
   @spec ec2_action() :: String.t()

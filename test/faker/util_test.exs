@@ -1,9 +1,9 @@
-defmodule Faker.UtilTest do
+defmodule EverFaker.UtilTest do
   use ExUnit.Case, async: true
 
-  import Faker.Util
+  import EverFaker.Util
 
-  doctest Faker.Util
+  doctest EverFaker.Util
 
   @iterations 10_000
 
@@ -41,10 +41,10 @@ defmodule Faker.UtilTest do
 
   test "cycle/2" do
     list = ~w/a b c/
-    my_cycle = Faker.Util.cycle_start(list)
+    my_cycle = EverFaker.Util.cycle_start(list)
 
     Stream.repeatedly(fn ->
-      Stream.repeatedly(fn -> Faker.Util.cycle(my_cycle) end) |> Enum.take(3)
+      Stream.repeatedly(fn -> EverFaker.Util.cycle(my_cycle) end) |> Enum.take(3)
     end)
     |> Enum.take(@iterations)
     |> Enum.each(fn generated_value ->

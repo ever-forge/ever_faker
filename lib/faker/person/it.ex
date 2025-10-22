@@ -1,5 +1,5 @@
-defmodule Faker.Person.It do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Person.It do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for name data in Italian
@@ -10,13 +10,13 @@ defmodule Faker.Person.It do
 
   ## Examples
 
-      iex> Faker.Person.It.name()
+      iex> EverFaker.Person.It.name()
       "Sig.ra Agave Bianchi"
-      iex> Faker.Person.It.name()
+      iex> EverFaker.Person.It.name()
       "Gennaro Mazza"
   """
   @spec name() :: String.t()
-  def name, do: name(Faker.random_between(0, 9))
+  def name, do: name(EverFaker.random_between(0, 9))
   defp name(0), do: "#{prefix()} #{first_name()} #{last_name()}"
   defp name(_), do: "#{first_name()} #{last_name()}"
 
@@ -25,11 +25,11 @@ defmodule Faker.Person.It do
 
   ## Examples
 
-      iex> Faker.Person.It.first_name()
+      iex> EverFaker.Person.It.first_name()
       "Azalea"
-      iex> Faker.Person.It.first_name()
+      iex> EverFaker.Person.It.first_name()
       "Dionigi"
-      iex> Faker.Person.It.first_name()
+      iex> EverFaker.Person.It.first_name()
       "Agave"
   """
   @spec first_name() :: String.t()
@@ -1090,13 +1090,13 @@ defmodule Faker.Person.It do
 
   ## Examples
 
-      iex> Faker.Person.It.last_name()
+      iex> EverFaker.Person.It.last_name()
       "Bruno"
-      iex> Faker.Person.It.last_name()
+      iex> EverFaker.Person.It.last_name()
       "Russo"
-      iex> Faker.Person.It.last_name()
+      iex> EverFaker.Person.It.last_name()
       "Serra"
-      iex> Faker.Person.It.last_name()
+      iex> EverFaker.Person.It.last_name()
       "Bianchi"
   """
   @spec last_name() :: String.t()
@@ -1208,13 +1208,13 @@ defmodule Faker.Person.It do
 
   ## Examples
 
-      iex> Faker.Person.It.prefix()
+      iex> EverFaker.Person.It.prefix()
       "Sig."
-      iex> Faker.Person.It.prefix()
+      iex> EverFaker.Person.It.prefix()
       "Sig.ra"
-      iex> Faker.Person.It.prefix()
+      iex> EverFaker.Person.It.prefix()
       "Sig."
-      iex> Faker.Person.It.prefix()
+      iex> EverFaker.Person.It.prefix()
       "Avv."
   """
   @spec prefix() :: String.t()

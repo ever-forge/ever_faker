@@ -1,4 +1,4 @@
-defmodule Faker.Finance do
+defmodule EverFaker.Finance do
   @moduledoc """
   Functions for generating financial data
   """

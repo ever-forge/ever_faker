@@ -1,5 +1,5 @@
-defmodule Faker.Color.Fr do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Color.Fr do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for color data in French
@@ -10,13 +10,13 @@ defmodule Faker.Color.Fr do
 
   ## Examples
 
-      iex> Faker.Color.Fr.name()
+      iex> EverFaker.Color.Fr.name()
       "Rouge"
-      iex> Faker.Color.Fr.name()
+      iex> EverFaker.Color.Fr.name()
       "Vert"
-      iex> Faker.Color.Fr.name()
+      iex> EverFaker.Color.Fr.name()
       "Marron"
-      iex> Faker.Color.Fr.name()
+      iex> EverFaker.Color.Fr.name()
       "Rose"
   """
   @spec name() :: String.t()

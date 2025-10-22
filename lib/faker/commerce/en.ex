@@ -1,5 +1,5 @@
-defmodule Faker.Commerce.En do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Commerce.En do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating commerce related data in English
@@ -10,13 +10,13 @@ defmodule Faker.Commerce.En do
 
   ## Examples
 
-      iex> Faker.Commerce.En.color()
+      iex> EverFaker.Commerce.En.color()
       "red"
-      iex> Faker.Commerce.En.color()
+      iex> EverFaker.Commerce.En.color()
       "sky blue"
-      iex> Faker.Commerce.En.color()
+      iex> EverFaker.Commerce.En.color()
       "lavender"
-      iex> Faker.Commerce.En.color()
+      iex> EverFaker.Commerce.En.color()
       "grey"
   """
   @spec color() :: String.t()
@@ -60,13 +60,13 @@ defmodule Faker.Commerce.En do
 
   ## Examples
 
-      iex> Faker.Commerce.En.department()
+      iex> EverFaker.Commerce.En.department()
       "Home, Garden & Tools"
-      iex> Faker.Commerce.En.department()
+      iex> EverFaker.Commerce.En.department()
       "Electronics & Computers"
-      iex> Faker.Commerce.En.department()
+      iex> EverFaker.Commerce.En.department()
       "Clothing, Shoes & Jewelery"
-      iex> Faker.Commerce.En.department()
+      iex> EverFaker.Commerce.En.department()
       "Toys, Kids & Baby"
   """
   @spec department() :: String.t()
@@ -88,17 +88,17 @@ defmodule Faker.Commerce.En do
 
   ## Examples
 
-      iex> Faker.Commerce.En.product_name()
+      iex> EverFaker.Commerce.En.product_name()
       "Ergonomic Steel Shirt"
-      iex> Faker.Commerce.En.product_name()
+      iex> EverFaker.Commerce.En.product_name()
       "Fantastic Car"
-      iex> Faker.Commerce.En.product_name()
+      iex> EverFaker.Commerce.En.product_name()
       "Granite Gloves"
-      iex> Faker.Commerce.En.product_name()
+      iex> EverFaker.Commerce.En.product_name()
       "Plastic Shoes"
   """
   @spec product_name() :: String.t()
-  def product_name, do: product_name(Faker.random_between(0, 2))
+  def product_name, do: product_name(EverFaker.random_between(0, 2))
 
   defp product_name(0) do
     "#{product_name_adjective()} #{product_name_material()} #{product_name_product()}"
@@ -112,13 +112,13 @@ defmodule Faker.Commerce.En do
 
   ## Examples
 
-      iex> Faker.Commerce.En.product_name_adjective()
+      iex> EverFaker.Commerce.En.product_name_adjective()
       "Small"
-      iex> Faker.Commerce.En.product_name_adjective()
+      iex> EverFaker.Commerce.En.product_name_adjective()
       "Ergonomic"
-      iex> Faker.Commerce.En.product_name_adjective()
+      iex> EverFaker.Commerce.En.product_name_adjective()
       "Incredible"
-      iex> Faker.Commerce.En.product_name_adjective()
+      iex> EverFaker.Commerce.En.product_name_adjective()
       "Gorgeous"
   """
   @spec product_name_adjective() :: String.t()
@@ -140,13 +140,13 @@ defmodule Faker.Commerce.En do
 
   ## Examples
 
-      iex> Faker.Commerce.En.product_name_material()
+      iex> EverFaker.Commerce.En.product_name_material()
       "Rubber"
-      iex> Faker.Commerce.En.product_name_material()
+      iex> EverFaker.Commerce.En.product_name_material()
       "Concrete"
-      iex> Faker.Commerce.En.product_name_material()
+      iex> EverFaker.Commerce.En.product_name_material()
       "Steel"
-      iex> Faker.Commerce.En.product_name_material()
+      iex> EverFaker.Commerce.En.product_name_material()
       "Granite"
   """
   @spec product_name_material() :: String.t()
@@ -165,13 +165,13 @@ defmodule Faker.Commerce.En do
 
   ## Examples
 
-      iex> Faker.Commerce.En.product_name_product()
+      iex> EverFaker.Commerce.En.product_name_product()
       "Gloves"
-      iex> Faker.Commerce.En.product_name_product()
+      iex> EverFaker.Commerce.En.product_name_product()
       "Computer"
-      iex> Faker.Commerce.En.product_name_product()
+      iex> EverFaker.Commerce.En.product_name_product()
       "Table"
-      iex> Faker.Commerce.En.product_name_product()
+      iex> EverFaker.Commerce.En.product_name_product()
       "Shirt"
   """
   @spec product_name_product() :: String.t()

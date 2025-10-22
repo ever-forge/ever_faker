@@ -1,5 +1,5 @@
-defmodule Faker.Beer do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Beer do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Functions for generating Beer related data
@@ -10,13 +10,13 @@ defmodule Faker.Beer do
 
   ## Examples
 
-      iex> Faker.Beer.brand()
+      iex> EverFaker.Beer.brand()
       "Paulaner"
-      iex> Faker.Beer.brand()
+      iex> EverFaker.Beer.brand()
       "Pabst Blue Ribbon"
-      iex> Faker.Beer.brand()
+      iex> EverFaker.Beer.brand()
       "Kirin Inchiban"
-      iex> Faker.Beer.brand()
+      iex> EverFaker.Beer.brand()
       "Birra Moretti"
   """
   @spec brand() :: String.t()
@@ -27,13 +27,13 @@ defmodule Faker.Beer do
 
   ## Examples
 
-      iex> Faker.Beer.name()
+      iex> EverFaker.Beer.name()
       "Duvel"
-      iex> Faker.Beer.name()
+      iex> EverFaker.Beer.name()
       "Founders Kentucky Breakfast"
-      iex> Faker.Beer.name()
+      iex> EverFaker.Beer.name()
       "Yeti Imperial Stout"
-      iex> Faker.Beer.name()
+      iex> EverFaker.Beer.name()
       "Stone Imperial Russian Stout"
   """
   @spec name() :: String.t()
@@ -44,13 +44,13 @@ defmodule Faker.Beer do
 
   ## Examples
 
-      iex> Faker.Beer.hop()
+      iex> EverFaker.Beer.hop()
       "Eroica"
-      iex> Faker.Beer.hop()
+      iex> EverFaker.Beer.hop()
       "Bullion"
-      iex> Faker.Beer.hop()
+      iex> EverFaker.Beer.hop()
       "Mt. Rainier"
-      iex> Faker.Beer.hop()
+      iex> EverFaker.Beer.hop()
       "Citra"
   """
   @spec hop() :: String.t()
@@ -61,13 +61,13 @@ defmodule Faker.Beer do
 
   ## Examples
 
-      iex> Faker.Beer.yeast()
+      iex> EverFaker.Beer.yeast()
       "2206 - Bavarian Lager"
-      iex> Faker.Beer.yeast()
+      iex> EverFaker.Beer.yeast()
       "3763 - Roeselare Ale Blend"
-      iex> Faker.Beer.yeast()
+      iex> EverFaker.Beer.yeast()
       "3711 - French Saison"
-      iex> Faker.Beer.yeast()
+      iex> EverFaker.Beer.yeast()
       "3944 - Belgian Witbier"
   """
   @spec yeast() :: String.t()
@@ -78,13 +78,13 @@ defmodule Faker.Beer do
 
   ## Examples
 
-      iex> Faker.Beer.malt()
+      iex> EverFaker.Beer.malt()
       "Carapils"
-      iex> Faker.Beer.malt()
+      iex> EverFaker.Beer.malt()
       "Pale"
-      iex> Faker.Beer.malt()
+      iex> EverFaker.Beer.malt()
       "Rye malt"
-      iex> Faker.Beer.malt()
+      iex> EverFaker.Beer.malt()
       "Munich"
   """
   @spec malt() :: String.t()
@@ -95,13 +95,13 @@ defmodule Faker.Beer do
 
   ## Examples
 
-      iex> Faker.Beer.style()
+      iex> EverFaker.Beer.style()
       "Stout"
-      iex> Faker.Beer.style()
+      iex> EverFaker.Beer.style()
       "European Amber Lager"
-      iex> Faker.Beer.style()
+      iex> EverFaker.Beer.style()
       "Strong Ale"
-      iex> Faker.Beer.style()
+      iex> EverFaker.Beer.style()
       "German Wheat And Rye Beer"
   """
   @spec style() :: String.t()
@@ -112,18 +112,18 @@ defmodule Faker.Beer do
 
   ## Examples
 
-      iex> Faker.Beer.ibu()
+      iex> EverFaker.Beer.ibu()
       "59 IBU"
-      iex> Faker.Beer.ibu()
+      iex> EverFaker.Beer.ibu()
       "10 IBU"
-      iex> Faker.Beer.ibu()
+      iex> EverFaker.Beer.ibu()
       "56 IBU"
-      iex> Faker.Beer.ibu()
+      iex> EverFaker.Beer.ibu()
       "85 IBU"
   """
   @spec ibu :: String.t()
   def ibu do
-    "#{Faker.random_between(5, 120)} IBU"
+    "#{EverFaker.random_between(5, 120)} IBU"
   end
 
   @doc """
@@ -131,13 +131,13 @@ defmodule Faker.Beer do
 
   ## Examples
 
-      iex> Faker.Beer.alcohol()
+      iex> EverFaker.Beer.alcohol()
       "10.1%"
-      iex> Faker.Beer.alcohol()
+      iex> EverFaker.Beer.alcohol()
       "35.4%"
-      iex> Faker.Beer.alcohol()
+      iex> EverFaker.Beer.alcohol()
       "92.6%"
-      iex> Faker.Beer.alcohol()
+      iex> EverFaker.Beer.alcohol()
       "64.6%"
   """
   @spec alcohol :: String.t()
@@ -150,13 +150,13 @@ defmodule Faker.Beer do
 
   ## Examples
 
-      iex> Faker.Beer.blg()
+      iex> EverFaker.Beer.blg()
       "10.1°Blg"
-      iex> Faker.Beer.blg()
+      iex> EverFaker.Beer.blg()
       "35.4°Blg"
-      iex> Faker.Beer.blg()
+      iex> EverFaker.Beer.blg()
       "92.6°Blg"
-      iex> Faker.Beer.blg()
+      iex> EverFaker.Beer.blg()
       "64.6°Blg"
   """
   @spec blg :: String.t()
@@ -165,6 +165,6 @@ defmodule Faker.Beer do
   end
 
   defp random_float do
-    "#{Faker.random_between(0, 99)}.#{Faker.random_between(0, 9)}"
+    "#{EverFaker.random_between(0, 99)}.#{EverFaker.random_between(0, 9)}"
   end
 end

@@ -1,7 +1,7 @@
-defmodule Faker.Pizza do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Pizza do
+  import EverFaker, only: [sampler: 2]
 
-  alias Faker.Util
+  alias EverFaker.Util
 
   @moduledoc """
   Functions for generating Pizza related data in English.
@@ -16,26 +16,26 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.pizzas()
+      iex> EverFaker.Pizza.pizzas()
       [
         "14\\" Greek Fajita",
         "Large with Reindeer, Buffalo Chicken, Egg, Chorizo, and Clam",
         "9\\" Kebab",
         "9\\" Sicilian Style Buffalo Chicken"
       ]
-      iex> Faker.Pizza.pizzas(2..3)
+      iex> EverFaker.Pizza.pizzas(2..3)
       [
         "12\\" Quattro Formaggio",
         "Medium Pesto Chicken"
       ]
-      iex> Faker.Pizza.pizzas(3..4)
+      iex> EverFaker.Pizza.pizzas(3..4)
       [
         "Large Gluten-Free Corn with Oysters, Bacon, and Steak",
         "10\\" Flatbread Pesto Chicken",
         "30\\" Funghi",
         "Small with Sauerkraut"
       ]
-      iex> Faker.Pizza.pizzas(5)
+      iex> EverFaker.Pizza.pizzas(5)
       [
         "Large Cheese",
         "Small Sweet Potato Crust with Mackerel, Jalapeños, Smoked Mozzarella, and Smoked Salmon",
@@ -63,17 +63,17 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.pizza()
+      iex> EverFaker.Pizza.pizza()
       "16\\" with Fior di latte"
-      iex> Faker.Pizza.pizza()
+      iex> EverFaker.Pizza.pizza()
       "Medium New York Style with Clam and Reindeer"
-      iex> Faker.Pizza.pizza()
+      iex> EverFaker.Pizza.pizza()
       "9\\" Africana"
-      iex> Faker.Pizza.pizza()
+      iex> EverFaker.Pizza.pizza()
       "16\\" Meat Lovers"
   """
   @spec pizza() :: String.t()
-  def pizza, do: pizza(Faker.random_between(1, 30))
+  def pizza, do: pizza(EverFaker.random_between(1, 30))
   defp pizza(n) when n <= 5, do: "#{size_or_inches()} with #{toppings_sentence(n)}"
 
   defp pizza(n) when n <= 10,
@@ -91,13 +91,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.toppings()
+      iex> EverFaker.Pizza.toppings()
       ["Pesto Sauce", "Fior di latte", "Broccoli", "Banana Peppers"]
-      iex> Faker.Pizza.toppings(4)
+      iex> EverFaker.Pizza.toppings(4)
       ["Clam", "Reindeer", "Buffalo Chicken", "Egg"]
-      iex> Faker.Pizza.toppings(2..3)
+      iex> EverFaker.Pizza.toppings(2..3)
       ["Sausage", "Green Peas"]
-      iex> Faker.Pizza.toppings(2..3)
+      iex> EverFaker.Pizza.toppings(2..3)
       ["Shellfish", "Smoked Salmon"]
   """
   @spec toppings(integer | Range.t()) :: list(String.t())
@@ -123,17 +123,17 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.topping()
+      iex> EverFaker.Pizza.topping()
       "Black Olives"
-      iex> Faker.Pizza.topping()
+      iex> EverFaker.Pizza.topping()
       "Meatballs"
-      iex> Faker.Pizza.topping()
+      iex> EverFaker.Pizza.topping()
       "Asiago"
-      iex> Faker.Pizza.topping()
+      iex> EverFaker.Pizza.topping()
       "Philly Steak"
   """
   @spec topping() :: String.t()
-  def topping, do: topping(Faker.random_between(0, 7))
+  def topping, do: topping(EverFaker.random_between(0, 7))
   defp topping(0), do: cheese()
   defp topping(1), do: sauce()
   defp topping(count) when count <= 5, do: meat()
@@ -144,13 +144,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.company()
+      iex> EverFaker.Pizza.company()
       "Papa Plastique"
-      iex> Faker.Pizza.company()
+      iex> EverFaker.Pizza.company()
       "Chicago Deep Dish"
-      iex> Faker.Pizza.company()
+      iex> EverFaker.Pizza.company()
       "Pizza Joe’s"
-      iex> Faker.Pizza.company()
+      iex> EverFaker.Pizza.company()
       "CosaNostra Pizza"
   """
   @spec company() :: String.t()
@@ -202,13 +202,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.style()
+      iex> EverFaker.Pizza.style()
       "Pizza Frittata"
-      iex> Faker.Pizza.style()
+      iex> EverFaker.Pizza.style()
       "Gluten-Free Corn"
-      iex> Faker.Pizza.style()
+      iex> EverFaker.Pizza.style()
       "Detroit-style"
-      iex> Faker.Pizza.style()
+      iex> EverFaker.Pizza.style()
       "Stuffed Crust"
   """
   @spec style() :: String.t()
@@ -247,13 +247,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.sauce()
+      iex> EverFaker.Pizza.sauce()
       "Spicy Tomato Sauce"
-      iex> Faker.Pizza.sauce()
+      iex> EverFaker.Pizza.sauce()
       "Hummus"
-      iex> Faker.Pizza.sauce()
+      iex> EverFaker.Pizza.sauce()
       "Pesto Sauce"
-      iex> Faker.Pizza.sauce()
+      iex> EverFaker.Pizza.sauce()
       "Hummus"
   """
   @spec sauce() :: String.t()
@@ -298,13 +298,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.cheese()
+      iex> EverFaker.Pizza.cheese()
       "Mozzarella"
-      iex> Faker.Pizza.cheese()
+      iex> EverFaker.Pizza.cheese()
       "Marscapone"
-      iex> Faker.Pizza.cheese()
+      iex> EverFaker.Pizza.cheese()
       "Blue (Bleu) Cheese"
-      iex> Faker.Pizza.cheese()
+      iex> EverFaker.Pizza.cheese()
       "Smoked Mozzarella"
   """
   @spec cheese() :: String.t()
@@ -346,13 +346,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.meat()
+      iex> EverFaker.Pizza.meat()
       "Buffalo Chicken"
-      iex> Faker.Pizza.meat()
+      iex> EverFaker.Pizza.meat()
       "Meatballs"
-      iex> Faker.Pizza.meat()
+      iex> EverFaker.Pizza.meat()
       "Chicken"
-      iex> Faker.Pizza.meat()
+      iex> EverFaker.Pizza.meat()
       "Meatballs"
   """
   @spec meat() :: String.t()
@@ -397,13 +397,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.vegetable()
+      iex> EverFaker.Pizza.vegetable()
       "Mango"
-      iex> Faker.Pizza.vegetable()
+      iex> EverFaker.Pizza.vegetable()
       "Black Olives"
-      iex> Faker.Pizza.vegetable()
+      iex> EverFaker.Pizza.vegetable()
       "Green Olives"
-      iex> Faker.Pizza.vegetable()
+      iex> EverFaker.Pizza.vegetable()
       "Sauerkraut"
   """
   @spec vegetable() :: String.t()
@@ -449,13 +449,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.combo()
+      iex> EverFaker.Pizza.combo()
       "Hot & Spicy"
-      iex> Faker.Pizza.combo()
+      iex> EverFaker.Pizza.combo()
       "Breakfast"
-      iex> Faker.Pizza.combo()
+      iex> EverFaker.Pizza.combo()
       "Thai Chicken"
-      iex> Faker.Pizza.combo()
+      iex> EverFaker.Pizza.combo()
       "Poutine"
   """
   @spec combo() :: String.t()
@@ -522,17 +522,17 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.size_or_inches()
+      iex> EverFaker.Pizza.size_or_inches()
       "Family"
-      iex> Faker.Pizza.size_or_inches()
+      iex> EverFaker.Pizza.size_or_inches()
       "14\\""
-      iex> Faker.Pizza.size_or_inches()
+      iex> EverFaker.Pizza.size_or_inches()
       "Personal"
-      iex> Faker.Pizza.size_or_inches()
+      iex> EverFaker.Pizza.size_or_inches()
       "Medium"
   """
   @spec size_or_inches() :: String.t()
-  def size_or_inches, do: size_or_inches(Faker.random_between(0, 1))
+  def size_or_inches, do: size_or_inches(EverFaker.random_between(0, 1))
   defp size_or_inches(0), do: size()
   defp size_or_inches(1), do: inches()
 
@@ -541,13 +541,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.size()
+      iex> EverFaker.Pizza.size()
       "Personal"
-      iex> Faker.Pizza.size()
+      iex> EverFaker.Pizza.size()
       "Family"
-      iex> Faker.Pizza.size()
+      iex> EverFaker.Pizza.size()
       "Large"
-      iex> Faker.Pizza.size()
+      iex> EverFaker.Pizza.size()
       "Medium"
   """
   @spec size() :: String.t()
@@ -558,13 +558,13 @@ defmodule Faker.Pizza do
 
   ## Examples
 
-      iex> Faker.Pizza.inches()
+      iex> EverFaker.Pizza.inches()
       "9\\""
-      iex> Faker.Pizza.inches()
+      iex> EverFaker.Pizza.inches()
       "10\\""
-      iex> Faker.Pizza.inches()
+      iex> EverFaker.Pizza.inches()
       "16\\""
-      iex> Faker.Pizza.inches()
+      iex> EverFaker.Pizza.inches()
       "14\\""
   """
   @spec inches() :: String.t()

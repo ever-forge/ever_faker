@@ -1,5 +1,5 @@
-defmodule Faker.Phone.EnGb do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Phone.EnGb do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   This follows the rules of
@@ -30,18 +30,18 @@ defmodule Faker.Phone.EnGb do
 
   ## Examples
 
-      iex> Faker.Phone.EnGb.number()
+      iex> EverFaker.Phone.EnGb.number()
       "+44042646108"
-      iex> Faker.Phone.EnGb.number()
+      iex> EverFaker.Phone.EnGb.number()
       "07897 052357"
-      iex> Faker.Phone.EnGb.number()
+      iex> EverFaker.Phone.EnGb.number()
       "+44803032097"
-      iex> Faker.Phone.EnGb.number()
+      iex> EverFaker.Phone.EnGb.number()
       "+447776 033745"
   """
   @spec number() :: String.t()
   def number do
-    if Faker.random_between(0, 1) == 0 do
+    if EverFaker.random_between(0, 1) == 0 do
       landline_number()
     else
       cell_number()
@@ -53,13 +53,13 @@ defmodule Faker.Phone.EnGb do
 
   ## Examples
 
-      iex> Faker.Phone.EnGb.landline_number()
+      iex> EverFaker.Phone.EnGb.landline_number()
       "+44335426461"
-      iex> Faker.Phone.EnGb.landline_number()
+      iex> EverFaker.Phone.EnGb.landline_number()
       "+44343297052"
-      iex> Faker.Phone.EnGb.landline_number()
+      iex> EverFaker.Phone.EnGb.landline_number()
       "+44567020303"
-      iex> Faker.Phone.EnGb.landline_number()
+      iex> EverFaker.Phone.EnGb.landline_number()
       "+44709733760"
   """
   @spec landline_number() :: String.t()
@@ -88,18 +88,18 @@ defmodule Faker.Phone.EnGb do
 
   ## Examples
 
-      iex> Faker.Phone.EnGb.cell_number()
+      iex> EverFaker.Phone.EnGb.cell_number()
       "+447415 426461"
-      iex> Faker.Phone.EnGb.cell_number()
+      iex> EverFaker.Phone.EnGb.cell_number()
       "07483 297052"
-      iex> Faker.Phone.EnGb.cell_number()
+      iex> EverFaker.Phone.EnGb.cell_number()
       "+447557 020303"
-      iex> Faker.Phone.EnGb.cell_number()
+      iex> EverFaker.Phone.EnGb.cell_number()
       "+447609 733760"
   """
   @spec cell_number() :: String.t()
   def cell_number do
-    Faker.format(cell_number_format())
+    EverFaker.format(cell_number_format())
   end
 
   @doc """
@@ -107,13 +107,13 @@ defmodule Faker.Phone.EnGb do
 
   ## Examples
 
-      iex> Faker.Phone.EnGb.mobile_number()
+      iex> EverFaker.Phone.EnGb.mobile_number()
       "+447415 426461"
-      iex> Faker.Phone.EnGb.mobile_number()
+      iex> EverFaker.Phone.EnGb.mobile_number()
       "07483 297052"
-      iex> Faker.Phone.EnGb.mobile_number()
+      iex> EverFaker.Phone.EnGb.mobile_number()
       "+447557 020303"
-      iex> Faker.Phone.EnGb.mobile_number()
+      iex> EverFaker.Phone.EnGb.mobile_number()
       "+447609 733760"
   """
   @spec mobile_number() :: String.t()
@@ -127,12 +127,12 @@ defmodule Faker.Phone.EnGb do
 
     format = String.duplicate("#", count - char_count)
 
-    "#{out}#{Faker.format(format)}"
+    "#{out}#{EverFaker.format(format)}"
   end
 
   defp number_prefix do
     numbers = Map.values(@prefixes)
-    type = Enum.at(numbers, Faker.random_between(0, Enum.count(@prefixes) - 1))
-    Enum.at(type, Faker.random_between(0, Enum.count(type) - 1))
+    type = Enum.at(numbers, EverFaker.random_between(0, Enum.count(@prefixes) - 1))
+    Enum.at(type, EverFaker.random_between(0, Enum.count(type) - 1))
   end
 end

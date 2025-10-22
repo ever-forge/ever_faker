@@ -1,5 +1,5 @@
-defmodule Faker.Currency do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Currency do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating currency related data
@@ -10,13 +10,13 @@ defmodule Faker.Currency do
 
   ## Examples
 
-      iex> Faker.Currency.code()
+      iex> EverFaker.Currency.code()
       "WST"
-      iex> Faker.Currency.code()
+      iex> EverFaker.Currency.code()
       "UYU"
-      iex> Faker.Currency.code()
+      iex> EverFaker.Currency.code()
       "CRC"
-      iex> Faker.Currency.code()
+      iex> EverFaker.Currency.code()
       "DOP"
   """
   @spec code() :: String.t()
@@ -194,13 +194,13 @@ defmodule Faker.Currency do
 
   ## Examples
 
-      iex> Faker.Currency.symbol()
+      iex> EverFaker.Currency.symbol()
       "£"
-      iex> Faker.Currency.symbol()
+      iex> EverFaker.Currency.symbol()
       "฿"
-      iex> Faker.Currency.symbol()
+      iex> EverFaker.Currency.symbol()
       "ƒ"
-      iex> Faker.Currency.symbol()
+      iex> EverFaker.Currency.symbol()
       "Rp"
   """
   @spec symbol() :: String.t()

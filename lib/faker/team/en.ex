@@ -1,6 +1,6 @@
-defmodule Faker.Team.En do
-  import Faker, only: [sampler: 2]
-  alias Faker.Address
+defmodule EverFaker.Team.En do
+  import EverFaker, only: [sampler: 2]
+  alias EverFaker.Address
 
   @moduledoc """
   Functions for generating team related data in English
@@ -11,13 +11,13 @@ defmodule Faker.Team.En do
 
   ## Examples
 
-      iex> Faker.Team.En.name()
+      iex> EverFaker.Team.En.name()
       "Hawaii cats"
-      iex> Faker.Team.En.name()
+      iex> EverFaker.Team.En.name()
       "Oklahoma banshees"
-      iex> Faker.Team.En.name()
+      iex> EverFaker.Team.En.name()
       "Texas elves"
-      iex> Faker.Team.En.name()
+      iex> EverFaker.Team.En.name()
       "Iowa fishes"
   """
   @spec name() :: String.t()
@@ -28,13 +28,13 @@ defmodule Faker.Team.En do
 
   ## Examples
 
-      iex> Faker.Team.En.creature()
+      iex> EverFaker.Team.En.creature()
       "prophets"
-      iex> Faker.Team.En.creature()
+      iex> EverFaker.Team.En.creature()
       "cats"
-      iex> Faker.Team.En.creature()
+      iex> EverFaker.Team.En.creature()
       "enchanters"
-      iex> Faker.Team.En.creature()
+      iex> EverFaker.Team.En.creature()
       "banshees"
   """
   @spec creature() :: String.t()

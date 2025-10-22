@@ -1,5 +1,5 @@
-defmodule Faker.Person.PtBr do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Person.PtBr do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for name data in Brazilian Portuguese
@@ -10,17 +10,17 @@ defmodule Faker.Person.PtBr do
 
   ## Examples
 
-      iex> Faker.Person.PtBr.name()
+      iex> EverFaker.Person.PtBr.name()
       "Sra. Kaique Mendes Neto"
-      iex> Faker.Person.PtBr.name()
+      iex> EverFaker.Person.PtBr.name()
       "Roberta Garcês"
-      iex> Faker.Person.PtBr.name()
+      iex> EverFaker.Person.PtBr.name()
       "Sr. Vitor Albuquerque"
-      iex> Faker.Person.PtBr.name()
+      iex> EverFaker.Person.PtBr.name()
       "Maria Laura da Penha Jr."
   """
   @spec name() :: String.t()
-  def name, do: name(Faker.random_between(0, 9))
+  def name, do: name(EverFaker.random_between(0, 9))
   defp name(0), do: "#{prefix()} #{first_name()} #{last_name()} #{suffix()}"
   defp name(1), do: "#{prefix()} #{first_name()} #{last_name()}"
   defp name(2), do: "#{first_name()} #{last_name()} #{suffix()}"
@@ -34,13 +34,13 @@ defmodule Faker.Person.PtBr do
 
   ## Examples
 
-      iex> Faker.Person.PtBr.first_name()
+      iex> EverFaker.Person.PtBr.first_name()
       "Augusto"
-      iex> Faker.Person.PtBr.first_name()
+      iex> EverFaker.Person.PtBr.first_name()
       "Amanda"
-      iex> Faker.Person.PtBr.first_name()
+      iex> EverFaker.Person.PtBr.first_name()
       "Kaique"
-      iex> Faker.Person.PtBr.first_name()
+      iex> EverFaker.Person.PtBr.first_name()
       "Antonia"
   """
   @spec first_name() :: String.t()
@@ -326,13 +326,13 @@ defmodule Faker.Person.PtBr do
 
   ## Examples
 
-      iex> Faker.Person.PtBr.last_name()
+      iex> EverFaker.Person.PtBr.last_name()
       "Sá"
-      iex> Faker.Person.PtBr.last_name()
+      iex> EverFaker.Person.PtBr.last_name()
       "das Neves"
-      iex> Faker.Person.PtBr.last_name()
+      iex> EverFaker.Person.PtBr.last_name()
       "Castelo"
-      iex> Faker.Person.PtBr.last_name()
+      iex> EverFaker.Person.PtBr.last_name()
       "Mendes"
   """
   @spec last_name() :: String.t()
@@ -605,13 +605,13 @@ defmodule Faker.Person.PtBr do
 
   ## Examples
 
-      iex> Faker.Person.PtBr.prefix()
+      iex> EverFaker.Person.PtBr.prefix()
       "Sr."
-      iex> Faker.Person.PtBr.prefix()
+      iex> EverFaker.Person.PtBr.prefix()
       "Sra."
-      iex> Faker.Person.PtBr.prefix()
+      iex> EverFaker.Person.PtBr.prefix()
       "Sr."
-      iex> Faker.Person.PtBr.prefix()
+      iex> EverFaker.Person.PtBr.prefix()
       "Dra."
   """
   @spec prefix() :: String.t()
@@ -628,13 +628,13 @@ defmodule Faker.Person.PtBr do
 
   ## Examples
 
-      iex> Faker.Person.PtBr.suffix()
+      iex> EverFaker.Person.PtBr.suffix()
       "Jr."
-      iex> Faker.Person.PtBr.suffix()
+      iex> EverFaker.Person.PtBr.suffix()
       "Filho"
-      iex> Faker.Person.PtBr.suffix()
+      iex> EverFaker.Person.PtBr.suffix()
       "Jr."
-      iex> Faker.Person.PtBr.suffix()
+      iex> EverFaker.Person.PtBr.suffix()
       "Filho"
   """
   @spec suffix() :: String.t()

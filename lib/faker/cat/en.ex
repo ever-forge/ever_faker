@@ -1,5 +1,5 @@
-defmodule Faker.Cat.En do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Cat.En do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for Cat names, breeds and registries in English
@@ -10,13 +10,13 @@ defmodule Faker.Cat.En do
 
   ## Examples
 
-      iex> Faker.Cat.En.name()
+      iex> EverFaker.Cat.En.name()
       "Daisy"
-      iex> Faker.Cat.En.name()
+      iex> EverFaker.Cat.En.name()
       "Lily"
-      iex> Faker.Cat.En.name()
+      iex> EverFaker.Cat.En.name()
       "Felix"
-      iex> Faker.Cat.En.name()
+      iex> EverFaker.Cat.En.name()
       "Max"
   """
   @spec name() :: String.t()
@@ -56,13 +56,13 @@ defmodule Faker.Cat.En do
 
   ## Examples
 
-      iex> Faker.Cat.En.breed()
+      iex> EverFaker.Cat.En.breed()
       "Mekong Bobtail"
-      iex> Faker.Cat.En.breed()
+      iex> EverFaker.Cat.En.breed()
       "Suphalak"
-      iex> Faker.Cat.En.breed()
+      iex> EverFaker.Cat.En.breed()
       "Russian White, Black and Tabby"
-      iex> Faker.Cat.En.breed()
+      iex> EverFaker.Cat.En.breed()
       "Asian Semi-longhair"
   """
   @spec breed() :: String.t()
@@ -170,13 +170,13 @@ defmodule Faker.Cat.En do
 
   ## Examples
 
-      iex> Faker.Cat.En.registry()
+      iex> EverFaker.Cat.En.registry()
       "Cat Aficionado Association"
-      iex> Faker.Cat.En.registry()
+      iex> EverFaker.Cat.En.registry()
       "Fédération Internationale Féline"
-      iex> Faker.Cat.En.registry()
+      iex> EverFaker.Cat.En.registry()
       "Fédération Internationale Féline"
-      iex> Faker.Cat.En.registry()
+      iex> EverFaker.Cat.En.registry()
       "Fédération Internationale Féline"
   """
   @spec registry() :: String.t()

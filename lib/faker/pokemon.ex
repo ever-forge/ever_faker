@@ -1,5 +1,5 @@
-defmodule Faker.Pokemon do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Pokemon do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Function for generating Pokemon
@@ -10,13 +10,13 @@ defmodule Faker.Pokemon do
 
   ## Examples
 
-      iex> Faker.Pokemon.name()
+      iex> EverFaker.Pokemon.name()
       "Fraxure"
-      iex> Faker.Pokemon.name()
+      iex> EverFaker.Pokemon.name()
       "Shellos"
-      iex> Faker.Pokemon.name()
+      iex> EverFaker.Pokemon.name()
       "Ambipom"
-      iex> Faker.Pokemon.name()
+      iex> EverFaker.Pokemon.name()
       "Forretress"
   """
   @spec name() :: String.t()
@@ -27,13 +27,13 @@ defmodule Faker.Pokemon do
 
   ## Examples
 
-      iex> Faker.Pokemon.location()
+      iex> EverFaker.Pokemon.location()
       "Vaniville Town"
-      iex> Faker.Pokemon.location()
+      iex> EverFaker.Pokemon.location()
       "Slateport City"
-      iex> Faker.Pokemon.location()
+      iex> EverFaker.Pokemon.location()
       "Shalour City"
-      iex> Faker.Pokemon.location()
+      iex> EverFaker.Pokemon.location()
       "Solaceon Town"
   """
   @spec location() :: String.t()

@@ -1,7 +1,7 @@
-defmodule Faker.Phone.EnUsTest do
+defmodule EverFaker.Phone.EnUsTest do
   use ExUnit.Case, async: true
 
-  import Faker.Phone.EnUs
+  import EverFaker.Phone.EnUs
 
   @iterations 10_000
 

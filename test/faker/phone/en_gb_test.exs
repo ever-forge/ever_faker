@@ -1,7 +1,7 @@
-defmodule Faker.Phone.EnGbTest do
+defmodule EverFaker.Phone.EnGbTest do
   use ExUnit.Case, async: true
 
-  import Faker.Phone.EnGb
+  import EverFaker.Phone.EnGb
 
   @iterations 10_000
 

@@ -1,5 +1,5 @@
-defmodule Faker.Color.Hy do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Color.Hy do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating color data in Armenian
@@ -10,13 +10,13 @@ defmodule Faker.Color.Hy do
 
   ## Examples
 
-      iex> Faker.Color.Hy.name()
+      iex> EverFaker.Color.Hy.name()
       "մոխրագույն"
-      iex> Faker.Color.Hy.name()
+      iex> EverFaker.Color.Hy.name()
       "կանաչ"
-      iex> Faker.Color.Hy.name()
+      iex> EverFaker.Color.Hy.name()
       "երկնագույն"
-      iex> Faker.Color.Hy.name()
+      iex> EverFaker.Color.Hy.name()
       "մանուշակագույն"
   """
   @spec name() :: String.t()

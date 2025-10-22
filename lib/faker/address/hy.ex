@@ -1,5 +1,5 @@
-defmodule Faker.Address.Hy do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Address.Hy do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating addresses in Armenian
@@ -10,20 +10,20 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.building_number()
+      iex> EverFaker.Address.Hy.building_number()
       "1"
-      iex> Faker.Address.Hy.building_number()
+      iex> EverFaker.Address.Hy.building_number()
       "4"
-      iex> Faker.Address.Hy.building_number()
+      iex> EverFaker.Address.Hy.building_number()
       "64"
-      iex> Faker.Address.Hy.building_number()
+      iex> EverFaker.Address.Hy.building_number()
       "108"
   """
   @spec building_number() :: String.t()
   def building_number do
     ["#", "##", "###"]
-    |> Enum.at(Faker.random_between(0, 2))
-    |> Faker.format()
+    |> Enum.at(EverFaker.random_between(0, 2))
+    |> EverFaker.format()
   end
 
   @doc """
@@ -31,13 +31,13 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.city()
+      iex> EverFaker.Address.Hy.city()
       "Ստեփանավան"
-      iex> Faker.Address.Hy.city()
+      iex> EverFaker.Address.Hy.city()
       "Մարալիկ"
-      iex> Faker.Address.Hy.city()
+      iex> EverFaker.Address.Hy.city()
       "Ճամբարակ"
-      iex> Faker.Address.Hy.city()
+      iex> EverFaker.Address.Hy.city()
       "Մեղրի"
   """
 
@@ -99,7 +99,7 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.city_prefix()
+      iex> EverFaker.Address.Hy.city_prefix()
       "ք."
 
   """
@@ -113,13 +113,13 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.country()
+      iex> EverFaker.Address.Hy.country()
       "Ֆրանսիա"
-      iex> Faker.Address.Hy.country()
+      iex> EverFaker.Address.Hy.country()
       "Նիդերլանդներ"
-      iex> Faker.Address.Hy.country()
+      iex> EverFaker.Address.Hy.country()
       "Ղազախստան"
-      iex> Faker.Address.Hy.country()
+      iex> EverFaker.Address.Hy.country()
       "Թուրքմենստան"
   """
   @spec country() :: String.t()
@@ -362,21 +362,21 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.secondary_address()
+      iex> EverFaker.Address.Hy.secondary_address()
       "բն. 1"
-      iex> Faker.Address.Hy.secondary_address()
+      iex> EverFaker.Address.Hy.secondary_address()
       "բն. 4"
-      iex> Faker.Address.Hy.secondary_address()
+      iex> EverFaker.Address.Hy.secondary_address()
       "բն. 64"
-      iex> Faker.Address.Hy.secondary_address()
+      iex> EverFaker.Address.Hy.secondary_address()
       "բն. 110"
   """
 
   @spec secondary_address() :: String.t()
   def secondary_address do
     ["#", "##", "1##"]
-    |> Enum.at(Faker.random_between(0, 2))
-    |> Faker.format()
+    |> Enum.at(EverFaker.random_between(0, 2))
+    |> EverFaker.format()
     |> (&("բն. " <> &1)).()
   end
 
@@ -385,13 +385,13 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.state()
+      iex> EverFaker.Address.Hy.state()
       "Արագածոտն"
-      iex> Faker.Address.Hy.state()
+      iex> EverFaker.Address.Hy.state()
       "Արարատ"
-      iex> Faker.Address.Hy.state()
+      iex> EverFaker.Address.Hy.state()
       "Կոտայք"
-      iex> Faker.Address.Hy.state()
+      iex> EverFaker.Address.Hy.state()
       "Լոռի"
   """
   @spec state() :: String.t()
@@ -413,13 +413,13 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.state_abbr()
+      iex> EverFaker.Address.Hy.state_abbr()
       "ԱԳ"
-      iex> Faker.Address.Hy.state_abbr()
+      iex> EverFaker.Address.Hy.state_abbr()
       "ԱՐ"
-      iex> Faker.Address.Hy.state_abbr()
+      iex> EverFaker.Address.Hy.state_abbr()
       "ԿՏ"
-      iex> Faker.Address.Hy.state_abbr()
+      iex> EverFaker.Address.Hy.state_abbr()
       "ԼՌ"
   """
   @spec state_abbr() :: String.t()
@@ -441,13 +441,13 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.street_address()
+      iex> EverFaker.Address.Hy.street_address()
       "Սուրբ Հովհաննեսի 542"
-      iex> Faker.Address.Hy.street_address()
+      iex> EverFaker.Address.Hy.street_address()
       "Բուռնազյան 61"
-      iex> Faker.Address.Hy.street_address()
+      iex> EverFaker.Address.Hy.street_address()
       "Լամբրոնի 329"
-      iex> Faker.Address.Hy.street_address()
+      iex> EverFaker.Address.Hy.street_address()
       "Հանրապետության 5"
   """
   @spec street_address() :: String.t()
@@ -460,13 +460,13 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.street_address(true)
+      iex> EverFaker.Address.Hy.street_address(true)
       "Սուրբ Հովհաննեսի 542 բն. 4"
-      iex> Faker.Address.Hy.street_address(false)
+      iex> EverFaker.Address.Hy.street_address(false)
       "Գյուլբենկյան 0"
-      iex> Faker.Address.Hy.street_address(true)
+      iex> EverFaker.Address.Hy.street_address(true)
       "Պուշկինի 29 բն. 0"
-      iex> Faker.Address.Hy.street_address(false)
+      iex> EverFaker.Address.Hy.street_address(false)
       "Տիգրան Մեծի 35"
   """
   @spec street_address(true | any) :: String.t()
@@ -478,13 +478,13 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.street_name()
+      iex> EverFaker.Address.Hy.street_name()
       "Սուրբ Հովհաննեսի"
-      iex> Faker.Address.Hy.street_name()
+      iex> EverFaker.Address.Hy.street_name()
       "Մոսկովյան"
-      iex> Faker.Address.Hy.street_name()
+      iex> EverFaker.Address.Hy.street_name()
       "Սերգեյ Փարաջանովի"
-      iex> Faker.Address.Hy.street_name()
+      iex> EverFaker.Address.Hy.street_name()
       "Պրահայի"
   """
   @spec street_name() :: String.t()
@@ -659,13 +659,13 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.street_suffix()
+      iex> EverFaker.Address.Hy.street_suffix()
       "նրբանցք"
-      iex> Faker.Address.Hy.street_suffix()
+      iex> EverFaker.Address.Hy.street_suffix()
       "պողոտա"
-      iex> Faker.Address.Hy.street_suffix()
+      iex> EverFaker.Address.Hy.street_suffix()
       "փակուղի"
-      iex> Faker.Address.Hy.street_suffix()
+      iex> EverFaker.Address.Hy.street_suffix()
       "փողոց"
   """
   @spec street_suffix() :: String.t()
@@ -681,19 +681,19 @@ defmodule Faker.Address.Hy do
 
   ## Examples
 
-      iex> Faker.Address.Hy.zip_code()
+      iex> EverFaker.Address.Hy.zip_code()
       "0154"
-      iex> Faker.Address.Hy.zip_code()
+      iex> EverFaker.Address.Hy.zip_code()
       "2646"
-      iex> Faker.Address.Hy.zip_code()
+      iex> EverFaker.Address.Hy.zip_code()
       "1083"
-      iex> Faker.Address.Hy.zip_code()
+      iex> EverFaker.Address.Hy.zip_code()
       "2970"
   """
   @spec zip_code() :: String.t()
   def zip_code do
     ["0###", "1###", "2###", "3###", "4###"]
-    |> Enum.at(Faker.random_between(0, 4))
-    |> Faker.format()
+    |> Enum.at(EverFaker.random_between(0, 4))
+    |> EverFaker.format()
   end
 end

@@ -1,8 +1,8 @@
-defmodule Faker.Name do
-  alias Faker.Person
+defmodule EverFaker.Name do
+  alias EverFaker.Person
 
   @moduledoc """
-  Deprecated. Faker.Name will be removed in 1.0.0. Please use Faker.Person instead.
+  Deprecated. EverFaker.Name will be removed in 1.0.0. Please use EverFaker.Person instead.
   """
 
   @doc """
@@ -10,16 +10,16 @@ defmodule Faker.Name do
 
   ## Examples
 
-      iex> Faker.Name.name()
+      iex> EverFaker.Name.name()
       "Mrs. Abe Rolfson MD"
-      iex> Faker.Name.name()
+      iex> EverFaker.Name.name()
       "Conor Padberg"
-      iex> Faker.Name.name()
+      iex> EverFaker.Name.name()
       "Mr. Bianka Ryan"
-      iex> Faker.Name.name()
+      iex> EverFaker.Name.name()
       "Ally Rau MD"
   """
-  @deprecated "Use Faker.Person.name/0 instead."
+  @deprecated "Use EverFaker.Person.name/0 instead."
   @spec name() :: String.t()
   def name, do: Person.name()
 
@@ -28,16 +28,16 @@ defmodule Faker.Name do
 
   ## Examples
 
-      iex> Faker.Name.first_name()
+      iex> EverFaker.Name.first_name()
       "Joany"
-      iex> Faker.Name.first_name()
+      iex> EverFaker.Name.first_name()
       "Elizabeth"
-      iex> Faker.Name.first_name()
+      iex> EverFaker.Name.first_name()
       "Abe"
-      iex> Faker.Name.first_name()
+      iex> EverFaker.Name.first_name()
       "Ozella"
   """
-  @deprecated "Use Faker.Person.first_name/0 instead."
+  @deprecated "Use EverFaker.Person.first_name/0 instead."
   @spec first_name() :: String.t()
   def first_name, do: Person.first_name()
 
@@ -46,16 +46,16 @@ defmodule Faker.Name do
 
   ## Examples
 
-      iex> Faker.Name.last_name()
+      iex> EverFaker.Name.last_name()
       "Blick"
-      iex> Faker.Name.last_name()
+      iex> EverFaker.Name.last_name()
       "Hayes"
-      iex> Faker.Name.last_name()
+      iex> EverFaker.Name.last_name()
       "Schumm"
-      iex> Faker.Name.last_name()
+      iex> EverFaker.Name.last_name()
       "Rolfson"
   """
-  @deprecated "Use Faker.Person.last_name/0 instead."
+  @deprecated "Use EverFaker.Person.last_name/0 instead."
   @spec last_name() :: String.t()
   def last_name, do: Person.last_name()
 
@@ -64,16 +64,16 @@ defmodule Faker.Name do
 
   ## Examples
 
-      iex> Faker.Name.title()
+      iex> EverFaker.Name.title()
       "Dynamic Identity Administrator"
-      iex> Faker.Name.title()
+      iex> EverFaker.Name.title()
       "Product Communications Technician"
-      iex> Faker.Name.title()
+      iex> EverFaker.Name.title()
       "Legacy Accountability Architect"
-      iex> Faker.Name.title()
+      iex> EverFaker.Name.title()
       "Customer Data Representative"
   """
-  @deprecated "Use Faker.Person.title/0 instead."
+  @deprecated "Use EverFaker.Person.title/0 instead."
   @spec title() :: String.t()
   def title, do: Person.title()
 
@@ -82,16 +82,16 @@ defmodule Faker.Name do
 
   ## Examples
 
-      iex> Faker.Name.suffix()
+      iex> EverFaker.Name.suffix()
       "II"
-      iex> Faker.Name.suffix()
+      iex> EverFaker.Name.suffix()
       "V"
-      iex> Faker.Name.suffix()
+      iex> EverFaker.Name.suffix()
       "V"
-      iex> Faker.Name.suffix()
+      iex> EverFaker.Name.suffix()
       "V"
   """
-  @deprecated "Use Faker.Person.suffix/0 instead."
+  @deprecated "Use EverFaker.Person.suffix/0 instead."
   @spec suffix() :: String.t()
   def suffix, do: Person.suffix()
 
@@ -100,16 +100,16 @@ defmodule Faker.Name do
 
   ## Examples
 
-      iex> Faker.Name.prefix()
+      iex> EverFaker.Name.prefix()
       "Mr."
-      iex> Faker.Name.prefix()
+      iex> EverFaker.Name.prefix()
       "Mrs."
-      iex> Faker.Name.prefix()
+      iex> EverFaker.Name.prefix()
       "Mr."
-      iex> Faker.Name.prefix()
+      iex> EverFaker.Name.prefix()
       "Dr."
   """
-  @deprecated "Use Faker.Person.prefix/0 instead."
+  @deprecated "Use EverFaker.Person.prefix/0 instead."
   @spec prefix() :: String.t()
   def prefix, do: Person.prefix()
 end

@@ -1,4 +1,4 @@
-defmodule Faker.Mixfile do
+defmodule EverFaker.Mixfile do
   use Mix.Project
 
   @version "0.1.0"
@@ -27,7 +27,7 @@ defmodule Faker.Mixfile do
       env: [
         locale: :en,
         country: nil,
-        random_module: Faker.Random.Elixir
+        random_module: EverFaker.Random.Elixir
       ]
     ]
   end

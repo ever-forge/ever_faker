@@ -1,5 +1,5 @@
-defmodule Faker.Blockchain.EthereumTest do
+defmodule EverFaker.Blockchain.EthereumTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Blockchain.Ethereum
+  doctest EverFaker.Blockchain.Ethereum
 end

@@ -1,5 +1,5 @@
-defmodule Faker.Internet.Hy do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Internet.Hy do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating internet related data in Armenian
@@ -10,13 +10,13 @@ defmodule Faker.Internet.Hy do
 
   ## Examples
 
-      iex> Faker.Internet.Hy.free_email_service()
+      iex> EverFaker.Internet.Hy.free_email_service()
       "hotmail.com"
-      iex> Faker.Internet.Hy.free_email_service()
+      iex> EverFaker.Internet.Hy.free_email_service()
       "yandex.ru"
-      iex> Faker.Internet.Hy.free_email_service()
+      iex> EverFaker.Internet.Hy.free_email_service()
       "freenet.am"
-      iex> Faker.Internet.Hy.free_email_service()
+      iex> EverFaker.Internet.Hy.free_email_service()
       "yahoo.com"
   """
   @spec free_email_service() :: String
@@ -35,13 +35,13 @@ defmodule Faker.Internet.Hy do
 
   ## Examples
 
-      iex> Faker.Internet.Hy.domain_suffix()
+      iex> EverFaker.Internet.Hy.domain_suffix()
       "am"
-      iex> Faker.Internet.Hy.domain_suffix()
+      iex> EverFaker.Internet.Hy.domain_suffix()
       "com"
-      iex> Faker.Internet.Hy.domain_suffix()
+      iex> EverFaker.Internet.Hy.domain_suffix()
       "am"
-      iex> Faker.Internet.Hy.domain_suffix()
+      iex> EverFaker.Internet.Hy.domain_suffix()
       "org"
   """
   @spec domain_suffix() :: String.t()

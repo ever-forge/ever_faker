@@ -1,5 +1,5 @@
-defmodule Faker.Internet.StatusCode do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Internet.StatusCode do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating HTTP status codes
@@ -10,13 +10,13 @@ defmodule Faker.Internet.StatusCode do
 
   ## Examples
 
-      iex> Faker.Internet.StatusCode.information()
+      iex> EverFaker.Internet.StatusCode.information()
       102
-      iex> Faker.Internet.StatusCode.information()
+      iex> EverFaker.Internet.StatusCode.information()
       101
-      iex> Faker.Internet.StatusCode.information()
+      iex> EverFaker.Internet.StatusCode.information()
       103
-      iex> Faker.Internet.StatusCode.information()
+      iex> EverFaker.Internet.StatusCode.information()
       100
   """
   @spec information :: 100..103
@@ -27,13 +27,13 @@ defmodule Faker.Internet.StatusCode do
 
   ## Examples
 
-      iex> Faker.Internet.StatusCode.success()
+      iex> EverFaker.Internet.StatusCode.success()
       200
-      iex> Faker.Internet.StatusCode.success()
+      iex> EverFaker.Internet.StatusCode.success()
       201
-      iex> Faker.Internet.StatusCode.success()
+      iex> EverFaker.Internet.StatusCode.success()
       205
-      iex> Faker.Internet.StatusCode.success()
+      iex> EverFaker.Internet.StatusCode.success()
       204
   """
   @spec success :: 200..208 | 226
@@ -44,13 +44,13 @@ defmodule Faker.Internet.StatusCode do
 
   ## Examples
 
-      iex> Faker.Internet.StatusCode.redirect()
+      iex> EverFaker.Internet.StatusCode.redirect()
       303
-      iex> Faker.Internet.StatusCode.redirect()
+      iex> EverFaker.Internet.StatusCode.redirect()
       302
-      iex> Faker.Internet.StatusCode.redirect()
+      iex> EverFaker.Internet.StatusCode.redirect()
       306
-      iex> Faker.Internet.StatusCode.redirect()
+      iex> EverFaker.Internet.StatusCode.redirect()
       305
   """
   @spec redirect :: 300..308
@@ -61,13 +61,13 @@ defmodule Faker.Internet.StatusCode do
 
   ## Examples
 
-      iex> Faker.Internet.StatusCode.client_error()
+      iex> EverFaker.Internet.StatusCode.client_error()
       428
-      iex> Faker.Internet.StatusCode.client_error()
+      iex> EverFaker.Internet.StatusCode.client_error()
       405
-      iex> Faker.Internet.StatusCode.client_error()
+      iex> EverFaker.Internet.StatusCode.client_error()
       424
-      iex> Faker.Internet.StatusCode.client_error()
+      iex> EverFaker.Internet.StatusCode.client_error()
       424
   """
   @spec client_error :: 400..418 | 421..426 | 428..429 | 431 | 451
@@ -108,13 +108,13 @@ defmodule Faker.Internet.StatusCode do
 
   ## Examples
 
-      iex> Faker.Internet.StatusCode.server_error()
+      iex> EverFaker.Internet.StatusCode.server_error()
       503
-      iex> Faker.Internet.StatusCode.server_error()
+      iex> EverFaker.Internet.StatusCode.server_error()
       506
-      iex> Faker.Internet.StatusCode.server_error()
+      iex> EverFaker.Internet.StatusCode.server_error()
       506
-      iex> Faker.Internet.StatusCode.server_error()
+      iex> EverFaker.Internet.StatusCode.server_error()
       506
   """
   @spec server_error :: 500..508 | 510..511

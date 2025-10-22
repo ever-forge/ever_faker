@@ -1,9 +1,9 @@
-defmodule Faker.AvatarTest do
+defmodule EverFaker.AvatarTest do
   use ExUnit.Case, async: true
 
-  import Faker.Avatar
+  import EverFaker.Avatar
 
-  doctest Faker.Avatar
+  doctest EverFaker.Avatar
 
   test "image_url/0" do
     assert String.starts_with?(image_url(), "https://robohash.org/")

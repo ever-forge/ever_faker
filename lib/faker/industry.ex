@@ -1,5 +1,5 @@
-defmodule Faker.Industry do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Industry do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Functions for generating Industry related data
@@ -11,13 +11,13 @@ defmodule Faker.Industry do
 
   ## Examples
 
-      iex> Faker.Industry.industry()
+      iex> EverFaker.Industry.industry()
       "Oil & Gas"
-      iex> Faker.Industry.industry()
+      iex> EverFaker.Industry.industry()
       "Basic Materials"
-      iex> Faker.Industry.industry()
+      iex> EverFaker.Industry.industry()
       "Consumer Services"
-      iex> Faker.Industry.industry()
+      iex> EverFaker.Industry.industry()
       "Health Care"
   """
   @spec industry() :: String.t()
@@ -28,13 +28,13 @@ defmodule Faker.Industry do
 
   ## Examples
 
-      iex> Faker.Industry.super_sector()
+      iex> EverFaker.Industry.super_sector()
       "Automobiles & Parts"
-      iex> Faker.Industry.super_sector()
+      iex> EverFaker.Industry.super_sector()
       "Banks"
-      iex> Faker.Industry.super_sector()
+      iex> EverFaker.Industry.super_sector()
       "Automobiles & Parts"
-      iex> Faker.Industry.super_sector()
+      iex> EverFaker.Industry.super_sector()
       "Health Care"
   """
   @spec super_sector() :: String.t()
@@ -45,13 +45,13 @@ defmodule Faker.Industry do
 
   ## Examples
 
-      iex> Faker.Industry.sector()
+      iex> EverFaker.Industry.sector()
       "Food & Drug Retailers"
-      iex> Faker.Industry.sector()
+      iex> EverFaker.Industry.sector()
       "Banks"
-      iex> Faker.Industry.sector()
+      iex> EverFaker.Industry.sector()
       "Software & Computer Services"
-      iex> Faker.Industry.sector()
+      iex> EverFaker.Industry.sector()
       "Media"
   """
   @spec sector() :: String.t()
@@ -62,13 +62,13 @@ defmodule Faker.Industry do
 
   ## Examples
 
-      iex> Faker.Industry.sub_sector()
+      iex> EverFaker.Industry.sub_sector()
       "Electrical Components & Equipment"
-      iex> Faker.Industry.sub_sector()
+      iex> EverFaker.Industry.sub_sector()
       "Publishing"
-      iex> Faker.Industry.sub_sector()
+      iex> EverFaker.Industry.sub_sector()
       "Alternative Electricity"
-      iex> Faker.Industry.sub_sector()
+      iex> EverFaker.Industry.sub_sector()
       "Forestry"
   """
   @spec sub_sector() :: String.t()

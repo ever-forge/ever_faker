@@ -1,5 +1,5 @@
-defmodule Faker.Team do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Team do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Functions for generating team related data
@@ -10,13 +10,13 @@ defmodule Faker.Team do
 
   ## Examples
 
-      iex> Faker.Team.creature()
+      iex> EverFaker.Team.creature()
       "prophets"
-      iex> Faker.Team.creature()
+      iex> EverFaker.Team.creature()
       "cats"
-      iex> Faker.Team.creature()
+      iex> EverFaker.Team.creature()
       "enchanters"
-      iex> Faker.Team.creature()
+      iex> EverFaker.Team.creature()
       "banshees"
   """
   @spec creature() :: String.t()
@@ -27,13 +27,13 @@ defmodule Faker.Team do
 
   ## Examples
 
-      iex> Faker.Team.name()
+      iex> EverFaker.Team.name()
       "Hawaii cats"
-      iex> Faker.Team.name()
+      iex> EverFaker.Team.name()
       "Oklahoma banshees"
-      iex> Faker.Team.name()
+      iex> EverFaker.Team.name()
       "Texas elves"
-      iex> Faker.Team.name()
+      iex> EverFaker.Team.name()
       "Iowa fishes"
   """
   @spec name() :: String.t()

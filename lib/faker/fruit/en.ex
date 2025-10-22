@@ -1,5 +1,5 @@
-defmodule Faker.Fruit.En do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Fruit.En do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for fruit data in English.
@@ -8,13 +8,13 @@ defmodule Faker.Fruit.En do
   @doc """
   Returns a fruit.
   ## Examples
-      iex> Faker.Fruit.En.fruit()
+      iex> EverFaker.Fruit.En.fruit()
       "Kiwano"
-      iex> Faker.Fruit.En.fruit()
+      iex> EverFaker.Fruit.En.fruit()
       "Sugarcane"
-      iex> Faker.Fruit.En.fruit()
+      iex> EverFaker.Fruit.En.fruit()
       "Pineapple"
-      iex> Faker.Fruit.En.fruit()
+      iex> EverFaker.Fruit.En.fruit()
       "Lemon"
   """
   @spec fruit() :: String.t()

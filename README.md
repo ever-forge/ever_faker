@@ -26,11 +26,11 @@ def deps do
 end
 ```
 
-Add `Faker.start()` to `test/test_helper.exs`:
+Add `EverFaker.start()` to `test/test_helper.exs`:
 
 ```elixir
 ExUnit.start()
-Faker.start()
+EverFaker.start()
 ```
 
 ## Usage

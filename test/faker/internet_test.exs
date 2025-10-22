@@ -1,45 +1,45 @@
-defmodule Faker.InternetTest do
+defmodule EverFaker.InternetTest do
   use ExUnit.Case, async: true
 
-  import Faker.Internet
+  import EverFaker.Internet
 
-  doctest Faker.Internet
-  doctest Faker.Internet.En
-  doctest Faker.Internet.Es
-  doctest Faker.Internet.Hy
-  doctest Faker.Internet.It
-  doctest Faker.Internet.PtBr
+  doctest EverFaker.Internet
+  doctest EverFaker.Internet.En
+  doctest EverFaker.Internet.Es
+  doctest EverFaker.Internet.Hy
+  doctest EverFaker.Internet.It
+  doctest EverFaker.Internet.PtBr
 
   @iterations 10_000
 
   test "ip_v4_address/0" do
-    assert Regex.match?(~r/^(\d+\.){3}\d+$/, Faker.Internet.ip_v4_address())
+    assert Regex.match?(~r/^(\d+\.){3}\d+$/, EverFaker.Internet.ip_v4_address())
   end
 
   test "ip_v6_address/0" do
-    assert Regex.match?(~r/^([0-9A-F]{4}:){7}[0-9A-F]{4}$/, Faker.Internet.ip_v6_address())
+    assert Regex.match?(~r/^([0-9A-F]{4}:){7}[0-9A-F]{4}$/, EverFaker.Internet.ip_v6_address())
   end
 
   test "mac_address/0" do
-    assert Regex.match?(~r/^([0-9a-f]{2}:){5}[0-9a-f]{2}$/, Faker.Internet.mac_address())
+    assert Regex.match?(~r/^([0-9a-f]{2}:){5}[0-9a-f]{2}$/, EverFaker.Internet.mac_address())
   end
 
   test "url/0" do
-    assert Regex.match?(~r/^http[s]?:\/\/\w+\.\w+$/, Faker.Internet.url())
+    assert Regex.match?(~r/^http[s]?:\/\/\w+\.\w+$/, EverFaker.Internet.url())
   end
 
   test "slug/0" do
-    assert Regex.match?(~r/\A([a-z0-9]+[-\._])*[a-z0-9]+\z/, Faker.Internet.slug())
+    assert Regex.match?(~r/\A([a-z0-9]+[-\._])*[a-z0-9]+\z/, EverFaker.Internet.slug())
   end
 
   test "slug/1" do
-    slug = Faker.Internet.slug(["hello", "world"])
+    slug = EverFaker.Internet.slug(["hello", "world"])
 
     assert Regex.match?(~r/\A((hello|world)[-\._])(hello|world)\z/, slug)
   end
 
   test "slug/2" do
-    slug = Faker.Internet.slug(["hello", "world"], ["-"])
+    slug = EverFaker.Internet.slug(["hello", "world"], ["-"])
 
     assert Regex.match?(~r/\A((hello|world)-)(hello|world)\z/, slug)
   end

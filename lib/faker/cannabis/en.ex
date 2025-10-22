@@ -1,5 +1,5 @@
-defmodule Faker.Cannabis.En do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Cannabis.En do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating Cannabis related data in English
@@ -10,13 +10,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.strain()
+      iex> EverFaker.Cannabis.En.strain()
       "Critical Kush"
-      iex> Faker.Cannabis.En.strain()
+      iex> EverFaker.Cannabis.En.strain()
       "Blue Dream"
-      iex> Faker.Cannabis.En.strain()
+      iex> EverFaker.Cannabis.En.strain()
       "Mr. Nice Guy"
-      iex> Faker.Cannabis.En.strain()
+      iex> EverFaker.Cannabis.En.strain()
       "Gorilla Glue"
   """
   @spec strain() :: String.t()
@@ -145,13 +145,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.cannabinoid()
+      iex> EverFaker.Cannabis.En.cannabinoid()
       "Cannabinol"
-      iex> Faker.Cannabis.En.cannabinoid()
+      iex> EverFaker.Cannabis.En.cannabinoid()
       "Cannabigerolic Acid"
-      iex> Faker.Cannabis.En.cannabinoid()
+      iex> EverFaker.Cannabis.En.cannabinoid()
       "Cannabinolic Acid"
-      iex> Faker.Cannabis.En.cannabinoid()
+      iex> EverFaker.Cannabis.En.cannabinoid()
       "Cannabicyclol"
   """
   @spec cannabinoid() :: String.t()
@@ -177,13 +177,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.cannabinoid_abbreviation()
+      iex> EverFaker.Cannabis.En.cannabinoid_abbreviation()
       "THCa"
-      iex> Faker.Cannabis.En.cannabinoid_abbreviation()
+      iex> EverFaker.Cannabis.En.cannabinoid_abbreviation()
       "THCv"
-      iex> Faker.Cannabis.En.cannabinoid_abbreviation()
+      iex> EverFaker.Cannabis.En.cannabinoid_abbreviation()
       "CBC"
-      iex> Faker.Cannabis.En.cannabinoid_abbreviation()
+      iex> EverFaker.Cannabis.En.cannabinoid_abbreviation()
       "CBG"
   """
   @spec cannabinoid_abbreviation() :: String.t()
@@ -212,13 +212,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.terpene()
+      iex> EverFaker.Cannabis.En.terpene()
       "Camphor"
-      iex> Faker.Cannabis.En.terpene()
+      iex> EverFaker.Cannabis.En.terpene()
       "Camphene"
-      iex> Faker.Cannabis.En.terpene()
+      iex> EverFaker.Cannabis.En.terpene()
       "α Pinene"
-      iex> Faker.Cannabis.En.terpene()
+      iex> EverFaker.Cannabis.En.terpene()
       "Sabinene"
   """
   @spec terpene() :: String.t()
@@ -265,13 +265,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.medical_use()
+      iex> EverFaker.Cannabis.En.medical_use()
       "analgesic"
-      iex> Faker.Cannabis.En.medical_use()
+      iex> EverFaker.Cannabis.En.medical_use()
       "anti-cancer"
-      iex> Faker.Cannabis.En.medical_use()
+      iex> EverFaker.Cannabis.En.medical_use()
       "anti-cancer"
-      iex> Faker.Cannabis.En.medical_use()
+      iex> EverFaker.Cannabis.En.medical_use()
       "anti-fungal"
   """
   @spec medical_use() :: String.t()
@@ -314,13 +314,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.health_benefit()
+      iex> EverFaker.Cannabis.En.health_benefit()
       "relieves pain"
-      iex> Faker.Cannabis.En.health_benefit()
+      iex> EverFaker.Cannabis.En.health_benefit()
       "inhibits cell growth in tumors/cancer cells"
-      iex> Faker.Cannabis.En.health_benefit()
+      iex> EverFaker.Cannabis.En.health_benefit()
       "inhibits cell growth in tumors/cancer cells"
-      iex> Faker.Cannabis.En.health_benefit()
+      iex> EverFaker.Cannabis.En.health_benefit()
       "treats fungal infection"
   """
   @spec health_benefit() :: String.t()
@@ -363,13 +363,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.category()
+      iex> EverFaker.Cannabis.En.category()
       "flower"
-      iex> Faker.Cannabis.En.category()
+      iex> EverFaker.Cannabis.En.category()
       "medical"
-      iex> Faker.Cannabis.En.category()
+      iex> EverFaker.Cannabis.En.category()
       "seeds & clones"
-      iex> Faker.Cannabis.En.category()
+      iex> EverFaker.Cannabis.En.category()
       "live resin"
   """
   @spec category() :: String.t()
@@ -397,13 +397,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.type()
+      iex> EverFaker.Cannabis.En.type()
       "hybrid"
-      iex> Faker.Cannabis.En.type()
+      iex> EverFaker.Cannabis.En.type()
       "sativa"
-      iex> Faker.Cannabis.En.type()
+      iex> EverFaker.Cannabis.En.type()
       "hybrid"
-      iex> Faker.Cannabis.En.type()
+      iex> EverFaker.Cannabis.En.type()
       "sativa"
   """
   @spec type() :: String.t()
@@ -414,13 +414,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.buzzword()
+      iex> EverFaker.Cannabis.En.buzzword()
       "toke"
-      iex> Faker.Cannabis.En.buzzword()
+      iex> EverFaker.Cannabis.En.buzzword()
       "cbd"
-      iex> Faker.Cannabis.En.buzzword()
+      iex> EverFaker.Cannabis.En.buzzword()
       "stoned"
-      iex> Faker.Cannabis.En.buzzword()
+      iex> EverFaker.Cannabis.En.buzzword()
       "stoned"
   """
   @spec buzzword() :: String.t()
@@ -461,13 +461,13 @@ defmodule Faker.Cannabis.En do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.brand()
+      iex> EverFaker.Cannabis.En.brand()
       "Evolab"
-      iex> Faker.Cannabis.En.brand()
+      iex> EverFaker.Cannabis.En.brand()
       "CI Wholesale"
-      iex> Faker.Cannabis.En.brand()
+      iex> EverFaker.Cannabis.En.brand()
       "Muy"
-      iex> Faker.Cannabis.En.brand()
+      iex> EverFaker.Cannabis.En.brand()
       "Chong's Choice"
   """
   @spec brand() :: String.t()

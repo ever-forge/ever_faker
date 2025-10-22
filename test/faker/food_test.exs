@@ -1,8 +1,8 @@
-defmodule Faker.FoodTest do
+defmodule EverFaker.FoodTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Food
-  doctest Faker.Food.En
-  doctest Faker.Food.PtBr
-  doctest Faker.Food.Hy
+  doctest EverFaker.Food
+  doctest EverFaker.Food.En
+  doctest EverFaker.Food.PtBr
+  doctest EverFaker.Food.Hy
 end

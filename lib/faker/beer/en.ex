@@ -1,5 +1,5 @@
-defmodule Faker.Beer.En do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Beer.En do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating Beer related data in English
@@ -10,13 +10,13 @@ defmodule Faker.Beer.En do
 
   ## Examples
 
-      iex> Faker.Beer.En.brand()
+      iex> EverFaker.Beer.En.brand()
       "Paulaner"
-      iex> Faker.Beer.En.brand()
+      iex> EverFaker.Beer.En.brand()
       "Pabst Blue Ribbon"
-      iex> Faker.Beer.En.brand()
+      iex> EverFaker.Beer.En.brand()
       "Kirin Inchiban"
-      iex> Faker.Beer.En.brand()
+      iex> EverFaker.Beer.En.brand()
       "Birra Moretti"
   """
   @spec brand() :: String.t()
@@ -62,13 +62,13 @@ defmodule Faker.Beer.En do
 
   ## Examples
 
-      iex> Faker.Beer.En.name()
+      iex> EverFaker.Beer.En.name()
       "Duvel"
-      iex> Faker.Beer.En.name()
+      iex> EverFaker.Beer.En.name()
       "Founders Kentucky Breakfast"
-      iex> Faker.Beer.En.name()
+      iex> EverFaker.Beer.En.name()
       "Yeti Imperial Stout"
-      iex> Faker.Beer.En.name()
+      iex> EverFaker.Beer.En.name()
       "Stone Imperial Russian Stout"
   """
   @spec name() :: String.t()
@@ -130,13 +130,13 @@ defmodule Faker.Beer.En do
 
   ## Examples
 
-      iex> Faker.Beer.En.hop()
+      iex> EverFaker.Beer.En.hop()
       "Eroica"
-      iex> Faker.Beer.En.hop()
+      iex> EverFaker.Beer.En.hop()
       "Bullion"
-      iex> Faker.Beer.En.hop()
+      iex> EverFaker.Beer.En.hop()
       "Mt. Rainier"
-      iex> Faker.Beer.En.hop()
+      iex> EverFaker.Beer.En.hop()
       "Citra"
   """
   @spec hop() :: String.t()
@@ -199,13 +199,13 @@ defmodule Faker.Beer.En do
 
   ## Examples
 
-      iex> Faker.Beer.En.yeast()
+      iex> EverFaker.Beer.En.yeast()
       "2206 - Bavarian Lager"
-      iex> Faker.Beer.En.yeast()
+      iex> EverFaker.Beer.En.yeast()
       "3763 - Roeselare Ale Blend"
-      iex> Faker.Beer.En.yeast()
+      iex> EverFaker.Beer.En.yeast()
       "3711 - French Saison"
-      iex> Faker.Beer.En.yeast()
+      iex> EverFaker.Beer.En.yeast()
       "3944 - Belgian Witbier"
   """
   @spec yeast() :: String.t()
@@ -266,13 +266,13 @@ defmodule Faker.Beer.En do
 
   ## Examples
 
-      iex> Faker.Beer.En.malt()
+      iex> EverFaker.Beer.En.malt()
       "Carapils"
-      iex> Faker.Beer.En.malt()
+      iex> EverFaker.Beer.En.malt()
       "Pale"
-      iex> Faker.Beer.En.malt()
+      iex> EverFaker.Beer.En.malt()
       "Rye malt"
-      iex> Faker.Beer.En.malt()
+      iex> EverFaker.Beer.En.malt()
       "Munich"
   """
   @spec malt() :: String.t()
@@ -300,13 +300,13 @@ defmodule Faker.Beer.En do
 
   ## Examples
 
-      iex> Faker.Beer.En.style()
+      iex> EverFaker.Beer.En.style()
       "Stout"
-      iex> Faker.Beer.En.style()
+      iex> EverFaker.Beer.En.style()
       "European Amber Lager"
-      iex> Faker.Beer.En.style()
+      iex> EverFaker.Beer.En.style()
       "Strong Ale"
-      iex> Faker.Beer.En.style()
+      iex> EverFaker.Beer.En.style()
       "German Wheat And Rye Beer"
   """
   @spec style() :: String.t()

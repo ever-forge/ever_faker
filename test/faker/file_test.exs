@@ -1,5 +1,5 @@
-defmodule Faker.FileTest do
+defmodule EverFaker.FileTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.File
+  doctest EverFaker.File
 end

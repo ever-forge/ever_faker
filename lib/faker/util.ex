@@ -1,5 +1,5 @@
-defmodule Faker.Util do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Util do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Collection of useful functions for your fake data. Functions aware of locale.
@@ -10,15 +10,15 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.pick(10..100)
+      iex> EverFaker.Util.pick(10..100)
       79
-      iex> Faker.Util.pick([1, 3, 5, 7])
+      iex> EverFaker.Util.pick([1, 3, 5, 7])
       3
-      iex> Faker.Util.pick([true, false, nil])
+      iex> EverFaker.Util.pick([true, false, nil])
       true
-      iex> Faker.Util.pick(["a", "b", "c"], ["b"])
+      iex> EverFaker.Util.pick(["a", "b", "c"], ["b"])
       "a"
-      iex> Faker.Util.pick([1, "2", 3.0], 1..10)
+      iex> EverFaker.Util.pick([1, "2", 3.0], 1..10)
       "2"
   """
 
@@ -31,7 +31,7 @@ defmodule Faker.Util do
   end
 
   def pick(enum) do
-    Enum.at(enum, Faker.random_between(0, Enum.count(enum) - 1))
+    Enum.at(enum, EverFaker.random_between(0, Enum.count(enum) - 1))
   end
 
   @doc """
@@ -39,9 +39,9 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.sample_uniq(2, &Faker.Internet.email/0)
+      iex> EverFaker.Util.sample_uniq(2, &EverFaker.Internet.email/0)
       ["conor2058@schiller.com", "elizabeth2056@rolfson.net"]
-      iex> Faker.Util.sample_uniq(10, fn -> Faker.String.base64(4) end)
+      iex> EverFaker.Util.sample_uniq(10, fn -> EverFaker.String.base64(4) end)
       [
         "0CzJ",
         "3nuk",
@@ -54,10 +54,10 @@ defmodule Faker.Util do
         "hVCK",
         "snJn"
       ]
-      iex> Faker.Util.sample_uniq(1, &Faker.Phone.EnUs.area_code/0)
+      iex> EverFaker.Util.sample_uniq(1, &EverFaker.Phone.EnUs.area_code/0)
       ["508"]
-      iex> Faker.Util.sample_uniq(0, &Faker.Internet.email/0)
-      ** (FunctionClauseError) no function clause matching in Faker.Util.sample_uniq/3
+      iex> EverFaker.Util.sample_uniq(0, &EverFaker.Internet.email/0)
+      ** (FunctionClauseError) no function clause matching in EverFaker.Util.sample_uniq/3
   """
   @spec sample_uniq(pos_integer, (-> any), MapSet.t()) :: [any]
   def sample_uniq(count, sampler, acc \\ MapSet.new())
@@ -78,13 +78,13 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.list(3, &(&1))
+      iex> EverFaker.Util.list(3, &(&1))
       [0, 1, 2]
-      iex> Faker.Util.list(3, &(&1 + 1))
+      iex> EverFaker.Util.list(3, &(&1 + 1))
       [1, 2, 3]
-      iex> Faker.Util.list(5, &(&1 * &1))
+      iex> EverFaker.Util.list(5, &(&1 * &1))
       [0, 1, 4, 9, 16]
-      iex> Faker.Util.list(3, &(to_string(&1)))
+      iex> EverFaker.Util.list(3, &(to_string(&1)))
       ["0", "1", "2"]
   """
   @spec list(integer, (integer -> any)) :: [any]
@@ -102,13 +102,13 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.join(3, ", ", &Faker.Code.isbn13/0)
+      iex> EverFaker.Util.join(3, ", ", &EverFaker.Code.isbn13/0)
       "9781542646109, 9783297052358, 9790203032090"
-      iex> Faker.Util.join(4, "-", fn -> Faker.format("####") end)
+      iex> EverFaker.Util.join(4, "-", fn -> EverFaker.format("####") end)
       "7337-6033-7459-8109"
-      iex> Faker.Util.join(2, " vs ", &Faker.Superhero.name/0)
+      iex> EverFaker.Util.join(2, " vs ", &EverFaker.Superhero.name/0)
       "Falcon vs Green Blink Claw"
-      iex> Faker.Util.join(2, " or ", &Faker.Color.name/0)
+      iex> EverFaker.Util.join(2, " or ", &EverFaker.Color.name/0)
       "Purple or White"
   """
   @spec join(integer, binary, (-> binary)) :: binary
@@ -121,13 +121,13 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.digit()
+      iex> EverFaker.Util.digit()
       "0"
-      iex> Faker.Util.digit()
+      iex> EverFaker.Util.digit()
       "1"
-      iex> Faker.Util.digit()
+      iex> EverFaker.Util.digit()
       "5"
-      iex> Faker.Util.digit()
+      iex> EverFaker.Util.digit()
       "4"
   """
   @spec digit() :: binary
@@ -138,18 +138,18 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.to_sentence(["Black", "White"])
+      iex> EverFaker.Util.to_sentence(["Black", "White"])
       "Black and White"
-      iex> Faker.Util.to_sentence(["Jon Snow"])
+      iex> EverFaker.Util.to_sentence(["Jon Snow"])
       "Jon Snow"
-      iex> Faker.Util.to_sentence(["Oceane", "Angeline", "Nicholas"])
+      iex> EverFaker.Util.to_sentence(["Oceane", "Angeline", "Nicholas"])
       "Angeline, Nicholas, and Oceane"
-      iex> Faker.Util.to_sentence(["One", "Two", "Three", "Four"])
+      iex> EverFaker.Util.to_sentence(["One", "Two", "Three", "Four"])
       "Two, Three, Four, and One"
   """
   @spec to_sentence([binary]) :: binary
   def to_sentence(items) do
-    Module.concat(__MODULE__, Faker.mlocale()).to_sentence(items)
+    Module.concat(__MODULE__, EverFaker.mlocale()).to_sentence(items)
   end
 
   @doc """
@@ -157,15 +157,15 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.letter()
+      iex> EverFaker.Util.letter()
       "E"
-      iex> Faker.Util.letter()
+      iex> EverFaker.Util.letter()
       "L"
-      iex> Faker.Util.letter()
+      iex> EverFaker.Util.letter()
       "R"
-      iex> Faker.Util.letter()
+      iex> EverFaker.Util.letter()
       "C"
-      iex> Faker.Util.letter()
+      iex> EverFaker.Util.letter()
       "e"
   """
   @spec letter() :: binary
@@ -176,13 +176,13 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.lower_letter()
+      iex> EverFaker.Util.lower_letter()
       "e"
-      iex> Faker.Util.lower_letter()
+      iex> EverFaker.Util.lower_letter()
       "l"
-      iex> Faker.Util.lower_letter()
+      iex> EverFaker.Util.lower_letter()
       "r"
-      iex> Faker.Util.lower_letter()
+      iex> EverFaker.Util.lower_letter()
       "c"
   """
   @spec lower_letter() :: binary
@@ -193,13 +193,13 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.upper_letter()
+      iex> EverFaker.Util.upper_letter()
       "E"
-      iex> Faker.Util.upper_letter()
+      iex> EverFaker.Util.upper_letter()
       "L"
-      iex> Faker.Util.upper_letter()
+      iex> EverFaker.Util.upper_letter()
       "R"
-      iex> Faker.Util.upper_letter()
+      iex> EverFaker.Util.upper_letter()
       "C"
   """
   @spec upper_letter() :: binary
@@ -224,7 +224,7 @@ defmodule Faker.Util do
   def cycle(cycle_pid) do
     Agent.get_and_update(cycle_pid, fn
       {[], items} ->
-        [h | t] = Faker.shuffle(items)
+        [h | t] = EverFaker.shuffle(items)
         {h, {t, items}}
 
       {[h | t], items} ->
@@ -249,9 +249,9 @@ defmodule Faker.Util do
 
   ## Examples
 
-      iex> Faker.Util.format("%2d-%3d %a%A %2d%%")
+      iex> EverFaker.Util.format("%2d-%3d %a%A %2d%%")
       "01-542 aS 61%"
-      iex> Faker.Util.format("%8nBATMAN", n: fn() -> "nana " end)
+      iex> EverFaker.Util.format("%8nBATMAN", n: fn() -> "nana " end)
       "nana nana nana nana nana nana nana nana BATMAN"
   """
   @spec format(binary, Keyword.t()) :: binary

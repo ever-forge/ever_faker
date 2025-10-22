@@ -1,5 +1,5 @@
-defmodule Faker.Person.Hy do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Person.Hy do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating name related data in Armenian
@@ -10,13 +10,13 @@ defmodule Faker.Person.Hy do
 
   ## Examples
 
-      iex> Faker.Person.Hy.name()
+      iex> EverFaker.Person.Hy.name()
       "Սյուզաննա Բաղդասարյան"
-      iex> Faker.Person.Hy.name()
+      iex> EverFaker.Person.Hy.name()
       "Բարբարա Բեկզադով"
-      iex> Faker.Person.Hy.name()
+      iex> EverFaker.Person.Hy.name()
       "Վահրամ Կարագյան"
-      iex> Faker.Person.Hy.name()
+      iex> EverFaker.Person.Hy.name()
       "Բեռնար Վարպետյան"
   """
   @spec name() :: String.t()
@@ -27,13 +27,13 @@ defmodule Faker.Person.Hy do
 
   ## Examples
 
-      iex> Faker.Person.Hy.first_name()
+      iex> EverFaker.Person.Hy.first_name()
       "Սյուզաննա"
-      iex> Faker.Person.Hy.first_name()
+      iex> EverFaker.Person.Hy.first_name()
       "Վարուժան"
-      iex> Faker.Person.Hy.first_name()
+      iex> EverFaker.Person.Hy.first_name()
       "Բարբարա"
-      iex> Faker.Person.Hy.first_name()
+      iex> EverFaker.Person.Hy.first_name()
       "Սոֆյա"
   """
   @spec first_name() :: String.t()
@@ -373,13 +373,13 @@ defmodule Faker.Person.Hy do
 
   ## Examples
 
-      iex> Faker.Person.Hy.last_name()
+      iex> EverFaker.Person.Hy.last_name()
       "Թովուլջյան"
-      iex> Faker.Person.Hy.last_name()
+      iex> EverFaker.Person.Hy.last_name()
       "Բաղդասարյան"
-      iex> Faker.Person.Hy.last_name()
+      iex> EverFaker.Person.Hy.last_name()
       "Աթամյան"
-      iex> Faker.Person.Hy.last_name()
+      iex> EverFaker.Person.Hy.last_name()
       "Բեկզադով"
   """
   @spec last_name() :: String.t()
@@ -1021,13 +1021,13 @@ defmodule Faker.Person.Hy do
 
   ## Examples
 
-      iex> Faker.Person.Hy.prefix()
+      iex> EverFaker.Person.Hy.prefix()
       "օրիորդ"
-      iex> Faker.Person.Hy.prefix()
+      iex> EverFaker.Person.Hy.prefix()
       "տիկին"
-      iex> Faker.Person.Hy.prefix()
+      iex> EverFaker.Person.Hy.prefix()
       "դոկտոր"
-      iex> Faker.Person.Hy.prefix()
+      iex> EverFaker.Person.Hy.prefix()
       "պարոն"
   """
   @spec prefix() :: String.t()
@@ -1043,13 +1043,13 @@ defmodule Faker.Person.Hy do
 
   ## Examples
 
-      iex> Faker.Person.Hy.suffix()
+      iex> EverFaker.Person.Hy.suffix()
       "կրտսեր"
-      iex> Faker.Person.Hy.suffix()
+      iex> EverFaker.Person.Hy.suffix()
       "ավագ"
-      iex> Faker.Person.Hy.suffix()
+      iex> EverFaker.Person.Hy.suffix()
       "ավագ"
-      iex> Faker.Person.Hy.suffix()
+      iex> EverFaker.Person.Hy.suffix()
       "կրտսեր"
   """
   @spec suffix() :: String.t()
@@ -1063,13 +1063,13 @@ defmodule Faker.Person.Hy do
 
   ## Examples
 
-      iex> Faker.Person.Hy.title()
+      iex> EverFaker.Person.Hy.title()
       "մարկետինգի առաջատար խորհրդատու"
-      iex> Faker.Person.Hy.title()
+      iex> EverFaker.Person.Hy.title()
       "առևտրի կրտսեր համակարգող"
-      iex> Faker.Person.Hy.title()
+      iex> EverFaker.Person.Hy.title()
       "համայնքային ծառայությունների ավագ պլանավորող"
-      iex> Faker.Person.Hy.title()
+      iex> EverFaker.Person.Hy.title()
       "մարկետինգի ավագ ինժեներ"
   """
   @spec title() :: String.t()
@@ -1082,13 +1082,13 @@ defmodule Faker.Person.Hy do
 
   ## Examples
 
-      iex> Faker.Person.Hy.title_descriptor()
+      iex> EverFaker.Person.Hy.title_descriptor()
       "մարկետինգի"
-      iex> Faker.Person.Hy.title_descriptor()
+      iex> EverFaker.Person.Hy.title_descriptor()
       "արտադրության"
-      iex> Faker.Person.Hy.title_descriptor()
+      iex> EverFaker.Person.Hy.title_descriptor()
       "մարկետինգի"
-      iex> Faker.Person.Hy.title_descriptor()
+      iex> EverFaker.Person.Hy.title_descriptor()
       "առևտրի"
   """
   @spec title_descriptor() :: String.t()
@@ -1115,13 +1115,13 @@ defmodule Faker.Person.Hy do
 
   ## Examples
 
-      iex> Faker.Person.Hy.title_job()
+      iex> EverFaker.Person.Hy.title_job()
       "դիզայներ"
-      iex> Faker.Person.Hy.title_job()
+      iex> EverFaker.Person.Hy.title_job()
       "ղեկավար"
-      iex> Faker.Person.Hy.title_job()
+      iex> EverFaker.Person.Hy.title_job()
       "խորհրդատու"
-      iex> Faker.Person.Hy.title_job()
+      iex> EverFaker.Person.Hy.title_job()
       "մասնագետ"
   """
   @spec title_job() :: String.t()
@@ -1153,13 +1153,13 @@ defmodule Faker.Person.Hy do
 
   ## Examples
 
-      iex> Faker.Person.Hy.title_level()
+      iex> EverFaker.Person.Hy.title_level()
       "ավագ"
-      iex> Faker.Person.Hy.title_level()
+      iex> EverFaker.Person.Hy.title_level()
       "առաջատար"
-      iex> Faker.Person.Hy.title_level()
+      iex> EverFaker.Person.Hy.title_level()
       "գլխավոր"
-      iex> Faker.Person.Hy.title_level()
+      iex> EverFaker.Person.Hy.title_level()
       "կրտսեր"
   """
   @spec title_level() :: String.t()

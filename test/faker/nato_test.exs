@@ -1,5 +1,5 @@
-defmodule Faker.NatoTest do
+defmodule EverFaker.NatoTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Nato
+  doctest EverFaker.Nato
 end

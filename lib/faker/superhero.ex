@@ -1,5 +1,5 @@
-defmodule Faker.Superhero do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Superhero do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Functions for generating Superhero data
@@ -10,13 +10,13 @@ defmodule Faker.Superhero do
 
   ## Examples
 
-      iex> Faker.Superhero.name()
+      iex> EverFaker.Superhero.name()
       "Red Beyonder the Hunter"
-      iex> Faker.Superhero.name()
+      iex> EverFaker.Superhero.name()
       "Penance Strike"
-      iex> Faker.Superhero.name()
+      iex> EverFaker.Superhero.name()
       "Sage"
-      iex> Faker.Superhero.name()
+      iex> EverFaker.Superhero.name()
       "Giant Aqua I"
   """
   @spec name() :: String.t()
@@ -27,13 +27,13 @@ defmodule Faker.Superhero do
 
   ## Examples
 
-      iex> Faker.Superhero.prefix()
+      iex> EverFaker.Superhero.prefix()
       "The"
-      iex> Faker.Superhero.prefix()
+      iex> EverFaker.Superhero.prefix()
       "Red"
-      iex> Faker.Superhero.prefix()
+      iex> EverFaker.Superhero.prefix()
       "The"
-      iex> Faker.Superhero.prefix()
+      iex> EverFaker.Superhero.prefix()
       "Captain"
   """
   @spec prefix() :: String.t()
@@ -44,13 +44,13 @@ defmodule Faker.Superhero do
 
   ## Examples
 
-      iex> Faker.Superhero.suffix()
+      iex> EverFaker.Superhero.suffix()
       "Strange"
-      iex> Faker.Superhero.suffix()
+      iex> EverFaker.Superhero.suffix()
       "Claw"
-      iex> Faker.Superhero.suffix()
+      iex> EverFaker.Superhero.suffix()
       "the Hunter"
-      iex> Faker.Superhero.suffix()
+      iex> EverFaker.Superhero.suffix()
       "the Hunter"
   """
   @spec suffix() :: String.t()
@@ -61,13 +61,13 @@ defmodule Faker.Superhero do
 
   ## Examples
 
-      iex> Faker.Superhero.descriptor()
+      iex> EverFaker.Superhero.descriptor()
       "Ronin"
-      iex> Faker.Superhero.descriptor()
+      iex> EverFaker.Superhero.descriptor()
       "Azrael"
-      iex> Faker.Superhero.descriptor()
+      iex> EverFaker.Superhero.descriptor()
       "Beyonder"
-      iex> Faker.Superhero.descriptor()
+      iex> EverFaker.Superhero.descriptor()
       "Phantom"
   """
   @spec descriptor() :: String.t()
@@ -78,13 +78,13 @@ defmodule Faker.Superhero do
 
   ## Examples
 
-      iex> Faker.Superhero.power()
+      iex> EverFaker.Superhero.power()
       "Death Touch"
-      iex> Faker.Superhero.power()
+      iex> EverFaker.Superhero.power()
       "Shapeshifting"
-      iex> Faker.Superhero.power()
+      iex> EverFaker.Superhero.power()
       "Gliding"
-      iex> Faker.Superhero.power()
+      iex> EverFaker.Superhero.power()
       "Illusions"
   """
   @spec power() :: String.t()

@@ -1,5 +1,5 @@
-defmodule Faker.Internet.Es do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Internet.Es do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Generating internet related data in Spanish
@@ -10,13 +10,13 @@ defmodule Faker.Internet.Es do
 
   ## Examples
 
-      iex> Faker.Internet.Es.free_email_service()
+      iex> EverFaker.Internet.Es.free_email_service()
       "gmail.com"
-      iex> Faker.Internet.Es.free_email_service()
+      iex> EverFaker.Internet.Es.free_email_service()
       "hotmail.com"
-      iex> Faker.Internet.Es.free_email_service()
+      iex> EverFaker.Internet.Es.free_email_service()
       "gmail.com"
-      iex> Faker.Internet.Es.free_email_service()
+      iex> EverFaker.Internet.Es.free_email_service()
       "hotmail.com"
   """
   @spec free_email_service() :: String
@@ -27,13 +27,13 @@ defmodule Faker.Internet.Es do
 
   ## Examples
 
-      iex> Faker.Internet.Es.domain_suffix()
+      iex> EverFaker.Internet.Es.domain_suffix()
       "com"
-      iex> Faker.Internet.Es.domain_suffix()
+      iex> EverFaker.Internet.Es.domain_suffix()
       "es"
-      iex> Faker.Internet.Es.domain_suffix()
+      iex> EverFaker.Internet.Es.domain_suffix()
       "com"
-      iex> Faker.Internet.Es.domain_suffix()
+      iex> EverFaker.Internet.Es.domain_suffix()
       "org"
   """
   @spec domain_suffix() :: String.t()

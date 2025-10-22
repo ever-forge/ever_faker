@@ -1,8 +1,8 @@
-defmodule Faker.PokemonTest do
+defmodule EverFaker.PokemonTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Pokemon
-  doctest Faker.Pokemon.En
-  doctest Faker.Pokemon.De
-  doctest Faker.Pokemon.It
+  doctest EverFaker.Pokemon
+  doctest EverFaker.Pokemon.En
+  doctest EverFaker.Pokemon.De
+  doctest EverFaker.Pokemon.It
 end

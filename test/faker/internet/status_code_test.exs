@@ -1,5 +1,5 @@
-defmodule Faker.Internet.StatusCodeTest do
+defmodule EverFaker.Internet.StatusCodeTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Internet.StatusCode
+  doctest EverFaker.Internet.StatusCode
 end

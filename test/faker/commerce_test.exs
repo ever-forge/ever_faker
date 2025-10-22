@@ -1,14 +1,14 @@
-defmodule Faker.CommerceTest do
+defmodule EverFaker.CommerceTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Commerce
-  doctest Faker.Commerce.En
-  doctest Faker.Commerce.Hy
-  doctest Faker.Commerce.PtBr
+  doctest EverFaker.Commerce
+  doctest EverFaker.Commerce.En
+  doctest EverFaker.Commerce.Hy
+  doctest EverFaker.Commerce.PtBr
 
   test "price/0" do
-    assert is_float(Faker.Commerce.price())
-    assert Faker.Commerce.price() <= 100.0
-    assert Faker.Commerce.price() >= 0.0
+    assert is_float(EverFaker.Commerce.price())
+    assert EverFaker.Commerce.price() <= 100.0
+    assert EverFaker.Commerce.price() >= 0.0
   end
 end

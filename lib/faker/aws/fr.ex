@@ -1,5 +1,5 @@
-defmodule Faker.Aws.Fr do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Aws.Fr do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating AWS information in French
@@ -9,13 +9,13 @@ defmodule Faker.Aws.Fr do
   Returns a random region name available on AWS in French
 
   ## Examples
-  iex> Faker.Aws.Fr.region_name()
+  iex> EverFaker.Aws.Fr.region_name()
   "Asie Pacifique (Tokyo)"
-  iex> Faker.Aws.Fr.region_name()
+  iex> EverFaker.Aws.Fr.region_name()
   "USA Est (Ohio)"
-  iex> Faker.Aws.Fr.region_name()
+  iex> EverFaker.Aws.Fr.region_name()
   "Europe (Milan)"
-  iex> Faker.Aws.Fr.region_name()
+  iex> EverFaker.Aws.Fr.region_name()
   "Afrique (Le Cap)"
   """
   @spec region_name() :: String.t()

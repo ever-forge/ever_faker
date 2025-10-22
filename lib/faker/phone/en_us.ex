@@ -1,4 +1,4 @@
-defmodule Faker.Phone.EnUs do
+defmodule EverFaker.Phone.EnUs do
   @moduledoc """
   This follows the rules outlined in the North American Numbering Plan
   at https://en.wikipedia.org/wiki/North_American_Numbering_Plan.
@@ -31,13 +31,13 @@ defmodule Faker.Phone.EnUs do
 
   ## Examples
 
-      iex> Faker.Phone.EnUs.phone()
+      iex> EverFaker.Phone.EnUs.phone()
       "5528621083"
-      iex> Faker.Phone.EnUs.phone()
+      iex> EverFaker.Phone.EnUs.phone()
       "(730) 552-5702"
-      iex> Faker.Phone.EnUs.phone()
+      iex> EverFaker.Phone.EnUs.phone()
       "652-505-3376"
-      iex> Faker.Phone.EnUs.phone()
+      iex> EverFaker.Phone.EnUs.phone()
       "(377) 347-8109"
   """
   @spec phone() :: String.t()
@@ -58,13 +58,13 @@ defmodule Faker.Phone.EnUs do
 
   ## Examples
 
-      iex> Faker.Phone.EnUs.area_code()
+      iex> EverFaker.Phone.EnUs.area_code()
       "825"
-      iex> Faker.Phone.EnUs.area_code()
+      iex> EverFaker.Phone.EnUs.area_code()
       "246"
-      iex> Faker.Phone.EnUs.area_code()
+      iex> EverFaker.Phone.EnUs.area_code()
       "681"
-      iex> Faker.Phone.EnUs.area_code()
+      iex> EverFaker.Phone.EnUs.area_code()
       "683"
   """
   @spec area_code() :: String.t()
@@ -77,13 +77,13 @@ defmodule Faker.Phone.EnUs do
 
   ## Examples
 
-      iex> Faker.Phone.EnUs.exchange_code()
+      iex> EverFaker.Phone.EnUs.exchange_code()
       "503"
-      iex> Faker.Phone.EnUs.exchange_code()
+      iex> EverFaker.Phone.EnUs.exchange_code()
       "845"
-      iex> Faker.Phone.EnUs.exchange_code()
+      iex> EverFaker.Phone.EnUs.exchange_code()
       "549"
-      iex> Faker.Phone.EnUs.exchange_code()
+      iex> EverFaker.Phone.EnUs.exchange_code()
       "509"
   """
   @spec exchange_code() :: String.t()
@@ -104,18 +104,18 @@ defmodule Faker.Phone.EnUs do
 
   ## Examples
 
-      iex> Faker.Phone.EnUs.subscriber_number()
+      iex> EverFaker.Phone.EnUs.subscriber_number()
       "0154"
-      iex> Faker.Phone.EnUs.subscriber_number()
+      iex> EverFaker.Phone.EnUs.subscriber_number()
       "2646"
-      iex> Faker.Phone.EnUs.subscriber_number(2)
+      iex> EverFaker.Phone.EnUs.subscriber_number(2)
       "10"
-      iex> Faker.Phone.EnUs.subscriber_number(5)
+      iex> EverFaker.Phone.EnUs.subscriber_number(5)
       "83297"
   """
   @spec subscriber_number(pos_integer) :: String.t()
   def subscriber_number(n) when is_integer(n) do
-    Faker.format(String.duplicate("#", n))
+    EverFaker.format(String.duplicate("#", n))
   end
 
   @spec subscriber_number() :: String.t()
@@ -126,19 +126,19 @@ defmodule Faker.Phone.EnUs do
 
   ## Examples
 
-      iex> Faker.Phone.EnUs.extension()
+      iex> EverFaker.Phone.EnUs.extension()
       "0154"
-      iex> Faker.Phone.EnUs.extension()
+      iex> EverFaker.Phone.EnUs.extension()
       "2646"
-      iex> Faker.Phone.EnUs.extension(3)
+      iex> EverFaker.Phone.EnUs.extension(3)
       "108"
-      iex> Faker.Phone.EnUs.extension(5)
+      iex> EverFaker.Phone.EnUs.extension(5)
       "32970"
   """
   defdelegate extension(n), to: __MODULE__, as: :subscriber_number
   defdelegate extension, to: __MODULE__, as: :subscriber_number
 
-  defp std_separator, do: Enum.at(["-", ".", ""], Faker.random_between(0, 2))
+  defp std_separator, do: Enum.at(["-", ".", ""], EverFaker.random_between(0, 2))
 
-  defp digit(min, max), do: Faker.random_between(min, max)
+  defp digit(min, max), do: EverFaker.random_between(min, max)
 end

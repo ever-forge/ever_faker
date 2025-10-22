@@ -1,5 +1,5 @@
-defmodule Faker.Airports do
-  import Faker, only: [sampler: 2, localize: 1]
+defmodule EverFaker.Airports do
+  import EverFaker, only: [sampler: 2, localize: 1]
 
   @moduledoc """
   Functions for generating airports related data
@@ -10,13 +10,13 @@ defmodule Faker.Airports do
 
   ## Examples
 
-      iex> Faker.Airports.icao()
+      iex> EverFaker.Airports.icao()
       "SNOS"
-      iex> Faker.Airports.icao()
+      iex> EverFaker.Airports.icao()
       "UNBG"
-      iex> Faker.Airports.icao()
+      iex> EverFaker.Airports.icao()
       "KLOM"
-      iex> Faker.Airports.icao()
+      iex> EverFaker.Airports.icao()
       "HCME"
   """
   @spec icao() :: String.t()
@@ -1028,13 +1028,13 @@ defmodule Faker.Airports do
 
   ## Examples
 
-      iex> Faker.Airports.iata()
+      iex> EverFaker.Airports.iata()
       "UBJ"
-      iex> Faker.Airports.iata()
+      iex> EverFaker.Airports.iata()
       "CKB"
-      iex> Faker.Airports.iata()
+      iex> EverFaker.Airports.iata()
       "JAL"
-      iex> Faker.Airports.iata()
+      iex> EverFaker.Airports.iata()
       "PES"
   """
   @spec iata() :: String.t()

@@ -1,11 +1,11 @@
-defmodule Faker.PersonTest do
+defmodule EverFaker.PersonTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Person
-  doctest Faker.Person.En
-  doctest Faker.Person.Es
-  doctest Faker.Person.Fr
-  doctest Faker.Person.Hy
-  doctest Faker.Person.It
-  doctest Faker.Person.PtBr
+  doctest EverFaker.Person
+  doctest EverFaker.Person.En
+  doctest EverFaker.Person.Es
+  doctest EverFaker.Person.Fr
+  doctest EverFaker.Person.Hy
+  doctest EverFaker.Person.It
+  doctest EverFaker.Person.PtBr
 end

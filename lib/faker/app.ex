@@ -1,8 +1,8 @@
-defmodule Faker.App do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.App do
+  import EverFaker, only: [sampler: 2]
 
-  alias Faker.Company
-  alias Faker.Person
+  alias EverFaker.Company
+  alias EverFaker.Person
 
   @moduledoc """
   Functions for generating app specific properties.
@@ -13,20 +13,20 @@ defmodule Faker.App do
 
   ## Examples
 
-      iex> Faker.App.version()
+      iex> EverFaker.App.version()
       "0.1.5"
-      iex> Faker.App.version()
+      iex> EverFaker.App.version()
       "2.6.4"
-      iex> Faker.App.version()
+      iex> EverFaker.App.version()
       "0.10"
-      iex> Faker.App.version()
+      iex> EverFaker.App.version()
       "3.2"
   """
   @spec version() :: String.t()
   def version do
     ["0.#.#", "0.##", "#.##", "#.#", "#.#.#"]
-    |> Enum.at(Faker.random_between(0, 4))
-    |> Faker.format()
+    |> Enum.at(EverFaker.random_between(0, 4))
+    |> EverFaker.format()
   end
 
   @doc """
@@ -41,13 +41,13 @@ defmodule Faker.App do
 
   ## Examples
 
-      iex> Faker.App.semver()
+      iex> EverFaker.App.semver()
       "5.42.64"
-      iex> Faker.App.semver()
+      iex> EverFaker.App.semver()
       "0.2.8"
-      iex> Faker.App.semver()
+      iex> EverFaker.App.semver()
       "7.0.5"
-      iex> Faker.App.semver()
+      iex> EverFaker.App.semver()
       "5.7.0"
   """
   @spec semver(Keyword.t()) :: String.t()
@@ -57,7 +57,7 @@ defmodule Faker.App do
 
     pre =
       ~w(dev alpha beta rc.0 rc.1)
-      |> Enum.at(Faker.random_between(0, 4))
+      |> Enum.at(EverFaker.random_between(0, 4))
 
     formats =
       ["0.#.#", "#.#.#", "#.##.##"]
@@ -66,8 +66,8 @@ defmodule Faker.App do
       |> semver_pre_release_builds(pre, allow_pre and allow_build)
 
     formats
-    |> Enum.at(Faker.random_between(0, length(formats) - 1))
-    |> Faker.format()
+    |> Enum.at(EverFaker.random_between(0, length(formats) - 1))
+    |> EverFaker.format()
     |> semver_reformat_bad_luck()
   end
 
@@ -81,19 +81,19 @@ defmodule Faker.App do
   defp semver_pre_release_builds(acc, _pre, _), do: acc
 
   defp semver_reformat_bad_luck(<<"0.0", rest::binary>>) do
-    semver_reformat_bad_luck(<<"0.#{Faker.random_between(1, 9)}", rest::binary>>)
+    semver_reformat_bad_luck(<<"0.#{EverFaker.random_between(1, 9)}", rest::binary>>)
   end
 
   defp semver_reformat_bad_luck(<<first::utf8, ".0", second::utf8, rest::binary>>)
        when second !== 46 do
-    semver_reformat_bad_luck(<<first, ".#{Faker.random_between(1, 9)}", second, rest::binary>>)
+    semver_reformat_bad_luck(<<first, ".#{EverFaker.random_between(1, 9)}", second, rest::binary>>)
   end
 
   defp semver_reformat_bad_luck(
          <<first::utf8, ".", second::utf8, third::utf8, ".0", rest::binary>>
        ) do
     semver_reformat_bad_luck(
-      <<first, ".", second, third, ".#{Faker.random_between(1, 9)}", rest::binary>>
+      <<first, ".", second, third, ".#{EverFaker.random_between(1, 9)}", rest::binary>>
     )
   end
 
@@ -104,13 +104,13 @@ defmodule Faker.App do
 
   ## Examples
 
-      iex> Faker.App.name()
+      iex> EverFaker.App.name()
       "Redhold"
-      iex> Faker.App.name()
+      iex> EverFaker.App.name()
       "Tempsoft"
-      iex> Faker.App.name()
+      iex> EverFaker.App.name()
       "Tempsoft"
-      iex> Faker.App.name()
+      iex> EverFaker.App.name()
       "Quo Lux"
   """
   @spec name() :: String.t()
@@ -184,17 +184,17 @@ defmodule Faker.App do
 
   ## Examples
 
-      iex> Faker.App.author()
+      iex> EverFaker.App.author()
       "Mr. Ozella Sipes"
-      iex> Faker.App.author()
+      iex> EverFaker.App.author()
       "Aniya Schiller"
-      iex> Faker.App.author()
+      iex> EverFaker.App.author()
       "Frederique Murphy"
-      iex> Faker.App.author()
+      iex> EverFaker.App.author()
       "Rutherford Inc"
   """
   @spec author() :: String.t()
-  def author, do: author(Faker.random_between(0, 1))
+  def author, do: author(EverFaker.random_between(0, 1))
 
   defp author(0), do: Person.name()
   defp author(1), do: Company.name()

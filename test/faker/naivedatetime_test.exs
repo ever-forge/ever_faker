@@ -1,4 +1,4 @@
-defmodule Faker.NaiveDateTimeTest do
+defmodule EverFaker.NaiveDateTimeTest do
   use ExUnit.Case, async: true
 
   test "forward/1" do
@@ -7,7 +7,7 @@ defmodule Faker.NaiveDateTimeTest do
     now_time = now_datetime |> DateTime.to_time()
     {:ok, now} = NaiveDateTime.new(now_date, now_time)
 
-    forwarded_date = Faker.NaiveDateTime.forward(10)
+    forwarded_date = EverFaker.NaiveDateTime.forward(10)
 
     assert %NaiveDateTime{
              year: year,
@@ -29,7 +29,7 @@ defmodule Faker.NaiveDateTimeTest do
     now_time = now_datetime |> DateTime.to_time()
     {:ok, now} = NaiveDateTime.new(now_date, now_time)
 
-    backward_date = Faker.NaiveDateTime.backward(10)
+    backward_date = EverFaker.NaiveDateTime.backward(10)
 
     assert %NaiveDateTime{
              year: year,
@@ -51,12 +51,12 @@ defmodule Faker.NaiveDateTimeTest do
     from_time = from_datetime |> DateTime.to_time()
     {:ok, from_naivedatetime} = NaiveDateTime.new(from_date, from_time)
 
-    to_datetime = Faker.DateTime.forward(50)
+    to_datetime = EverFaker.DateTime.forward(50)
     to_date = to_datetime |> DateTime.to_date()
     to_time = to_datetime |> DateTime.to_time()
     {:ok, to_naivedatetime} = NaiveDateTime.new(to_date, to_time)
 
-    between_date = Faker.DateTime.between(from_naivedatetime, to_naivedatetime)
+    between_date = EverFaker.DateTime.between(from_naivedatetime, to_naivedatetime)
 
     assert %DateTime{
              year: year,

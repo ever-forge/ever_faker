@@ -1,5 +1,5 @@
-defmodule Faker.Cat.PtBr do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Cat.PtBr do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for Cat names and breeds in Brazilian Portuguese
@@ -10,13 +10,13 @@ defmodule Faker.Cat.PtBr do
 
   ## Examples
 
-      iex> Faker.Cat.PtBr.female_name()
+      iex> EverFaker.Cat.PtBr.female_name()
       "Samy"
-      iex> Faker.Cat.PtBr.female_name()
+      iex> EverFaker.Cat.PtBr.female_name()
       "Linda"
-      iex> Faker.Cat.PtBr.female_name()
+      iex> EverFaker.Cat.PtBr.female_name()
       "Úrsula"
-      iex> Faker.Cat.PtBr.female_name()
+      iex> EverFaker.Cat.PtBr.female_name()
       "Florinda"
   """
   @spec female_name() :: String.t()
@@ -108,13 +108,13 @@ defmodule Faker.Cat.PtBr do
 
   ## Examples
 
-      iex> Faker.Cat.PtBr.male_name()
+      iex> EverFaker.Cat.PtBr.male_name()
       "Soneca"
-      iex> Faker.Cat.PtBr.male_name()
+      iex> EverFaker.Cat.PtBr.male_name()
       "Loui"
-      iex> Faker.Cat.PtBr.male_name()
+      iex> EverFaker.Cat.PtBr.male_name()
       "Ton"
-      iex> Faker.Cat.PtBr.male_name()
+      iex> EverFaker.Cat.PtBr.male_name()
       "Dante"
   """
   @spec male_name() :: String.t()
@@ -209,13 +209,13 @@ defmodule Faker.Cat.PtBr do
 
   ## Examples
 
-      iex> Faker.Cat.PtBr.breed()
+      iex> EverFaker.Cat.PtBr.breed()
       "Angorá Turco"
-      iex> Faker.Cat.PtBr.breed()
+      iex> EverFaker.Cat.PtBr.breed()
       "Azul Russo"
-      iex> Faker.Cat.PtBr.breed()
+      iex> EverFaker.Cat.PtBr.breed()
       "Pelo Curto Brasileiro"
-      iex> Faker.Cat.PtBr.breed()
+      iex> EverFaker.Cat.PtBr.breed()
       "Pelo Curto Americano"
   """
   @spec breed() :: String.t()

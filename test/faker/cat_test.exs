@@ -1,7 +1,7 @@
-defmodule Faker.Cat.EnTest do
+defmodule EverFaker.Cat.EnTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Cat
-  doctest Faker.Cat.En
-  doctest Faker.Cat.PtBr
+  doctest EverFaker.Cat
+  doctest EverFaker.Cat.En
+  doctest EverFaker.Cat.PtBr
 end

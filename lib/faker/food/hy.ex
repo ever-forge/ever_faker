@@ -1,5 +1,5 @@
-defmodule Faker.Food.Hy do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Food.Hy do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for food data in Armenian.
@@ -10,13 +10,13 @@ defmodule Faker.Food.Hy do
 
   ## Examples
 
-      iex> Faker.Food.Hy.dish()
+      iex> EverFaker.Food.Hy.dish()
       "ձու շոտլանդական ձևով"
-      iex> Faker.Food.Hy.dish()
+      iex> EverFaker.Food.Hy.dish()
       "պիցցա"
-      iex> Faker.Food.Hy.dish()
+      iex> EverFaker.Food.Hy.dish()
       "խորոված կողիկներ"
-      iex> Faker.Food.Hy.dish()
+      iex> EverFaker.Food.Hy.dish()
       "սաղմոն նիգիրի"
   """
   @spec dish() :: String.t()
@@ -63,13 +63,13 @@ defmodule Faker.Food.Hy do
 
   ## Examples
 
-      iex> Faker.Food.Hy.description()
+      iex> EverFaker.Food.Hy.description()
       "Տապակած հավ վաֆլիների հետ: Մատուցվում է թխկիի օշարակով:"
-      iex> Faker.Food.Hy.description()
+      iex> EverFaker.Food.Hy.description()
       "Երեք ձվի օմլետ ռոքֆոր պանրով, մանր սոխ և խոզապուխտ: Կողքը ավելացրեք խորոված կարտոֆիլ և ֆրանսիական տոստ:"
-      iex> Faker.Food.Hy.description()
+      iex> EverFaker.Food.Hy.description()
       "Ապխտած սաղմոն, խոզապուխտով ձու, կարմիր սոխ և լոլիկի սոուս բուլկիի վրա: Կողքը ավելացրեք խորոված կարտոֆիլ:"
-      iex> Faker.Food.Hy.description()
+      iex> EverFaker.Food.Hy.description()
       "Երեք ձու, համեմ, լոլիկ, սոխ, ավոկադո և հալած պանիր: Կողքը ավելացրեք խորոված կարտոֆիլ և ֆրանսիական տոստ:"
   """
   @spec description() :: String.t()
@@ -89,13 +89,13 @@ defmodule Faker.Food.Hy do
 
   ## Examples
 
-      iex> Faker.Food.Hy.ingredient()
+      iex> EverFaker.Food.Hy.ingredient()
       "ոսպ"
-      iex> Faker.Food.Hy.ingredient()
+      iex> EverFaker.Food.Hy.ingredient()
       "մշկընկույզ"
-      iex> Faker.Food.Hy.ingredient()
+      iex> EverFaker.Food.Hy.ingredient()
       "ընկույզ"
-      iex> Faker.Food.Hy.ingredient()
+      iex> EverFaker.Food.Hy.ingredient()
       "սամիթ"
   """
   @spec ingredient() :: String.t()
@@ -283,13 +283,13 @@ defmodule Faker.Food.Hy do
 
   ## Examples
 
-      iex> Faker.Food.Hy.measurement()
+      iex> EverFaker.Food.Hy.measurement()
       "թեյի գդալ"
-      iex> Faker.Food.Hy.measurement()
+      iex> EverFaker.Food.Hy.measurement()
       "գալոն"
-      iex> Faker.Food.Hy.measurement()
+      iex> EverFaker.Food.Hy.measurement()
       "պինտա"
-      iex> Faker.Food.Hy.measurement()
+      iex> EverFaker.Food.Hy.measurement()
       "բաժակ"
   """
   @spec measurement() :: String.t()
@@ -300,13 +300,13 @@ defmodule Faker.Food.Hy do
 
   ## Examples
 
-      iex> Faker.Food.Hy.measurement_size()
+      iex> EverFaker.Food.Hy.measurement_size()
       "1/4"
-      iex> Faker.Food.Hy.measurement_size()
+      iex> EverFaker.Food.Hy.measurement_size()
       "3"
-      iex> Faker.Food.Hy.measurement_size()
+      iex> EverFaker.Food.Hy.measurement_size()
       "1"
-      iex> Faker.Food.Hy.measurement_size()
+      iex> EverFaker.Food.Hy.measurement_size()
       "1/2"
   """
   @spec measurement_size() :: String.t()
@@ -317,13 +317,13 @@ defmodule Faker.Food.Hy do
 
   ## Examples
 
-      iex> Faker.Food.Hy.metric_measurement()
+      iex> EverFaker.Food.Hy.metric_measurement()
       "սանտիլիտր"
-      iex> Faker.Food.Hy.metric_measurement()
+      iex> EverFaker.Food.Hy.metric_measurement()
       "դեցիլիտր"
-      iex> Faker.Food.Hy.metric_measurement()
+      iex> EverFaker.Food.Hy.metric_measurement()
       "լիտր"
-      iex> Faker.Food.Hy.metric_measurement()
+      iex> EverFaker.Food.Hy.metric_measurement()
       "միլիլիտր"
   """
   @spec metric_measurement() :: String.t()
@@ -334,13 +334,13 @@ defmodule Faker.Food.Hy do
 
   ## Examples
 
-      iex> Faker.Food.Hy.spice()
+      iex> EverFaker.Food.Hy.spice()
       "կայնեյան պղպեղ"
-      iex> Faker.Food.Hy.spice()
+      iex> EverFaker.Food.Hy.spice()
       "պիրի պիրի համեմունք"
-      iex> Faker.Food.Hy.spice()
+      iex> EverFaker.Food.Hy.spice()
       "կարամ մասալա"
-      iex> Faker.Food.Hy.spice()
+      iex> EverFaker.Food.Hy.spice()
       "մանանեխ"
   """
   @spec spice() :: String.t()

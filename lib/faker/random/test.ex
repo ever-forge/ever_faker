@@ -1,7 +1,7 @@
-defmodule Faker.Random.Test do
+defmodule EverFaker.Random.Test do
   @moduledoc false
 
-  use Faker.Random
+  use EverFaker.Random
 
   def random_between(left, right) do
     set_seed(:ets.lookup(:seed_registry, self()))

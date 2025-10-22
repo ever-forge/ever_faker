@@ -1,7 +1,7 @@
-defmodule Faker.IndustryTest do
+defmodule EverFaker.IndustryTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Industry
-  doctest Faker.Industry.En
-  doctest Faker.Industry.Hy
+  doctest EverFaker.Industry
+  doctest EverFaker.Industry.En
+  doctest EverFaker.Industry.Hy
 end

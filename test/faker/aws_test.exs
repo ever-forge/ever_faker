@@ -1,8 +1,8 @@
-defmodule Faker.AwsTest do
+defmodule EverFaker.AwsTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Aws.En
-  doctest Faker.Aws.Fr
-  doctest Faker.Aws.PtPt
-  doctest Faker.Aws.PtBr
+  doctest EverFaker.Aws.En
+  doctest EverFaker.Aws.Fr
+  doctest EverFaker.Aws.PtPt
+  doctest EverFaker.Aws.PtBr
 end

@@ -1,9 +1,9 @@
-defmodule Faker.Gov.UsTest do
+defmodule EverFaker.Gov.UsTest do
   use ExUnit.Case, async: true
 
-  import Faker.Gov.Us
+  import EverFaker.Gov.Us
 
-  doctest Faker.Gov.Us
+  doctest EverFaker.Gov.Us
 
   @iterations 10_000
 

@@ -1,5 +1,5 @@
-defmodule Faker.Nato do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Nato do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating NATO alphabet data
@@ -10,13 +10,13 @@ defmodule Faker.Nato do
 
   ## Examples
 
-      iex> Faker.Nato.letter_code_word()
+      iex> EverFaker.Nato.letter_code_word()
       "ECHO"
-      iex> Faker.Nato.letter_code_word()
+      iex> EverFaker.Nato.letter_code_word()
       "LIMA"
-      iex> Faker.Nato.letter_code_word()
+      iex> EverFaker.Nato.letter_code_word()
       "ROMEO"
-      iex> Faker.Nato.letter_code_word()
+      iex> EverFaker.Nato.letter_code_word()
       "CHARLIE"
   """
   @spec letter_code_word :: String.t()
@@ -54,13 +54,13 @@ defmodule Faker.Nato do
 
   ## Examples
 
-      iex> Faker.Nato.digit_code_word()
+      iex> EverFaker.Nato.digit_code_word()
       "ONE"
-      iex> Faker.Nato.digit_code_word()
+      iex> EverFaker.Nato.digit_code_word()
       "TWO"
-      iex> Faker.Nato.digit_code_word()
+      iex> EverFaker.Nato.digit_code_word()
       "SIX"
-      iex> Faker.Nato.digit_code_word()
+      iex> EverFaker.Nato.digit_code_word()
       "FIVE"
   """
   @spec digit_code_word :: String.t()
@@ -82,7 +82,7 @@ defmodule Faker.Nato do
 
   ## Examples
 
-      iex> Faker.Nato.stop_code_word()
+      iex> EverFaker.Nato.stop_code_word()
       "STOP"
   """
   @spec stop_code_word :: String.t()
@@ -93,13 +93,13 @@ defmodule Faker.Nato do
 
   ## Examples
 
-      iex> Faker.Nato.callsign()
+      iex> EverFaker.Nato.callsign()
       "ECHO-LIMA-SIX"
-      iex> Faker.Nato.callsign()
+      iex> EverFaker.Nato.callsign()
       "CHARLIE-ECHO-SEVEN"
-      iex> Faker.Nato.callsign()
+      iex> EverFaker.Nato.callsign()
       "SIERRA-GOLF-TWO"
-      iex> Faker.Nato.callsign()
+      iex> EverFaker.Nato.callsign()
       "INDIA-WHISKEY-FOUR"
   """
   @spec callsign() :: String.t()
@@ -113,13 +113,13 @@ defmodule Faker.Nato do
 
   ## Examples
 
-      iex> Faker.Nato.format("#-?-#-.")
+      iex> EverFaker.Nato.format("#-?-#-.")
       "ONE-LIMA-SIX-STOP"
-      iex> Faker.Nato.format("#-?-#-.")
+      iex> EverFaker.Nato.format("#-?-#-.")
       "FIVE-ECHO-SEVEN-STOP"
-      iex> Faker.Nato.format("#-?-#-.")
+      iex> EverFaker.Nato.format("#-?-#-.")
       "FIVE-GOLF-TWO-STOP"
-      iex> Faker.Nato.format("#-?-#-.")
+      iex> EverFaker.Nato.format("#-?-#-.")
       "ONE-WHISKEY-FOUR-STOP"
   """
   @spec format(String.t()) :: String.t()

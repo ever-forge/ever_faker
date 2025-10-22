@@ -1,10 +1,10 @@
-defmodule Faker.StringTest do
+defmodule EverFaker.StringTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.String
+  doctest EverFaker.String
 
   test "base64/1" do
-    length = Faker.String.base64(12) |> String.length()
+    length = EverFaker.String.base64(12) |> String.length()
     assert length == 12
   end
 end

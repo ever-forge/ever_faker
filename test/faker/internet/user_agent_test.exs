@@ -1,5 +1,5 @@
-defmodule Faker.Internet.UserAgentTest do
+defmodule EverFaker.Internet.UserAgentTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Internet.UserAgent
+  doctest EverFaker.Internet.UserAgent
 end

@@ -1,5 +1,5 @@
-defmodule Faker.Person do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Person do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Functions for generating names for a person.
@@ -10,13 +10,13 @@ defmodule Faker.Person do
 
   ## Examples
 
-      iex> Faker.Person.name()
+      iex> EverFaker.Person.name()
       "Mrs. Abe Rolfson MD"
-      iex> Faker.Person.name()
+      iex> EverFaker.Person.name()
       "Conor Padberg"
-      iex> Faker.Person.name()
+      iex> EverFaker.Person.name()
       "Mr. Bianka Ryan"
-      iex> Faker.Person.name()
+      iex> EverFaker.Person.name()
       "Ally Rau MD"
   """
   @spec name() :: String.t()
@@ -27,13 +27,13 @@ defmodule Faker.Person do
 
   ## Examples
 
-      iex> Faker.Person.first_name()
+      iex> EverFaker.Person.first_name()
       "Joany"
-      iex> Faker.Person.first_name()
+      iex> EverFaker.Person.first_name()
       "Elizabeth"
-      iex> Faker.Person.first_name()
+      iex> EverFaker.Person.first_name()
       "Abe"
-      iex> Faker.Person.first_name()
+      iex> EverFaker.Person.first_name()
       "Ozella"
   """
   @spec first_name() :: String.t()
@@ -44,13 +44,13 @@ defmodule Faker.Person do
 
   ## Examples
 
-      iex> Faker.Person.last_name()
+      iex> EverFaker.Person.last_name()
       "Blick"
-      iex> Faker.Person.last_name()
+      iex> EverFaker.Person.last_name()
       "Hayes"
-      iex> Faker.Person.last_name()
+      iex> EverFaker.Person.last_name()
       "Schumm"
-      iex> Faker.Person.last_name()
+      iex> EverFaker.Person.last_name()
       "Rolfson"
   """
   @spec last_name() :: String.t()
@@ -61,13 +61,13 @@ defmodule Faker.Person do
 
   ## Examples
 
-      iex> Faker.Person.title()
+      iex> EverFaker.Person.title()
       "Dynamic Identity Administrator"
-      iex> Faker.Person.title()
+      iex> EverFaker.Person.title()
       "Product Communications Technician"
-      iex> Faker.Person.title()
+      iex> EverFaker.Person.title()
       "Legacy Accountability Architect"
-      iex> Faker.Person.title()
+      iex> EverFaker.Person.title()
       "Customer Data Representative"
   """
   @spec title() :: String.t()
@@ -78,13 +78,13 @@ defmodule Faker.Person do
 
   ## Examples
 
-      iex> Faker.Person.suffix()
+      iex> EverFaker.Person.suffix()
       "II"
-      iex> Faker.Person.suffix()
+      iex> EverFaker.Person.suffix()
       "V"
-      iex> Faker.Person.suffix()
+      iex> EverFaker.Person.suffix()
       "V"
-      iex> Faker.Person.suffix()
+      iex> EverFaker.Person.suffix()
       "V"
   """
   @spec suffix() :: String.t()
@@ -95,13 +95,13 @@ defmodule Faker.Person do
 
   ## Examples
 
-      iex> Faker.Person.prefix()
+      iex> EverFaker.Person.prefix()
       "Mr."
-      iex> Faker.Person.prefix()
+      iex> EverFaker.Person.prefix()
       "Mrs."
-      iex> Faker.Person.prefix()
+      iex> EverFaker.Person.prefix()
       "Mr."
-      iex> Faker.Person.prefix()
+      iex> EverFaker.Person.prefix()
       "Dr."
   """
   @spec prefix() :: String.t()

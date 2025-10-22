@@ -1,5 +1,5 @@
-defmodule Faker.Color.En do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Color.En do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for color data in English
@@ -10,13 +10,13 @@ defmodule Faker.Color.En do
 
   ## Examples
 
-      iex> Faker.Color.En.name()
+      iex> EverFaker.Color.En.name()
       "Red"
-      iex> Faker.Color.En.name()
+      iex> EverFaker.Color.En.name()
       "Green"
-      iex> Faker.Color.En.name()
+      iex> EverFaker.Color.En.name()
       "Brown"
-      iex> Faker.Color.En.name()
+      iex> EverFaker.Color.En.name()
       "Pink"
   """
   @spec name() :: String.t()
@@ -38,13 +38,13 @@ defmodule Faker.Color.En do
 
   ## Examples
 
-      iex> Faker.Color.En.fancy_name()
+      iex> EverFaker.Color.En.fancy_name()
       "Tawny"
-      iex> Faker.Color.En.fancy_name()
+      iex> EverFaker.Color.En.fancy_name()
       "Citrine"
-      iex> Faker.Color.En.fancy_name()
+      iex> EverFaker.Color.En.fancy_name()
       "Greige"
-      iex> Faker.Color.En.fancy_name()
+      iex> EverFaker.Color.En.fancy_name()
       "Cesious"
   """
   @spec fancy_name() :: String.t()

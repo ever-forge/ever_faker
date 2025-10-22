@@ -1,5 +1,5 @@
-defmodule Faker.Dog.PtBr do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Dog.PtBr do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for Dog names, breeds and characteristics in Portuguese
@@ -10,13 +10,13 @@ defmodule Faker.Dog.PtBr do
 
   ## Examples
 
-      iex> Faker.Dog.PtBr.name()
+      iex> EverFaker.Dog.PtBr.name()
       "Simba"
-      iex> Faker.Dog.PtBr.name()
+      iex> EverFaker.Dog.PtBr.name()
       "Max"
-      iex> Faker.Dog.PtBr.name()
+      iex> EverFaker.Dog.PtBr.name()
       "Malu"
-      iex> Faker.Dog.PtBr.name()
+      iex> EverFaker.Dog.PtBr.name()
       "Mike"
   """
   @spec name() :: String.t()
@@ -77,13 +77,13 @@ defmodule Faker.Dog.PtBr do
 
   ## Examples
 
-      iex> Faker.Dog.PtBr.breed()
+      iex> EverFaker.Dog.PtBr.breed()
       "Boxer"
-      iex> Faker.Dog.PtBr.breed()
+      iex> EverFaker.Dog.PtBr.breed()
       "Schnauzer"
-      iex> Faker.Dog.PtBr.breed()
+      iex> EverFaker.Dog.PtBr.breed()
       "Lhasa apso"
-      iex> Faker.Dog.PtBr.breed()
+      iex> EverFaker.Dog.PtBr.breed()
       "Fila brasileiro"
   """
   @spec breed() :: String.t()
@@ -142,13 +142,13 @@ defmodule Faker.Dog.PtBr do
 
   ## Examples
 
-      iex> Faker.Dog.PtBr.characteristic()
+      iex> EverFaker.Dog.PtBr.characteristic()
       "Atlético, protetor e amável"
-      iex> Faker.Dog.PtBr.characteristic()
+      iex> EverFaker.Dog.PtBr.characteristic()
       "Independente, reservado e inteligente"
-      iex> Faker.Dog.PtBr.characteristic()
+      iex> EverFaker.Dog.PtBr.characteristic()
       "Amigável, trabalhador e extrovertido"
-      iex> Faker.Dog.PtBr.characteristic()
+      iex> EverFaker.Dog.PtBr.characteristic()
       "Calmo, leal e orgulhoso"
   """
   @spec characteristic() :: String.t()

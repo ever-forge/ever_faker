@@ -1,9 +1,9 @@
-defmodule Faker.Bitcoin do
+defmodule EverFaker.Bitcoin do
   @moduledoc false
 
-  alias Faker.Blockchain.Bitcoin
+  alias EverFaker.Blockchain.Bitcoin
 
-  @deprecated "Use Faker.Blockchain.Bitcoin.address instead"
+  @deprecated "Use EverFaker.Blockchain.Bitcoin.address instead"
   def address(format \\ :main)
 
   def address(:testnet) do

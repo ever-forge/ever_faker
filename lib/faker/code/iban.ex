@@ -1,4 +1,4 @@
-defmodule Faker.Code.Iban do
+defmodule EverFaker.Code.Iban do
   @moduledoc """
   Functions for generating IBANs (International Bank Account Numbers).
 
@@ -10,13 +10,13 @@ defmodule Faker.Code.Iban do
 
   ## Examples
 
-      iex> Faker.Code.Iban.iban
+      iex> EverFaker.Code.Iban.iban
       "GI88LRCE6SQ3CQJGP3UHAJD"
-      iex> Faker.Code.Iban.iban("NL")
+      iex> EverFaker.Code.Iban.iban("NL")
       "NL26VYOC3032097337"
-      iex> Faker.Code.Iban.iban(["NL", "BE"])
+      iex> EverFaker.Code.Iban.iban(["NL", "BE"])
       "NL74YRFX4598109960"
-      iex> Faker.Code.Iban.iban(["NL", "BE"])
+      iex> EverFaker.Code.Iban.iban(["NL", "BE"])
       "BE31198979502980"
   """
 
@@ -97,13 +97,13 @@ defmodule Faker.Code.Iban do
 
   ## Examples
 
-      iex> Faker.Code.Iban.iban
+      iex> EverFaker.Code.Iban.iban
       "GI88LRCE6SQ3CQJGP3UHAJD"
-      iex> Faker.Code.Iban.iban
+      iex> EverFaker.Code.Iban.iban
       "BR0302030320973376033745981CB"
-      iex> Faker.Code.Iban.iban
+      iex> EverFaker.Code.Iban.iban
       "BE98607198979502"
-      iex> Faker.Code.Iban.iban
+      iex> EverFaker.Code.Iban.iban
       "PT72807856869061130164499"
   """
   def iban, do: iban(Keyword.keys(@iso_iban_specs))
@@ -115,13 +115,13 @@ defmodule Faker.Code.Iban do
 
   ## Examples
 
-      iex> Faker.Code.Iban.iban("FR")
+      iex> EverFaker.Code.Iban.iban("FR")
       "FR650154264610QJGP3UHAJDJ02"
-      iex> Faker.Code.Iban.iban("BE")
+      iex> EverFaker.Code.Iban.iban("BE")
       "BE95030320973376"
-      iex> Faker.Code.Iban.iban(["NL", "BE"])
+      iex> EverFaker.Code.Iban.iban(["NL", "BE"])
       "NL31RFXY5981099607"
-      iex> Faker.Code.Iban.iban(["BE", "DE"])
+      iex> EverFaker.Code.Iban.iban(["BE", "DE"])
       "DE57989795029807856869"
   """
   def iban(country_code_or_codes), do: iban(country_code_or_codes, [])
@@ -132,13 +132,13 @@ defmodule Faker.Code.Iban do
 
   ## Examples
 
-      iex> Faker.Code.Iban.iban("NL", ["ABNA"])
+      iex> EverFaker.Code.Iban.iban("NL", ["ABNA"])
       "NL16ABNA0154264610"
-      iex> Faker.Code.Iban.iban("MC", ["FOO", "BAR"])
+      iex> EverFaker.Code.Iban.iban("MC", ["FOO", "BAR"])
       "MC98FOOBAR83"
-      iex> Faker.Code.Iban.iban("SM", ["A"])
+      iex> EverFaker.Code.Iban.iban("SM", ["A"])
       "SM86A2970523570AY38NWIVZ5XT"
-      iex> Faker.Code.Iban.iban("MC", ["FOO", "BAR"])
+      iex> EverFaker.Code.Iban.iban("MC", ["FOO", "BAR"])
       "MC40FOOBAR60"
   """
   @spec iban(atom | binary | [binary], [binary]) :: binary
@@ -192,6 +192,6 @@ defmodule Faker.Code.Iban do
   end
 
   defp sample(list) do
-    Enum.fetch!(list, Faker.random_between(0, length(list) - 1))
+    Enum.fetch!(list, EverFaker.random_between(0, length(list) - 1))
   end
 end

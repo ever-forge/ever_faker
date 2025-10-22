@@ -1,7 +1,7 @@
-defmodule Faker.AirportsTest do
+defmodule EverFaker.AirportsTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Airports
-  doctest Faker.Airports.En
-  doctest Faker.Airports.PtBr
+  doctest EverFaker.Airports
+  doctest EverFaker.Airports.En
+  doctest EverFaker.Airports.PtBr
 end

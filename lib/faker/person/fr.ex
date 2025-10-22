@@ -1,5 +1,5 @@
-defmodule Faker.Person.Fr do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Person.Fr do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for name data in French
@@ -9,17 +9,17 @@ defmodule Faker.Person.Fr do
   Returns a complete name (may include a suffix/prefix or both)
 
   ## Examples
-      iex> Faker.Person.Fr.name()
+      iex> EverFaker.Person.Fr.name()
       "Madame Marcel Duplantier MD"
-      iex> Faker.Person.Fr.name()
+      iex> EverFaker.Person.Fr.name()
       "Quentin Garnier"
-      iex> Faker.Person.Fr.name()
+      iex> EverFaker.Person.Fr.name()
       "Docteur Camille Fontaine"
-      iex> Faker.Person.Fr.name()
+      iex> EverFaker.Person.Fr.name()
       "Serge Bassett V"
   """
   @spec name() :: String.t()
-  def name, do: name(Faker.random_between(0, 9))
+  def name, do: name(EverFaker.random_between(0, 9))
   defp name(0), do: "#{prefix()} #{first_name()} #{last_name()} #{suffix()}"
   defp name(1), do: "#{prefix()} #{first_name()} #{last_name()}"
   defp name(2), do: "#{first_name()} #{last_name()} #{suffix()}"
@@ -33,13 +33,13 @@ defmodule Faker.Person.Fr do
 
   ## Examples
 
-      iex> Faker.Person.Fr.first_name()
+      iex> EverFaker.Person.Fr.first_name()
       "Damien"
-      iex> Faker.Person.Fr.first_name()
+      iex> EverFaker.Person.Fr.first_name()
       "Madeleine"
-      iex> Faker.Person.Fr.first_name()
+      iex> EverFaker.Person.Fr.first_name()
       "Marcel"
-      iex> Faker.Person.Fr.first_name()
+      iex> EverFaker.Person.Fr.first_name()
       "Fabrice"
   """
   @spec first_name() :: String.t()
@@ -242,13 +242,13 @@ defmodule Faker.Person.Fr do
 
     ## Examples
 
-    iex> Faker.Person.Fr.last_name()
+    iex> EverFaker.Person.Fr.last_name()
     "Bassett"
-    iex> Faker.Person.Fr.last_name()
+    iex> EverFaker.Person.Fr.last_name()
     "Duplantier"
-    iex> Faker.Person.Fr.last_name()
+    iex> EverFaker.Person.Fr.last_name()
     "Boivin"
-    iex> Faker.Person.Fr.last_name()
+    iex> EverFaker.Person.Fr.last_name()
     "Duplantier"
   """
   @spec last_name() :: String.t()
@@ -293,13 +293,13 @@ defmodule Faker.Person.Fr do
 
   ## Examples
 
-      iex> Faker.Person.Fr.prefix()
+      iex> EverFaker.Person.Fr.prefix()
       "Docteur"
-      iex> Faker.Person.Fr.prefix()
+      iex> EverFaker.Person.Fr.prefix()
       "Madame"
-      iex> Faker.Person.Fr.prefix()
+      iex> EverFaker.Person.Fr.prefix()
       "Docteur"
-      iex> Faker.Person.Fr.prefix()
+      iex> EverFaker.Person.Fr.prefix()
       "Professeur"
   """
   @spec prefix() :: String.t()
@@ -316,13 +316,13 @@ defmodule Faker.Person.Fr do
 
   ## Examples
 
-      iex> Faker.Person.Fr.suffix()
+      iex> EverFaker.Person.Fr.suffix()
       "V"
-      iex> Faker.Person.Fr.suffix()
+      iex> EverFaker.Person.Fr.suffix()
       "I"
-      iex> Faker.Person.Fr.suffix()
+      iex> EverFaker.Person.Fr.suffix()
       "PhD"
-      iex> Faker.Person.Fr.suffix()
+      iex> EverFaker.Person.Fr.suffix()
       "MD"
   """
   @spec suffix() :: String.t()

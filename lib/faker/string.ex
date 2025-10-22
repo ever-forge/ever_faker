@@ -1,5 +1,5 @@
-defmodule Faker.String do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.String do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Function for generating Strings
@@ -10,19 +10,19 @@ defmodule Faker.String do
 
   ## Examples
 
-      iex> Faker.String.base64()
+      iex> EverFaker.String.base64()
       "1tmLiMhm"
-      iex> Faker.String.base64()
+      iex> EverFaker.String.base64()
       "29Tee6SN"
-      iex> Faker.String.base64(5)
+      iex> EverFaker.String.base64(5)
       "Kfp7+"
-      iex> Faker.String.base64(100)
+      iex> EverFaker.String.base64(100)
       "KLJyZ7xbfJZPMy3J7dAsyfOB3vnZIqFGv4VQil8D/xh1C/Nj9K7xJk47zJtcKsy5mjpJk61Wt3jcJu3bfgwuScTmOOYt4ykzvDUl"
   """
   @spec base64(pos_integer) :: String.t()
   def base64(length \\ 8) do
     length
-    |> Faker.random_bytes()
+    |> EverFaker.random_bytes()
     |> Base.encode64()
     |> binary_part(0, length)
   end
@@ -32,15 +32,15 @@ defmodule Faker.String do
 
   ## Examples
 
-      iex> Faker.String.naughty()
+      iex> EverFaker.String.naughty()
       "̦H̬̤̗̤͝e͜ ̜̥̝̻͍̟́w̕h̖̯͓o̝͙̖͎̱̮ ҉̺̙̞̟͈W̷̼̭a̺̪͍į͈͕̭͙̯̜t̶̼̮s̘͙͖̕ ̠̫̠B̻͍͙͉̳ͅe̵h̵̬͇̫͙i̹͓̳̳̮͎̫̕n͟d̴̪̜̖ ̰͉̩͇͙̲͞ͅT͖̼͓̪͢h͏͓̮̻e̬̝̟ͅ ̤̹̝W͙̞̝͔͇͝ͅa͏͓͔̹̼̣l̴͔̰̤̟͔ḽ̫.͕"
-      iex> Faker.String.naughty()
+      iex> EverFaker.String.naughty()
       "1#QNAN"
-      iex> Faker.String.naughty()
+      iex> EverFaker.String.naughty()
       "Craig Cockburn, Software Specialist"
-      iex> Faker.String.naughty()
+      iex> EverFaker.String.naughty()
       "\\"\\`\\'><script>\\\\x09javascript:alert(1)</script>"
-      iex> Faker.String.naughty()
+      iex> EverFaker.String.naughty()
       "𝚃𝚑𝚎 𝚚𝚞𝚒𝚌𝚔 𝚋𝚛𝚘𝚠𝚗 𝚏𝚘𝚡 𝚓𝚞𝚖𝚙𝚜 𝚘𝚟𝚎𝚛 𝚝𝚑𝚎 𝚕𝚊𝚣𝚢 𝚍𝚘𝚐"
 
   """

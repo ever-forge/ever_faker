@@ -1,5 +1,5 @@
-defmodule Faker.Cannabis do
-  import Faker, only: [localize: 1]
+defmodule EverFaker.Cannabis do
+  import EverFaker, only: [localize: 1]
 
   @moduledoc """
   Functions for generating Cannabis related data
@@ -10,13 +10,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.strain()
+      iex> EverFaker.Cannabis.strain()
       "Critical Kush"
-      iex> Faker.Cannabis.strain()
+      iex> EverFaker.Cannabis.strain()
       "Blue Dream"
-      iex> Faker.Cannabis.strain()
+      iex> EverFaker.Cannabis.strain()
       "Mr. Nice Guy"
-      iex> Faker.Cannabis.strain()
+      iex> EverFaker.Cannabis.strain()
       "Gorilla Glue"
   """
   @spec strain() :: String.t()
@@ -27,13 +27,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.cannabinoid()
+      iex> EverFaker.Cannabis.cannabinoid()
       "Cannabinol"
-      iex> Faker.Cannabis.cannabinoid()
+      iex> EverFaker.Cannabis.cannabinoid()
       "Cannabigerolic Acid"
-      iex> Faker.Cannabis.cannabinoid()
+      iex> EverFaker.Cannabis.cannabinoid()
       "Cannabinolic Acid"
-      iex> Faker.Cannabis.cannabinoid()
+      iex> EverFaker.Cannabis.cannabinoid()
       "Cannabicyclol"
   """
   @spec cannabinoid() :: String.t()
@@ -44,13 +44,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.cannabinoid_abbreviation()
+      iex> EverFaker.Cannabis.cannabinoid_abbreviation()
       "THCa"
-      iex> Faker.Cannabis.cannabinoid_abbreviation()
+      iex> EverFaker.Cannabis.cannabinoid_abbreviation()
       "THCv"
-      iex> Faker.Cannabis.cannabinoid_abbreviation()
+      iex> EverFaker.Cannabis.cannabinoid_abbreviation()
       "CBC"
-      iex> Faker.Cannabis.cannabinoid_abbreviation()
+      iex> EverFaker.Cannabis.cannabinoid_abbreviation()
       "CBG"
   """
   @spec cannabinoid_abbreviation() :: String.t()
@@ -61,13 +61,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.terpene()
+      iex> EverFaker.Cannabis.terpene()
       "Camphor"
-      iex> Faker.Cannabis.terpene()
+      iex> EverFaker.Cannabis.terpene()
       "Camphene"
-      iex> Faker.Cannabis.terpene()
+      iex> EverFaker.Cannabis.terpene()
       "α Pinene"
-      iex> Faker.Cannabis.terpene()
+      iex> EverFaker.Cannabis.terpene()
       "Sabinene"
   """
   @spec terpene() :: String.t()
@@ -78,13 +78,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.medical_use()
+      iex> EverFaker.Cannabis.medical_use()
       "analgesic"
-      iex> Faker.Cannabis.medical_use()
+      iex> EverFaker.Cannabis.medical_use()
       "anti-cancer"
-      iex> Faker.Cannabis.medical_use()
+      iex> EverFaker.Cannabis.medical_use()
       "anti-cancer"
-      iex> Faker.Cannabis.medical_use()
+      iex> EverFaker.Cannabis.medical_use()
       "anti-fungal"
   """
   @spec medical_use() :: String.t()
@@ -95,13 +95,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.health_benefit()
+      iex> EverFaker.Cannabis.health_benefit()
       "relieves pain"
-      iex> Faker.Cannabis.health_benefit()
+      iex> EverFaker.Cannabis.health_benefit()
       "inhibits cell growth in tumors/cancer cells"
-      iex> Faker.Cannabis.health_benefit()
+      iex> EverFaker.Cannabis.health_benefit()
       "inhibits cell growth in tumors/cancer cells"
-      iex> Faker.Cannabis.health_benefit()
+      iex> EverFaker.Cannabis.health_benefit()
       "treats fungal infection"
   """
   @spec health_benefit() :: String.t()
@@ -112,13 +112,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.category()
+      iex> EverFaker.Cannabis.category()
       "flower"
-      iex> Faker.Cannabis.category()
+      iex> EverFaker.Cannabis.category()
       "medical"
-      iex> Faker.Cannabis.category()
+      iex> EverFaker.Cannabis.category()
       "seeds & clones"
-      iex> Faker.Cannabis.category()
+      iex> EverFaker.Cannabis.category()
       "live resin"
   """
   @spec category() :: String.t()
@@ -129,13 +129,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.type()
+      iex> EverFaker.Cannabis.type()
       "hybrid"
-      iex> Faker.Cannabis.type()
+      iex> EverFaker.Cannabis.type()
       "sativa"
-      iex> Faker.Cannabis.type()
+      iex> EverFaker.Cannabis.type()
       "hybrid"
-      iex> Faker.Cannabis.type()
+      iex> EverFaker.Cannabis.type()
       "sativa"
   """
   @spec type() :: String.t()
@@ -146,13 +146,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.buzzword()
+      iex> EverFaker.Cannabis.buzzword()
       "toke"
-      iex> Faker.Cannabis.buzzword()
+      iex> EverFaker.Cannabis.buzzword()
       "cbd"
-      iex> Faker.Cannabis.buzzword()
+      iex> EverFaker.Cannabis.buzzword()
       "stoned"
-      iex> Faker.Cannabis.buzzword()
+      iex> EverFaker.Cannabis.buzzword()
       "stoned"
   """
   @spec buzzword() :: String.t()
@@ -163,13 +163,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.En.brand()
+      iex> EverFaker.Cannabis.En.brand()
       "Evolab"
-      iex> Faker.Cannabis.En.brand()
+      iex> EverFaker.Cannabis.En.brand()
       "CI Wholesale"
-      iex> Faker.Cannabis.En.brand()
+      iex> EverFaker.Cannabis.En.brand()
       "Muy"
-      iex> Faker.Cannabis.En.brand()
+      iex> EverFaker.Cannabis.En.brand()
       "Chong's Choice"
   """
   @spec brand() :: String.t()
@@ -180,13 +180,13 @@ defmodule Faker.Cannabis do
 
   ## Examples
 
-      iex> Faker.Cannabis.thc()
+      iex> EverFaker.Cannabis.thc()
       "18.1%"
-      iex> Faker.Cannabis.thc()
+      iex> EverFaker.Cannabis.thc()
       "30.4%"
-      iex> Faker.Cannabis.thc()
+      iex> EverFaker.Cannabis.thc()
       "28.6%"
-      iex> Faker.Cannabis.thc()
+      iex> EverFaker.Cannabis.thc()
       "40.6%"
   """
   @spec thc :: String.t()
@@ -195,6 +195,6 @@ defmodule Faker.Cannabis do
   end
 
   defp random_float do
-    "#{Faker.random_between(0, 50)}.#{Faker.random_between(0, 9)}"
+    "#{EverFaker.random_between(0, 50)}.#{EverFaker.random_between(0, 9)}"
   end
 end

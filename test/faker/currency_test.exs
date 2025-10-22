@@ -1,5 +1,5 @@
-defmodule Faker.CurrencyTest do
+defmodule EverFaker.CurrencyTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Currency
+  doctest EverFaker.Currency
 end

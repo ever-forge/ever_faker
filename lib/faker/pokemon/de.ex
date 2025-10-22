@@ -1,5 +1,5 @@
-defmodule Faker.Pokemon.De do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Pokemon.De do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for Pokemon names in German
@@ -10,13 +10,13 @@ defmodule Faker.Pokemon.De do
 
   ## Examples
 
-      iex> Faker.Pokemon.De.name()
+      iex> EverFaker.Pokemon.De.name()
       "Viscogon"
-      iex> Faker.Pokemon.De.name()
+      iex> EverFaker.Pokemon.De.name()
       "Lepumentas"
-      iex> Faker.Pokemon.De.name()
+      iex> EverFaker.Pokemon.De.name()
       "Quajutsu"
-      iex> Faker.Pokemon.De.name()
+      iex> EverFaker.Pokemon.De.name()
       "Pyroleo"
   """
   @spec name() :: String.t()
@@ -837,13 +837,13 @@ defmodule Faker.Pokemon.De do
 
   ## Examples
 
-      iex> Faker.Pokemon.De.location()
+      iex> EverFaker.Pokemon.De.location()
       "Blumenparadies"
-      iex> Faker.Pokemon.De.location()
+      iex> EverFaker.Pokemon.De.location()
       "Kraterberg"
-      iex> Faker.Pokemon.De.location()
+      iex> EverFaker.Pokemon.De.location()
       "Zweiblattdorf"
-      iex> Faker.Pokemon.De.location()
+      iex> EverFaker.Pokemon.De.location()
       "Sandgemme"
   """
   @spec location() :: String.t()

@@ -1,6 +1,6 @@
-defmodule Faker.Commerce.Hy do
-  import Faker, only: [sampler: 2]
-  alias Faker.Color.Hy, as: Color
+defmodule EverFaker.Commerce.Hy do
+  import EverFaker, only: [sampler: 2]
+  alias EverFaker.Color.Hy, as: Color
 
   @moduledoc """
   Fuctions for generating commerce related data in Armenian
@@ -11,13 +11,13 @@ defmodule Faker.Commerce.Hy do
 
   ## Examples
 
-      iex> Faker.Commerce.Hy.color()
+      iex> EverFaker.Commerce.Hy.color()
       "մոխրագույն"
-      iex> Faker.Commerce.Hy.color()
+      iex> EverFaker.Commerce.Hy.color()
       "կանաչ"
-      iex> Faker.Commerce.Hy.color()
+      iex> EverFaker.Commerce.Hy.color()
       "երկնագույն"
-      iex> Faker.Commerce.Hy.color()
+      iex> EverFaker.Commerce.Hy.color()
       "մանուշակագույն"
   """
   @spec color() :: String.t()
@@ -30,13 +30,13 @@ defmodule Faker.Commerce.Hy do
 
   ## Examples
 
-      iex> Faker.Commerce.Hy.department()
+      iex> EverFaker.Commerce.Hy.department()
       "Համակարգիչներ"
-      iex> Faker.Commerce.Hy.department()
+      iex> EverFaker.Commerce.Hy.department()
       "Երաժշտություն"
-      iex> Faker.Commerce.Hy.department()
+      iex> EverFaker.Commerce.Hy.department()
       "Գրքեր"
-      iex> Faker.Commerce.Hy.department()
+      iex> EverFaker.Commerce.Hy.department()
       "Էլեկտրոնիկա"
   """
   @spec department() :: String.t()
@@ -70,17 +70,17 @@ defmodule Faker.Commerce.Hy do
 
   ## Examples
 
-      iex> Faker.Commerce.Hy.product_name()
+      iex> EverFaker.Commerce.Hy.product_name()
       "հիանալի բրոնզե գլխարկ"
-      iex> Faker.Commerce.Hy.product_name()
+      iex> EverFaker.Commerce.Hy.product_name()
       "ֆանտաստիկ դանակ"
-      iex> Faker.Commerce.Hy.product_name()
+      iex> EverFaker.Commerce.Hy.product_name()
       "պլաստիկից աթոռ"
-      iex> Faker.Commerce.Hy.product_name()
+      iex> EverFaker.Commerce.Hy.product_name()
       "ալյումինե վերնաշապիկ"
   """
   @spec product_name() :: String.t()
-  def product_name, do: product_name(Faker.random_between(0, 2))
+  def product_name, do: product_name(EverFaker.random_between(0, 2))
 
   defp product_name(0) do
     "#{product_name_adjective()} #{product_name_material()} #{product_name_product()}"
@@ -94,13 +94,13 @@ defmodule Faker.Commerce.Hy do
 
   ## Examples
 
-      iex> Faker.Commerce.Hy.product_name_adjective()
+      iex> EverFaker.Commerce.Hy.product_name_adjective()
       "ֆանտաստիկ"
-      iex> Faker.Commerce.Hy.product_name_adjective()
+      iex> EverFaker.Commerce.Hy.product_name_adjective()
       "հիանալի"
-      iex> Faker.Commerce.Hy.product_name_adjective()
+      iex> EverFaker.Commerce.Hy.product_name_adjective()
       "միջակ"
-      iex> Faker.Commerce.Hy.product_name_adjective()
+      iex> EverFaker.Commerce.Hy.product_name_adjective()
       "նրբագեղ"
   """
   @spec product_name_adjective() :: String.t()
@@ -128,13 +128,13 @@ defmodule Faker.Commerce.Hy do
 
   ## Examples
 
-      iex> Faker.Commerce.Hy.product_name_material()
+      iex> EverFaker.Commerce.Hy.product_name_material()
       "փայտե"
-      iex> Faker.Commerce.Hy.product_name_material()
+      iex> EverFaker.Commerce.Hy.product_name_material()
       "գրանիտե"
-      iex> Faker.Commerce.Hy.product_name_material()
+      iex> EverFaker.Commerce.Hy.product_name_material()
       "բրոնզե"
-      iex> Faker.Commerce.Hy.product_name_material()
+      iex> EverFaker.Commerce.Hy.product_name_material()
       "մարմարե"
   """
   @spec product_name_material() :: String.t()
@@ -163,13 +163,13 @@ defmodule Faker.Commerce.Hy do
 
   ## Examples
 
-      iex> Faker.Commerce.Hy.product_name_product()
+      iex> EverFaker.Commerce.Hy.product_name_product()
       "վերնաշապիկ"
-      iex> Faker.Commerce.Hy.product_name_product()
+      iex> EverFaker.Commerce.Hy.product_name_product()
       "ստեղնաշար"
-      iex> Faker.Commerce.Hy.product_name_product()
+      iex> EverFaker.Commerce.Hy.product_name_product()
       "վերնաշապիկ"
-      iex> Faker.Commerce.Hy.product_name_product()
+      iex> EverFaker.Commerce.Hy.product_name_product()
       "գլխարկ"
   """
   @spec product_name_product() :: String.t()

@@ -1,6 +1,6 @@
-defmodule Faker.VehicleTest do
+defmodule EverFaker.VehicleTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Vehicle
-  doctest Faker.Vehicle.En
+  doctest EverFaker.Vehicle
+  doctest EverFaker.Vehicle.En
 end

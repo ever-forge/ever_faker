@@ -1,5 +1,5 @@
-defmodule Faker.MarkdownTest do
+defmodule EverFaker.MarkdownTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Markdown
+  doctest EverFaker.Markdown
 end

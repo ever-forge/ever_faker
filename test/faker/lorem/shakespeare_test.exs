@@ -1,7 +1,7 @@
-defmodule Faker.ShakespeareTest do
+defmodule EverFaker.ShakespeareTest do
   use ExUnit.Case, async: true
 
-  doctest Faker.Lorem.Shakespeare
-  doctest Faker.Lorem.Shakespeare.En
-  doctest Faker.Lorem.Shakespeare.Ru
+  doctest EverFaker.Lorem.Shakespeare
+  doctest EverFaker.Lorem.Shakespeare.En
+  doctest EverFaker.Lorem.Shakespeare.Ru
 end

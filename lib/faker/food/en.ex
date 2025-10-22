@@ -1,5 +1,5 @@
-defmodule Faker.Food.En do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Food.En do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for food data in English.
@@ -10,13 +10,13 @@ defmodule Faker.Food.En do
 
   ## Examples
 
-      iex> Faker.Food.En.dish()
+      iex> EverFaker.Food.En.dish()
       "Vegetable Soup"
-      iex> Faker.Food.En.dish()
+      iex> EverFaker.Food.En.dish()
       "Fish and chips"
-      iex> Faker.Food.En.dish()
+      iex> EverFaker.Food.En.dish()
       "Pork belly buns"
-      iex> Faker.Food.En.dish()
+      iex> EverFaker.Food.En.dish()
       "Pasta Carbonara"
   """
   @spec dish() :: String.t()
@@ -65,13 +65,13 @@ defmodule Faker.Food.En do
 
   ## Examples
 
-      iex> Faker.Food.En.description()
+      iex> EverFaker.Food.En.description()
       "Two buttermilk waffles, topped with whipped cream and maple syrup, a side of two eggs served any style, and your choice of smoked bacon or smoked ham."
-      iex> Faker.Food.En.description()
+      iex> EverFaker.Food.En.description()
       "28-day aged 300g USDA Certified Prime Ribeye, rosemary-thyme garlic butter, with choice of two sides."
-      iex> Faker.Food.En.description()
+      iex> EverFaker.Food.En.description()
       "Breaded fried chicken with waffles, and a side of maple syrup."
-      iex> Faker.Food.En.description()
+      iex> EverFaker.Food.En.description()
       "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder."
   """
   @spec description() :: String.t()
@@ -97,13 +97,13 @@ defmodule Faker.Food.En do
 
   ## Examples
 
-      iex> Faker.Food.En.ingredient()
+      iex> EverFaker.Food.En.ingredient()
       "Tomatoes"
-      iex> Faker.Food.En.ingredient()
+      iex> EverFaker.Food.En.ingredient()
       "Albacore Tuna"
-      iex> Faker.Food.En.ingredient()
+      iex> EverFaker.Food.En.ingredient()
       "Potatoes"
-      iex> Faker.Food.En.ingredient()
+      iex> EverFaker.Food.En.ingredient()
       "Tinned"
   """
   @spec ingredient() :: String.t()
@@ -608,13 +608,13 @@ defmodule Faker.Food.En do
 
   ## Examples
 
-      iex> Faker.Food.En.measurement()
+      iex> EverFaker.Food.En.measurement()
       "teaspoon"
-      iex> Faker.Food.En.measurement()
+      iex> EverFaker.Food.En.measurement()
       "gallon"
-      iex> Faker.Food.En.measurement()
+      iex> EverFaker.Food.En.measurement()
       "pint"
-      iex> Faker.Food.En.measurement()
+      iex> EverFaker.Food.En.measurement()
       "cup"
   """
   @spec measurement() :: String.t()
@@ -625,13 +625,13 @@ defmodule Faker.Food.En do
 
   ## Examples
 
-      iex> Faker.Food.En.measurement_size()
+      iex> EverFaker.Food.En.measurement_size()
       "1/4"
-      iex> Faker.Food.En.measurement_size()
+      iex> EverFaker.Food.En.measurement_size()
       "3"
-      iex> Faker.Food.En.measurement_size()
+      iex> EverFaker.Food.En.measurement_size()
       "1"
-      iex> Faker.Food.En.measurement_size()
+      iex> EverFaker.Food.En.measurement_size()
       "1/2"
   """
   @spec measurement_size() :: String.t()
@@ -642,13 +642,13 @@ defmodule Faker.Food.En do
 
   ## Examples
 
-      iex> Faker.Food.En.metric_measurement()
+      iex> EverFaker.Food.En.metric_measurement()
       "centiliter"
-      iex> Faker.Food.En.metric_measurement()
+      iex> EverFaker.Food.En.metric_measurement()
       "deciliter"
-      iex> Faker.Food.En.metric_measurement()
+      iex> EverFaker.Food.En.metric_measurement()
       "liter"
-      iex> Faker.Food.En.metric_measurement()
+      iex> EverFaker.Food.En.metric_measurement()
       "milliliter"
   """
   @spec metric_measurement() :: String.t()
@@ -659,13 +659,13 @@ defmodule Faker.Food.En do
 
   ## Examples
 
-      iex> Faker.Food.En.spice()
+      iex> EverFaker.Food.En.spice()
       "Garlic Salt"
-      iex> Faker.Food.En.spice()
+      iex> EverFaker.Food.En.spice()
       "Ras-el-Hanout"
-      iex> Faker.Food.En.spice()
+      iex> EverFaker.Food.En.spice()
       "Curry Hot"
-      iex> Faker.Food.En.spice()
+      iex> EverFaker.Food.En.spice()
       "Peppercorns Mixed"
   """
   @spec spice() :: String.t()
@@ -860,13 +860,13 @@ defmodule Faker.Food.En do
 
   ## Examples
 
-      iex> Faker.Food.En.sushi()
+      iex> EverFaker.Food.En.sushi()
       "Whitespotted conger"
-      iex> Faker.Food.En.sushi()
+      iex> EverFaker.Food.En.sushi()
       "Japanese horse mackerel"
-      iex> Faker.Food.En.sushi()
+      iex> EverFaker.Food.En.sushi()
       "Salmon"
-      iex> Faker.Food.En.sushi()
+      iex> EverFaker.Food.En.sushi()
       "Octopus"
   """
   @spec sushi() :: String.t()

@@ -1,9 +1,9 @@
-defmodule Faker.Code.IbanTest do
+defmodule EverFaker.Code.IbanTest do
   use ExUnit.Case, async: true
 
-  import Faker.Code.Iban
+  import EverFaker.Code.Iban
 
-  doctest Faker.Code.Iban
+  doctest EverFaker.Code.Iban
 
   @iterations 10_000
 

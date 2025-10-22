@@ -1,4 +1,4 @@
-defmodule Faker.NaiveDateTime do
+defmodule EverFaker.NaiveDateTime do
   @moduledoc false
 
   @doc """
@@ -6,7 +6,7 @@ defmodule Faker.NaiveDateTime do
 
   ## Examples
 
-      iex> Faker.NaiveDateTime.backward(4)
+      iex> EverFaker.NaiveDateTime.backward(4)
       #=> ~N[2016-12-20 06:02:17.922180]
   """
   @spec backward(integer) :: NaiveDateTime.t()
@@ -19,13 +19,13 @@ defmodule Faker.NaiveDateTime do
 
   ## Examples
 
-      iex> Faker.NaiveDateTime.forward(4)
+      iex> EverFaker.NaiveDateTime.forward(4)
       #=> ~N[2016-12-25 06:02:17.922180]
   """
   @spec forward(integer) :: NaiveDateTime.t()
   def forward(days) do
     days
-    |> Faker.DateTime.forward()
+    |> EverFaker.DateTime.forward()
     |> DateTime.to_naive()
   end
 
@@ -34,13 +34,13 @@ defmodule Faker.NaiveDateTime do
 
   ## Examples
 
-      iex> Faker.NaiveDateTime.between(~N[2016-12-20 00:00:00], ~N[2016-12-25 00:00:00])
+      iex> EverFaker.NaiveDateTime.between(~N[2016-12-20 00:00:00], ~N[2016-12-25 00:00:00])
       #=> ~N[2016-12-23 06:02:17.922180]
   """
   @spec between(NaiveDateTime.t(), NaiveDateTime.t()) :: NaiveDateTime.t()
   def between(from, to) do
     from
-    |> Faker.DateTime.between(to)
+    |> EverFaker.DateTime.between(to)
     |> DateTime.to_naive()
   end
 end

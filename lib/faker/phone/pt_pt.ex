@@ -1,5 +1,5 @@
-defmodule Faker.Phone.PtPt do
-  import Faker, only: [sampler: 2]
+defmodule EverFaker.Phone.PtPt do
+  import EverFaker, only: [sampler: 2]
 
   @moduledoc """
   Functions for generating phone related data for portugal location
@@ -10,19 +10,19 @@ defmodule Faker.Phone.PtPt do
 
   ## Examples
 
-      iex> Faker.Phone.PtPt.number()
+      iex> EverFaker.Phone.PtPt.number()
       "929999999"
-      iex> Faker.Phone.PtPt.number()
+      iex> EverFaker.Phone.PtPt.number()
       "919999999"
-      iex> Faker.Phone.PtPt.number()
+      iex> EverFaker.Phone.PtPt.number()
       "234999999"
-      iex> Faker.Phone.PtPt.number()
+      iex> EverFaker.Phone.PtPt.number()
       "939999999"
   """
 
   @spec number() :: String.t()
   def number do
-    if Faker.random_between(0, 1) == 0 do
+    if EverFaker.random_between(0, 1) == 0 do
       landline_number()
     else
       cell_number()
@@ -39,19 +39,19 @@ defmodule Faker.Phone.PtPt do
 
   ## Examples
 
-      iex> Faker.Phone.PtPt.landline_number()
+      iex> EverFaker.Phone.PtPt.landline_number()
       "299999999"
-      iex> Faker.Phone.PtPt.landline_number()
+      iex> EverFaker.Phone.PtPt.landline_number()
       "299999998"
-      iex> Faker.Phone.PtPt.landline_number()
+      iex> EverFaker.Phone.PtPt.landline_number()
       "399999999"
-      iex> Faker.Phone.PtPt.landline_number()
+      iex> EverFaker.Phone.PtPt.landline_number()
       "399999998"
   """
 
   @spec landline_number() :: String.t()
   def landline_number do
-    Faker.format(landline_number_format())
+    EverFaker.format(landline_number_format())
   end
 
   sampler(:cell_number_format, [
@@ -66,18 +66,18 @@ defmodule Faker.Phone.PtPt do
 
   ## Examples
 
-      iex> Faker.Phone.PtPt.cell_number()
+      iex> EverFaker.Phone.PtPt.cell_number()
       "919999999"
-      iex> Faker.Phone.PtPt.cell_number()
+      iex> EverFaker.Phone.PtPt.cell_number()
       "929999999"
-      iex> Faker.Phone.PtPt.cell_number()
+      iex> EverFaker.Phone.PtPt.cell_number()
       "939999999"
-      iex> Faker.Phone.PtPt.cell_number()
+      iex> EverFaker.Phone.PtPt.cell_number()
       "969999999"
   """
 
   @spec cell_number() :: String.t()
   def cell_number do
-    Faker.format(cell_number_format())
+    EverFaker.format(cell_number_format())
   end
 end

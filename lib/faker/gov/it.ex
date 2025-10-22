@@ -1,4 +1,4 @@
-defmodule Faker.Gov.It do
+defmodule EverFaker.Gov.It do
   @moduledoc """
   Functions for data created/released by the Italian government,
   like fiscal codes
@@ -6,20 +6,20 @@ defmodule Faker.Gov.It do
 
   require Integer
 
-  alias Faker.Util
+  alias EverFaker.Util
 
   @doc """
   Returns a random Italian fiscal code
 
   ## Examples
 
-      iex> Faker.Gov.It.fiscal_id()
+      iex> EverFaker.Gov.It.fiscal_id()
       "ELRCEA64C50A918F"
-      iex> Faker.Gov.It.fiscal_id()
+      iex> EverFaker.Gov.It.fiscal_id()
       "ZSLNKH22M34H480J"
-      iex> Faker.Gov.It.fiscal_id()
+      iex> EverFaker.Gov.It.fiscal_id()
       "OCPCVO90M50F353I"
-      iex> Faker.Gov.It.fiscal_id()
+      iex> EverFaker.Gov.It.fiscal_id()
       "PQYRFX94R54C681K"
   """
   @spec fiscal_id() :: binary()
@@ -44,7 +44,7 @@ defmodule Faker.Gov.It do
 
   defp birth_year do
     0
-    |> Faker.random_between(99)
+    |> EverFaker.random_between(99)
     |> Integer.to_string()
     |> String.pad_leading(2, "0")
   end
@@ -65,7 +65,7 @@ defmodule Faker.Gov.It do
   end
 
   defp town_code_numbers do
-    Faker.random_between(0, 999)
+    EverFaker.random_between(0, 999)
     |> Integer.to_string()
     |> String.pad_leading(3, "0")
   end
