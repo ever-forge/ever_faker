@@ -257,7 +257,7 @@ defmodule Faker.Internet do
   @spec ip_v6_address() :: String.t()
   def ip_v6_address do
     Enum.map_join(1..8, ":", fn _part ->
-      Faker.random_between(0, 65535)
+      Faker.random_between(0, 65_535)
       |> Integer.to_string(16)
       |> String.pad_leading(4, ["0"])
     end)
