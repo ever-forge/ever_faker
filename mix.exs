@@ -44,7 +44,7 @@ defmodule EverFaker.Mixfile do
   defp docs do
     [
       main: "readme",
-      extras: ["README.md", "CHANGELOG.md"],
+      extras: ["README.md", "CHANGELOG.md", "LICENSE"],
       skip_undefined_reference_warnings_on: ["CHANGELOG.md"],
       source_url: @source_url,
       source_ref: "v#{@version}"

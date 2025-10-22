@@ -39,4 +39,4 @@ For more information, see the [documentation](https://hexdocs.pm/ever_faker).
 
 ## License
 
-MIT
+[MIT](./LICENSE)
