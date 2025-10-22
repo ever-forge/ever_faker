@@ -1153,7 +1153,8 @@ defmodule EverFaker.Address.It do
   defp street_name(1), do: "#{street_prefix()} #{EverFaker.Person.It.last_name()}"
 
   defp street_name(2),
-    do: "#{street_prefix()} #{EverFaker.Person.It.first_name()} #{EverFaker.Person.It.last_name()}"
+    do:
+      "#{street_prefix()} #{EverFaker.Person.It.first_name()} #{EverFaker.Person.It.last_name()}"
 
   defp street_name(3), do: "#{street_prefix()} #{country()}"
   defp street_name(4), do: "#{street_prefix()} #{region()}"
