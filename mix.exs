@@ -15,13 +15,7 @@ defmodule Faker.Mixfile do
       deps: deps(),
       docs: docs(),
       source_url: @source_url,
-      homepage_url: @source_url,
-      dialyzer: [
-        flags: [
-          :error_handling,
-          :underspecs
-        ]
-      ]
+      homepage_url: @source_url
     ]
   end
 
